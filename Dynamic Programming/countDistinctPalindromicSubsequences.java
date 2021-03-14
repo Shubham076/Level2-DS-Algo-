@@ -68,8 +68,6 @@ public class countDistinctPalindromicSubsequences {
     }
 
     System.out.println(dp[0][s.length() - 1]);
-
-
      scn.close();
  }   
 }

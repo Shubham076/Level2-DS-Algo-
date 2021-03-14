@@ -36,7 +36,7 @@ class minimumWindowSubstring{
 				flag1 = true;
 			}
 
-// collect ans and release
+			// collect ans and release
 			while(j < i && count == desiredCount){
 				String curAns = s1.substring(j + 1 , i + 1);
 				if(ans.length() == 0 || curAns.length() < ans.length()){

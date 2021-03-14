@@ -4,6 +4,8 @@ class longestCommonSubstring{
 		Scanner scn = new Scanner(System.in);
 		String s1 = scn.next();
 		String s2 = scn.next();
+
+		//stores the length of common suffix in two strings 
 		int[][]dp = new int[s1.length() + 1][s2.length() + 1];
 		int max = Integer.MIN_VALUE;
 
