@@ -12,7 +12,7 @@ class kahnsAlgorithm{
 		int v = scn.nextInt();
 		int e = scn.nextInt();
 		ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
-		for(int i = 0; i < e; i++){
+		for(int i = 0; i < v; i++){
 			graph.add(i, new ArrayList<>());
 		}
 
@@ -52,7 +52,7 @@ class kahnsAlgorithm{
 				indeg[nbr]--;
 
 				if(indeg[nbr] == 0){
-					q.add(nbr);
+					q.add(nbr);       
 				}
 			}
 		}

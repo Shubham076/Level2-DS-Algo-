@@ -9,11 +9,11 @@ class countOfSubstringWithkUniqueCharacters{
 			 solveForK1(st);
 			 return;
 		}
-		int ib = -1;
-		int is = -1;
+		int ib = -1;  //big
+		int is = -1;  //small
 		int j = -1;
 		int ans = 0;
-		HashMap<Character, Integer> s = new HashMap<>();  ///grow upto k- 1 characters
+		HashMap<Character, Integer> s = new HashMap<>();  ///grow upto k - 1 characters
 		HashMap<Character, Integer> b = new HashMap<>(); ///grow upto k characters
 
 
