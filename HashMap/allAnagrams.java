@@ -5,9 +5,11 @@ public class allAnagrams {
         Scanner scn = new Scanner(System.in);
         String s = scn.nextLine();
         String p = scn.nextLine();
+
         HashMap<Character, Integer> str = new HashMap<>();
         HashMap<Character, Integer> pat = new HashMap<>();
         ArrayList<Integer> ans = new ArrayList<>();
+
         for(int i = 0; i < p.length(); i++){
             char c = p.charAt(i);
             pat.put(c, pat.getOrDefault(c, 0) + 1);

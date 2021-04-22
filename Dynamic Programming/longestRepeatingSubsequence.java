@@ -1,6 +1,6 @@
 import java.util.*;
 
-//make sure not a single character in the subsequence share the same character;
+//make sure not a single character in the subsequence shares the same character;
 class longestRepeatingSubsequence{
 	public static void main(String[] args){
 		Scanner scn = new Scanner(System.in);

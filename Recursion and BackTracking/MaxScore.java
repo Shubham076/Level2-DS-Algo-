@@ -3,41 +3,33 @@ import java.util.*;
 public class MaxScore {
 
 	public static int solution(String[] words, int[] farr, int[] score, int idx) {
-		//write your code here
-		// sno =score without word
+		// sno = score without word
 		// syes = score with word
-	if(idx == words.length) return 0;
-	int sno = solution(words , farr , score , idx +1);
-	
-	String word = words[idx];
-	boolean flag = true;
-	int sword = 0;
-	for(int i = 0; i < word.length(); i++){
-	    
-	    char ch = word.charAt(i);
-	    
-	    if( farr[ch - 'a'] == 0){
-	        flag = false;
-	    }
-	    
-	    farr[ch - 'a']--;
-	    sword += score[ch - 'a'];
-	    
-	    
-	}
-	int syes = 0;
-	
-	if(flag){
-	    syes = sword + solution( words , farr ,score , idx + 1);
-	}
-	
-	for(int i = 0; i < word.length(); i++){
-	    char ch = word.charAt(i);
-	    farr[ch -'a']++;
-	}
+		if(idx == words.length) return 0;
+		int sno = solution(words , farr , score , idx +1);
 		
+		String word = words[idx];
+		boolean flag = true;
+		int sword = 0;  //score of the word
+		for(int i = 0; i < word.length(); i++){
+		    char ch = word.charAt(i);
+		    if( farr[ch - 'a'] == 0){
+		        flag = false;
+		    }
+		    farr[ch - 'a']--;
+		    sword += score[ch - 'a'];
+		}
+		int syes = 0;
+		if(flag){
+		    syes = sword + solution( words, farr, score, idx + 1);
+		}
+		
+		for(int i = 0; i < word.length(); i++){
+		    char ch = word.charAt(i);
+		    farr[ch -'a']++;
+		}	
 		return Math.max(sno , syes);
-	}
+}
 
 	public static void main(String[] args) {
 
@@ -61,7 +53,7 @@ public class MaxScore {
 			System.out.println(0);
 			return;
 		}
-		int[] farr = new int[score.length];
+		int[] farr = new int[26];
 		for (char ch : letters) {
 			farr[ch - 'a']++;
 		}
