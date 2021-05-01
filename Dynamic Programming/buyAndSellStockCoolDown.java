@@ -9,9 +9,9 @@ public class buyAndSellStockCoolDown {
             arr[i] = scn.nextInt();
         }
         scn.close();
-        int obsp = -arr[0];
-        int ossp = 0;
-        int ocsp = 0;
+        int obsp = -arr[0];  //old bought state price
+        int ossp = 0;  //old sold state price
+        int ocsp = 0; //old cool state price
 
         for(int i = 1; i < arr.length; i++){
 
@@ -19,6 +19,7 @@ public class buyAndSellStockCoolDown {
             int nbsp = 0;
             int ncsp = 0;
 
+            //purane cool pe aj buy krle
             if(ocsp - arr[i] > obsp){
                 nbsp = ocsp - arr[i];
             }
@@ -26,6 +27,7 @@ public class buyAndSellStockCoolDown {
                 nbsp = obsp;
             }
 
+            //purane buy pe aj sell krle
             if(obsp + arr[i] > ossp){
                 nssp = obsp + arr[i];
             }

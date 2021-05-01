@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 class buyAndSellStock2Transactions{
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
@@ -10,9 +9,9 @@ class buyAndSellStock2Transactions{
         }
         scn.close();
 
-        int mpl = 0;
+        int mpl = 0;  //max profit left
         int[] dpl = new int[n];
-        int lsf = arr[0];
+        int lsf = arr[0];  //least so far
 
         for(int i = 1; i < arr.length; i++){
             if(arr[i] < lsf){
@@ -28,8 +27,8 @@ class buyAndSellStock2Transactions{
             }
         }
 
-        int mpr = 0;
-        int msf = arr[n - 1];
+        int mpr = 0;   //max profit right
+        int msf = arr[n - 1];  //max so far
         int[] dpr = new int[n];
         for(int i = arr.length -2; i >= 0; i--){
             if(arr[i] > msf){
@@ -43,11 +42,9 @@ class buyAndSellStock2Transactions{
             else{
                 dpr[i] = dpr[i + 1];
             }
-
-
         }
 
-        int op = 0;
+        int op = 0;  //overall profit
         for(int i = 0; i < arr.length; i++){
             if(dpl[i] + dpr[i] > op){
                 op = dpl[i] + dpr[i];

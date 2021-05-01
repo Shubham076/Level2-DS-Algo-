@@ -11,14 +11,14 @@ public class buyAndSellStockwithFee {
 
         int fees = scn.nextInt();
         scn.close();
-        int obsp = -arr[0];
-        int ossp = 0;
+        int obsp = -arr[0];  //bought state price  - BSBSB ONE BUY EXTRA(ONE EXTRA SHARE)
+        int ossp = 0;      // sold state price - BSBSBS
 
         for(int i = 1; i < arr.length; i++){
-
             int nssp = 0;
             int nbsp = 0;
 
+            //purane sold pe aj buy krle ya phir na kre
             if(ossp - arr[i] > obsp){
                 nbsp = ossp - arr[i];
             }
@@ -26,6 +26,7 @@ public class buyAndSellStockwithFee {
                 nbsp = obsp;
             }
 
+            //purane buy pe aj sell krde or fees bhi add krde
             if(obsp + arr[i] - fees > ossp){
                 nssp = obsp + arr[i] - fees;
             }
