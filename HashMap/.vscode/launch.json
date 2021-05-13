@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch threeSumClosest",
+            "request": "launch",
+            "mainClass": "threeSumClosest",
+            "projectName": "HashMap_3cf266b"
+        },
+        {
+            "type": "java",
+            "name": "Launch fourSum",
+            "request": "launch",
+            "mainClass": "fourSum",
+            "projectName": "HashMap_3cf266b"
+        },
+        {
+            "type": "java",
+            "name": "Launch threeSum",
+            "request": "launch",
+            "mainClass": "threeSum",
+            "projectName": "HashMap_3cf266b"
+        },
+        {
+            "type": "java",
+            "name": "Launch equalsAndHashcodeOveride",
+            "request": "launch",
+            "mainClass": "equalsAndHashcodeOveride",
+            "projectName": "HashMap_3cf266b"
+        },
+        {
+            "type": "java",
             "name": "Launch isomorphicStrings",
             "request": "launch",
             "mainClass": "isomorphicStrings",
