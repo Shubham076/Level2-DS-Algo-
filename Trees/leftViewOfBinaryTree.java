@@ -1,5 +1,5 @@
 import java.util.*;
-class leftViewOfNinaryTree {
+class leftViewOfBinaryTree {
 	class Node {
 		int data;
 		Node left, right;

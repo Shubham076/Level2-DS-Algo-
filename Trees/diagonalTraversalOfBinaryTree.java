@@ -1,19 +1,14 @@
-//leetcode serialize and deserialize binary tree
 import java.util.*;
-public class binaryTreeFromLevelOrder {
-    static class Node{
+public class diagonalTraversalOfBinaryTree {
+    static class Node {
         int data;
         Node left;
         Node right;
-        Node(int data, Node left, Node right){
+
+        Node(int data, Node left, Node right) {
             this.data = data;
             this.left = left;
             this.right = right;
-        }
-
-        @Override
-        public String toString(){
-            return this.data + "";
         }
     }
 
@@ -47,22 +42,32 @@ public class binaryTreeFromLevelOrder {
         return root;
     }
 
-    public static void display(Node root){
-        if(root == null) return;
-        String str = "";
-        str += root.left == null ? "." : root.left.data;
-        str += " => " +  root.data + " <= ";
-        str += root.right == null ? "." : root.right.data;
-        System.out.println(str);
+    public static ArrayList<ArrayList<Integer>> diagonalTraversal(Node root){
+        ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
+        Queue<Node> q = new ArrayDeque<>();
+        q.add(root);
+        while(q.size() > 0){
+            int s = q.size();
+            ArrayList<Integer> temp = new ArrayList<>();
+            while(s-- > 0){
+                Node n = q.remove();
 
-        display(root.left);
-        display(root.right);
+                while(n != null){
+                    temp.add(n.data);
+
+                    if(n.left != null)
+                        q.add(n.left);
+                    n = n.right;
+                }
+            }
+            ans.add(temp);
+        }
+        return ans;
     }
-
-
     public static void main(String[] args){
         Integer[] arr = {1, 2, 3, 4, 5};
         Node root = constructTree(arr);
-        display(root);
+        ArrayList<ArrayList<Integer>> ans = diagonalTraversal(root);
+        System.out.println(ans);
     }
 }
