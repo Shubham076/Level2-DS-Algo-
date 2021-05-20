@@ -9,7 +9,7 @@ public class threeSum {
         System.out.println(threesum(nums));
 
     }
-
+// O(NlogN + N^2)
     public static List<List<Integer>> threesum(int[] nums) {
         Arrays.sort(nums);
         List<List<Integer>> ans = new ArrayList<>();

@@ -6,9 +6,8 @@
 import java.util.*;
 class minimumWindowSubstring{
 	public static void main(String[] args){
-		Scanner scn = new Scanner(System.in);
-		String s1 = scn.next();
-		String s2 = scn.next();
+		String s1 = "ADOBECODEBANC";
+		String s2 = "ABC";
 		int count = 0;
 		int desiredCount = s2.length();
 		String ans = "";

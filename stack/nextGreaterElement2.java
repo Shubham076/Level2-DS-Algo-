@@ -1,4 +1,6 @@
 import java.util.*;
+//for cicrcular arrays run the loop 2 times
+// time complexity O(N)
 public class nextGreaterElement2 {
     public static int[] nextGreaterElements(int[] nums) {
         int[] ans = new int[nums.length];

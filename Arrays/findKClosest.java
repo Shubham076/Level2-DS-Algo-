@@ -1,6 +1,6 @@
 import java.util.*;
 //time complexity logn + k +  klogk
-public class findKclosest2 {
+public class findKClosest {
     public static List<Integer> findClosestElements(int[] arr, int k, int x) {
         List<Integer> ans = new ArrayList<>();
         int lo = 0;
