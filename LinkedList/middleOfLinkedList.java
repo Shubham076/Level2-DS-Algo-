@@ -16,4 +16,8 @@ class middleOfLinkedList{
    	 	} 
    	 	return slow;  
    	}
+
+      //note in case of even linked list if we have 2 mid nodes
+      //above solution return first node
+      //for returning the secong node just change the condition to (fast.next != null && fast != null)
 }

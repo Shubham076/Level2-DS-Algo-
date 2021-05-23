@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch threeSumMin",
+            "request": "launch",
+            "mainClass": "threeSumMin",
+            "projectName": "HashMap_3cf266b"
+        },
+        {
+            "type": "java",
+            "name": "Launch threeSumWithMultiplicity",
+            "request": "launch",
+            "mainClass": "threeSumWithMultiplicity",
+            "projectName": "HashMap_3cf266b"
+        },
+        {
+            "type": "java",
             "name": "Launch threeSumClosest",
             "request": "launch",
             "mainClass": "threeSumClosest",

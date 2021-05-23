@@ -29,7 +29,7 @@ class isLinkedListPalindrome{
 	}
 	public boolean isPalindrome(ListNode head) {
         ListNode mid = mid(head);
-        ListNode nh = mid.next;
+        ListNode nh = mid.next;  //new head
         mid.next = null;
         nh = reverse(nh);  //reversed by pointer iterative
         boolean res = true;

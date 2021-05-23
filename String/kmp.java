@@ -24,7 +24,7 @@ class kmp{
     }
 
     //method 2 without concatenating string and pattern
-    private static void KMP(char[] text, char[] pat ,int[] lps) {
+    private static void KMP2(char[] text, char[] pat ,int[] lps) {
         int i = 0; 
         int j = 0;
         while( i < text.length){
@@ -50,6 +50,8 @@ class kmp{
     public static void main(String[] args){
         String s = "geeksforgeeks";
         String p = "eek";
+
+        // method 1
         int[] lps = computeLPS(p + "#" + s);
         for(int i = 0; i < lps.length; i++){
             if(lps[i] == p.length()){
