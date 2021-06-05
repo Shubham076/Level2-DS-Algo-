@@ -1,10 +1,9 @@
 import java.util.Scanner;
-
 public class buyAndSellStockKTransactions {
     public static void main(String[] args) {
         int[] arr = {2, 4, 1};
         int n = arr.length;
-        int k = 2;
+        int k = 2; //represents transactions
         int[][] dp = new int[k + 1][arr.length];
 
         for(int t = 1; t <= k; t++){

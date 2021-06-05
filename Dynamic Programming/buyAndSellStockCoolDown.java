@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class buyAndSellStockCoolDown {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);

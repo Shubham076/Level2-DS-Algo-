@@ -1,7 +1,5 @@
-
 // leetcode 987 
 import java.util.*;
-
 public class verticalOrderOfBinaryTree {
     static class TreeNode {
         int val;
@@ -108,7 +106,6 @@ public class verticalOrderOfBinaryTree {
                 else return a.n.val - b.n.val;
             });
 
-            
             List<Integer> temp = new ArrayList<>();
             for(Pair p : map.get(i)){
                 temp.add(p.n.val);

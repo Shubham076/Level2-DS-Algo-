@@ -1,8 +1,8 @@
+//leetcode 132
 import java.util.*;
 class minimumPalindromeCut{
 	public static void main(String[] args){
-		Scanner scn = new Scanner(System.in);
-		String s = scn.next();
+		String s = "bbab";
 		boolean[][] storage = new boolean[s.length()][s.length()];
 		int[] dp = new int[s.length()];
 

@@ -1,6 +1,5 @@
 import java.util.HashMap;
 import java.util.Scanner;
-
 public class countDistinctSubsequences {
     public static void main(String[] args){
         Scanner scn = new Scanner(System.in);
@@ -21,7 +20,6 @@ public class countDistinctSubsequences {
 
             lo.put(c , i);
         }
-
         System.out.println(dp[s.length()]);
     }
 }

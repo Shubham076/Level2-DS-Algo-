@@ -1,9 +1,10 @@
+//very important
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class countDistinctPalindromicSubsequences {
  public static void main(String[] args){
-     Scanner scn = new Scanner(System.in);
+    Scanner scn = new Scanner(System.in);
     String s= scn.next();
     int[] prev = new int[s.length()];
     int[] next = new int[s.length()];

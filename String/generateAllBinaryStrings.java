@@ -15,7 +15,7 @@ class generateAllBinaryStrings{
 		}
 	}
 	public static void main(String[] args) {
-		String s = "??";
+		String s = "???";
 		generate(0, s, "");
 	}
 }

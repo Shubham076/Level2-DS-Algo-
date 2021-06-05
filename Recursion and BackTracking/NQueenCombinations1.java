@@ -25,7 +25,7 @@ class NQueenCombinations1 {
 		}
 	}
 	public static void main(String[] args) throws Exception {
-		int n = 2;
+		int n = 4;
 		boolean[][] chess = new boolean[n][n];
 		queensCombinations(0, n, chess, -1);
 	}

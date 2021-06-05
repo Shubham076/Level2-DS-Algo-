@@ -1,3 +1,10 @@
+/* basically this problem want certainity that after dropping e eggs we found the critical flooe
+or we can say that we want to find min of the max
+2 cases:
+case1:  if egg break at kth floor thenwe have to (k - 1) floor with e - 1 eggs = f(e - 1, k - 1);
+case 2: if egg dont break then we have to check (f - k) floor with e eggs = f(e , f - k);
+
+*/
 import java.util.*;
 class eggDrop{
 	public static void main(String[] args){

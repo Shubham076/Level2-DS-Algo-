@@ -12,7 +12,7 @@ class oddEvenList {
  		ListNode oh = new ListNode(-1);  // odd head;
 		ListNode et = eh; //even tail
 		ListNode ot = oh; // odd tail
-        boolean odd = true;
+      boolean odd = true;
 
 		ListNode cur = head;
 		while(cur != null){
@@ -20,12 +20,12 @@ class oddEvenList {
 			if(!odd){
 				et.next = cur;
 				et = et.next;
-                odd = !odd;
+            odd = !odd;
 			}
 			else{
 				ot.next = cur;
 				ot = ot.next;
-                odd = !odd;
+            odd = !odd;
 			}
             cur = cur.next;
 

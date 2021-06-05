@@ -1,3 +1,18 @@
+/*
+articulation or critical points => if removing a node from the graph results in increasing the number of connected components then
+that point is critical node or articulation point
+
+bridge = if removing a edge from the graph results in increasing the number of connected components then
+that edge is called bridge.
+
+//back edge  = it is an edge that connects a vertex to a vertex that is discovered before it's parent.
+//back edge always detects cycle in a graph
+
+//discovery time is the at which node is doscovered in the dfs
+
+lowest time = For every node u, the minimum discovery time that can be reached from subtree rooted with u.
+*/
+
 import java.util.*;
 class articulationPoints{
 	static HashSet<Integer> a_pts;
@@ -56,6 +71,8 @@ class articulationPoints{
 			}
 		}
 
+
+		//condition for root node
 		if(par == -1 && no_of_child >= 2){
 			a_pts.add(cur);
 		}

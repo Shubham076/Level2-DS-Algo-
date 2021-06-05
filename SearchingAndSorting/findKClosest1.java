@@ -30,8 +30,6 @@ public class findKClosest1 {
                     p.remove();
                     p.add(new Pair(i, Math.abs(i - x)));
                 }
-            }
-
         }
 
         while(p.size() > 0){
