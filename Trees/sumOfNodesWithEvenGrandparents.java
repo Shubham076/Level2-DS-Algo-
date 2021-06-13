@@ -1,5 +1,9 @@
+/*
+leetcode 1315
+Given a Binary Tree, calculate the sum of nodes with even valued Grandparents.
+*/
 import java.util.*;
-class imageMultiplication {
+class sumOfNodesWithEvenGrandparents {
 	static class Node {
 		int data;
 		Node left;
@@ -39,28 +43,23 @@ class imageMultiplication {
 		}
 		return root;
 	}
-	static long sum;
-	public static void multiply(Node left, Node right) {
-		if (left == null || right == null) {
+	static int sum;
+	public static void solve(Node root, Node p, Node gp) {
+		if (root == null) {
 			return;
-			// code here
 		}
 
-		sum += (left.data * right.data);
-		multiply(left.left, right.right);
-		multiply(left.right, right.left);
-	}
-	public static long imgMultiply(Node root) {
-		sum = 0;
-		sum += root.data * root.data;
-		multiply(root.left, root.right);
-		return sum;
+		if (gp != null && gp.data % 2 == 0) {
+			sum += root.data;
+		}
+
+		solve(root.left, root, p);
+		solve(root.right, root, p);
 	}
 	public static void main(String[] args) {
-		Integer[] tree = {1, 3, 2, 7, 6, 5, 4, 11 , 10, null, 15, 9, 8, null, 12};
-		Node root = constructTree(tree);
-		sum = 0;
-		sum += root.data;
-		System.out.println(imgMultiply(root));
+		Integer[] arr = {50, null, 54, 98, 6, null, null, null, 34};
+		Node root = constructTree(arr);
+		solve(root, null, null);
+		System.out.println(sum);
 	}
 }

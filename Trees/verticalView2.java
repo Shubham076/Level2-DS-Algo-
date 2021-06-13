@@ -62,8 +62,8 @@ public class verticalView2 {
     }
 
     static int[] minmax;
-    static void width(TreeNode root, int vl){  //vertical level = vl
-        if(root == null) return;
+    static void width(TreeNode root, int vl) { //vertical level = vl
+        if (root == null) return;
         minmax[0] = Math.min(minmax[0] , vl);
         minmax[1] = Math.max(minmax[1], vl);
 
@@ -77,7 +77,7 @@ public class verticalView2 {
         width(root, 0);
         List<List<Integer>> ans = new ArrayList<>();
         int len = minmax[1] - minmax[0] + 1;
-        for(int i = 0; i < len; i++){
+        for (int i = 0; i < len; i++) {
             ans.add(new ArrayList<Integer>());
         }
 
@@ -85,14 +85,14 @@ public class verticalView2 {
 
         while (q.size() > 0) {
             int s = q.size();
-            while(s-- > 0){
+            while (s-- > 0) {
                 Pair rp = q.remove();
                 ans.get(rp.vl).add(rp.n.val);
 
-                if(rp.n.left != null){
+                if (rp.n.left != null) {
                     q.add(new Pair(rp.n.left, rp.vl - 1));
                 }
-                if(rp.n.right != null){
+                if (rp.n.right != null) {
                     q.add(new Pair(rp.n.right, rp.vl + 1));
                 }
             }

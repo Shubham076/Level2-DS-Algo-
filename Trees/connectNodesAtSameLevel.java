@@ -42,6 +42,26 @@ class connectNodesAtSameLevel{
         }
         return root;
     }
+
+    //without using extra space
+    public static Node connect2(Node root){
+        if(root == null) return null;
+        //means next level is available
+        Node actual = root;
+        while(root.left != null){
+
+            Node temp = root;
+            while(temp != null){
+                temp.left.nextRight = temp.right;
+                if(temp.nextRight != null){
+                    temp.right.nextRight = temp.nextRight.left;
+                }
+                temp = temp.nextRight;
+            }
+            root = root.left;
+        }
+        return actual;
+    }
     public static Node constructTree(Integer[] arr){
         Queue<Node> q = new ArrayDeque<>();
         q.add(new Node(arr[0], null, null, null));

@@ -52,7 +52,7 @@ public class widthOfBinaryTree {
     }
 
     //leetcode 662
-    //  The width of one level is defined as the length between the end-nodes (the leftmost and rightmost non-null nodes), where the null nodes between the end-nodes are also counted into the length calculation.
+    // The width of one level is defined as the length between the end-nodes (the leftmost and rightmost non-null nodes), where the null nodes between the end-nodes are also counted into the length calculation.
     // above solution wont work
     static class Pair{
         Node n;

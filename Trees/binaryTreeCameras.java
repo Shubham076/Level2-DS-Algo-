@@ -30,16 +30,18 @@ class binaryTreeCameras {
 		int lc = minCameraCover_(root.left);
 		int rc = minCameraCover_(root.right);
 
+		//if either left or right child needs camers
 		if(lc == -1 || rc == -1){
 			camera++;
 			return 0;
 		}
 
+		//if either left or right child has camera means I am covered
 		if(lc == 0 || rc == 0){
 			return 1;
 		}
 
-		//means left is covered and right is covered
+		//means both left is covered and right is covered
 		return -1;
 	}
 }

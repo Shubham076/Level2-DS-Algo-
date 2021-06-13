@@ -1,6 +1,5 @@
-//suffix tree 
 import java.util.*;
-class Trie {
+class suffixTrie{
 	static class Node {
 		char c;
 		HashMap<Character, Node> map = new HashMap<>();
@@ -13,11 +12,11 @@ class Trie {
 	}
 
 	Node root;
-	Trie() {
+	suffixTrie() {
 		root = new Node('\0');
 	}
 	// O(key_length)
-	void insert(String s) {
+	void insertHelper(String s) {
 		Node temp = root;
 		for (int i = 0; i < s.length(); i++) {
 			char c = s.charAt(i);
@@ -28,6 +27,12 @@ class Trie {
 			temp = temp.map.get(c);
 		}
 		temp.isTerminal = true;
+	}
+
+	void insert(String s){
+		for(int i = 0; i < s.length(); i++){
+			insertHelper(s.substring(i));
+		}
 	}
 	// O(key_length)
 	boolean search(String s) {
@@ -42,12 +47,13 @@ class Trie {
 		return temp.isTerminal;
 	}
 	public static void main(String[] args) {
-		String[] s = {"apple", "ape", "mango", "man"};
-		Trie t = new Trie();
+		String[] s = {"apple"};
+		String[] words = {"pple", "ple", "le", "el"};
+		suffixTrie t = new suffixTrie();
 		for (String str : s) {
 			t.insert(str);
 		}
-
-		System.out.println(t.search("india"));
+		for(String str : words)
+			System.out.print(t.search(str) + " ");
 	}
 }
