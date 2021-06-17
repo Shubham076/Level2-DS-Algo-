@@ -19,7 +19,6 @@ class sumDistancesInAtree {
 			visited = new int[n];
 			ans[i] = bfs(i, graph, visited);
 		}
-
 		return ans;
 	}
 

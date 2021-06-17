@@ -13,21 +13,29 @@ class flattenBinaryTreeToLinkedList{
 		}
     }
 
-    public void flatten(TreeNode root) {
-        if(root == null) return;
-        TreeNode left = root.left;
-        TreeNode right = root.right;
-        
-        flatten(left);
-        flatten(right);
+    //O(N)
+    public TreeNode flatten(TreeNode root) {
+        if(root == null) return null;
+        TreeNode lt = flatten(root.left);  //left tail
+        TreeNode rt = flatten(root.right); // right tail
 
-        root.left = null;
-        root.right = left;
-        TreeNode temp = root;
-        while(temp.right != null){
-            temp = temp.right;
+        if(lt == null && rt == null){
+            return root;
         }
-
-        temp.right = right;
+        else if(lt == null){
+            return rt;
+        }
+        else if(rt == null){
+            root.right = root.left;
+            root.left = null;
+            return lt;
+        }
+        else{
+            TreeNode rh = root.right;  //right head;
+            root.right = root.left;
+            root.left = null;
+            lt.right = rh;
+            return rt;
+        }
     }
 }

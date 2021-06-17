@@ -1,4 +1,14 @@
 import java.util.*;
+
+/*
+we have to find the sum of all (diff of max and min of subsequence)
+we know that an array of length n have 2 ^ n subsequences
+if we sort the array we can find two things
+for eg array = 1,2,4
+2 will act as max for all subsequences ending at 2
+2 will act as min for all subsequences starting at 2
+ and we have to find the subseqiences witdth for all numbers
+*/
 class subsequenceWidth{
 	static int a = (int)1e9 + 7;
 	public static int sumSubseqWidths(int[] nums) {
