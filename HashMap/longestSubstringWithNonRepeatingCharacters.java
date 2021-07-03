@@ -36,7 +36,6 @@ class longestSubstringWithNonRepeatingCharacters{
 				if(map.get(c) == 1){
 					break;
 				}
-
 			}
 
 			if(f1 == false && f2 == false){

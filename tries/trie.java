@@ -1,7 +1,7 @@
-//suffix tree 
+//prefix tree using hashmap
 import java.util.*;
 class Trie {
-	static class Node {
+	class Node {
 		char c;
 		HashMap<Character, Node> map = new HashMap<>();
 		boolean isTerminal;
@@ -13,11 +13,13 @@ class Trie {
 	}
 
 	Node root;
-	Trie() {
+
+	/** Initialize your data structure here. */
+	public Trie() {
 		root = new Node('\0');
 	}
-	// O(key_length)
-	void insert(String s) {
+
+	public void insert(String s) {
 		Node temp = root;
 		for (int i = 0; i < s.length(); i++) {
 			char c = s.charAt(i);
@@ -29,8 +31,8 @@ class Trie {
 		}
 		temp.isTerminal = true;
 	}
-	// O(key_length)
-	boolean search(String s) {
+
+	public boolean search(String s) {
 		Node temp = root;
 		for (int i = 0; i < s.length(); i++) {
 			char c = s.charAt(i);
@@ -47,7 +49,6 @@ class Trie {
 		for (String str : s) {
 			t.insert(str);
 		}
-
-		System.out.println(t.search("india"));
+		System.out.println(t.search("man"));
 	}
 }

@@ -11,6 +11,7 @@ that edge is called bridge.
 //discovery time is the at which node is doscovered in the dfs
 
 lowest time = For every node u, the minimum discovery time that can be reached from subtree rooted with u.
+leetcode 1192
 */
 
 import java.util.*;

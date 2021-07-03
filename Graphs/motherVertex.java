@@ -2,6 +2,27 @@ import java.io.*;
 import java.util.*;
 class motherVertex{
 	static int count;
+	public static void dfs(ArrayList<ArrayList<Integer>> g, int src,
+	 int[] visisted, ArrayList<Integer> st){
+		visisted[src] = 1;
+		for(int nbr : g.get(src)){
+			if(visisted[nbr] == 0){
+				dfs(g, nbr,visisted, st);
+			}
+		}
+		st.add(src);
+	}
+
+	public static void checkVertex(ArrayList<ArrayList<Integer>> g, int src,
+	 int[] visisted){
+		visisted[src] = 1;
+		count++;
+		for(int nbr : g.get(src)){
+			if(visisted[nbr] == 0){
+				checkVertex(g, nbr,visisted);
+			}
+		}
+	}
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String[] st = br.readLine().split(" ");
@@ -29,33 +50,11 @@ class motherVertex{
 		Arrays.fill(visisted, 0);
 		count = 0;
 		checkVertex(graph, stack.get(stack.size() - 1), visisted);
-		if(count == v){
+		if (count == v){
 			System.out.println((stack.get(stack.size() - 1) + 1));
 		}
 		else{
 			System.out.println(-1);
-		}
-	}
-
-	public static void dfs(ArrayList<ArrayList<Integer>> g, int src,
-	 int[] visisted, ArrayList<Integer> st){
-		visisted[src] = 1;
-		for(int nbr : g.get(src)){
-			if(visisted[nbr] == 0){
-				dfs(g, nbr,visisted, st);
-			}
-		}
-		st.add(src);
-	}
-
-	public static void checkVertex(ArrayList<ArrayList<Integer>> g, int src,
-	 int[] visisted){
-		visisted[src] = 1;
-		count++;
-		for(int nbr : g.get(src)){
-			if(visisted[nbr] == 0){
-				checkVertex(g, nbr,visisted);
-			}
 		}
 	}
 }

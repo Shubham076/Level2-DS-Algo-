@@ -22,7 +22,6 @@ class bellmanFord{
 					System.out.println("Negative weight cycle found!");
 					negativeCycle = true;
 					break;
-
 				}
 			}
 	}
