@@ -52,6 +52,7 @@ public class next_Permutation {
 			char c = (char)('a' + i);
 			arr.add(c);
 		}
+		// out.println(arr);
 
 		do{
 			out.println(arr);

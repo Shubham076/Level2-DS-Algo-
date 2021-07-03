@@ -1,6 +1,6 @@
 /*
 if rem == 0 it is a z.
-	but why -1 ?? let say n = 26 => by doing n = n / 26 we get n = 1; but we know that answer if
+	but why -1 ?? let say n = 26 => by doing n = n / 26 we get n = 1; but we know that answer is
 	Z after that is should come out of the loop so we decrement it by 1
 if rem != 0 
 	we know the ascii value of A is 65

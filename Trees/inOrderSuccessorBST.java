@@ -50,7 +50,6 @@ class inOrderSuccessorBST {
     				ans = rp1;
     			}
     			break;
-    			
     		}
     		else if(root.val < p.val){
     			root = root.right;

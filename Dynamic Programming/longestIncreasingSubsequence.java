@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 class longestIncreasingSubsequence {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
@@ -29,7 +28,6 @@ class longestIncreasingSubsequence {
                 omax = dp[i];
             }
         }
-
         System.out.println(omax);
     }
 }

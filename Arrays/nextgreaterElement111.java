@@ -55,7 +55,7 @@ class nextgreaterElement111{
 		return (val <= Integer.MAX_VALUE) ? (int) val : -1;
     }
 	public static void main(String[] args){
-		int n = 2147483476;
+		int n = 137654;
 		System.out.println(nextGreaterElement(n));
 	}
 }

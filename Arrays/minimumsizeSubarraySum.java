@@ -1,6 +1,7 @@
-//leetcode 209
-//Time complexity O(N)
-// return the minimal length of a contiguous subarray [numsl, numsl+1, ..., numsr-1, numsr] of which the sum is greater than or equal to target. If there is no such subarray, return 0 instead.
+//leetcode 209 Time complexity O(N) 
+// return the minimal length of a contiguous
+//subarray [numsl, numsl+1, ..., numsr-1, numsr] of which the sum is greater
+//than or equal to target. If there is no such subarray, return 0 instead.
 class minimumsizeSubarraySum {
 	public static int minSubArrayLen(int target, int[] nums) {
     	int i = -1, j = -1;

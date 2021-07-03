@@ -11,7 +11,7 @@ class LongestCommonAncestorOfBinaryTree {
 		}
 	}
 
-	/*(N)
+	/*O(N)
 	lca is the first node that is common in node to root path
 	intuition we will ask from both left and right subtree whether they have any node n1 and n2
 	if yes we return node

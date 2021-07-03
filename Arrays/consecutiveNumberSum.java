@@ -11,7 +11,7 @@ class consecutiveNumberSum{
 	//lhs is positive so rhs should also be positive
 	// (N - k * (k - 1) / 2) > 0
 	// N > k * (k - 1) / 2     // k * (k - 1)  approximately equals to k * k
-	// 2 * N = K * K
+	// 2 * N > K * K
 
 
 	public static void printSeq(int k, int n){
@@ -34,7 +34,7 @@ class consecutiveNumberSum{
 		return cnt;        
     }
 	public static void main(String[] args) {
-		int n = 1000;
+		int n = 100;
 		System.out.println(consecutiveNumbersSum(n));
 	}
 }

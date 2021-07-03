@@ -31,9 +31,9 @@ class palindromePartioning{
         
         for(int i = pos; i < s.length(); i++) {
             if(dp[pos][i]) {
-                path.add(s.substring(pos,i+1));
-                helper(res, path, dp, s, i+1);
-                path.remove(path.size()-1);
+                path.add(s.substring(pos, i + 1));
+                helper(res, path, dp, s, i + 1);
+                path.remove(path.size() - 1);
             }
         }
     }

@@ -1,6 +1,11 @@
+/*
+topological sort
+for the linear ordering of graph(valid for directed acyclic graph)
+if
+used to detect cycle
+*/
 import java.util.*;
 class kahnsAlgorithm{
-
 	public static void print(int[] arr){
 		for(int i : arr){
 				System.out.print(i + " ");
@@ -35,12 +40,12 @@ class kahnsAlgorithm{
 		}
 
 		//add in the queue whose indegree is 0;
+		//note if all the vertices have indegree == 1 means graph is cyclic
 		for(int i = 0; i < v; i++){
 			if(indeg[i] == 0){
 				q.add(i);
 			}
 		}
-
 
 		while(q.size() > 0){
 			int r = q.remove();

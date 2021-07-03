@@ -1,3 +1,4 @@
+//leetcode 
 import java.util.*;
 public class boatstoSavePeople {
     public int numRescueBoats(int[] people, int limit) {

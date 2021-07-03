@@ -5,15 +5,22 @@ class insertInterval {
 		int i = 0;
 
 		//add all the intervals which are smaller (start of newInterval is greater than end of interval[i].end)
-		while(i < intervals.length && newInterval[0] > intervals[i][1]){
+		while (i < intervals.length && newInterval[0] > intervals[i][1]) {
 			ans.add(intervals[i]);
 			i++;
 		}
 
+		//case for overlapping interval
+		//fs = first start  fe = first start   ss = second start se = second end
+		// fs--------fe                                fs--------fe
+		// ss----------se          // ss----------se
+
+		// fs < se && ss < fe
+
 		//now we have 2 cases either the intervals got empty or we have overlapping of intervals
-		while(i < intervals.length && intervals[i][0] <= newInterval[1]){
+		while (i < intervals.length && intervals[i][0] <= newInterval[1] && newInterval[0] <= intervals[i][1]) {
 			int[] cur = intervals[i];
-			newInterval[0] = Math.min(cur[0], newInterval[0]); 
+			newInterval[0] = Math.min(cur[0], newInterval[0]);
 			newInterval[1] = Math.max(cur[1], newInterval[1]);
 			i++;
 		}
@@ -22,7 +29,7 @@ class insertInterval {
 		ans.add(newInterval);
 
 		//add the remaining ones;
-		while(i < intervals.length){
+		while (i < intervals.length) {
 			ans.add(intervals[i]);
 			i++;
 		}
@@ -34,8 +41,8 @@ class insertInterval {
 		int[] interval = {2, 5};
 		int[][] ans = insert(intervals, interval);
 
-		for(int i = 0; i < ans.length; i++){
-			for(int j = 0; j < ans[0].length; j++){
+		for (int i = 0; i < ans.length; i++) {
+			for (int j = 0; j < ans[0].length; j++) {
 				System.out.print(ans[i][j] + " ");
 			}
 			System.out.println();

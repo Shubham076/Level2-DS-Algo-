@@ -9,7 +9,7 @@ and the minimum element is the first element of second boundary
 
 how to find the first element of second boundary??
 we can see that it has some special property
-1 it is the only element in the numsay whose left is greater
+1 it is the only element in the num whose left is greater
 
 simlarly for the last element of first boundary
 1 it is the only element whose right is smaller

@@ -60,6 +60,13 @@ class avl {
         }
         return a.height;
     }
+    /*
+           a     =>              b
+          /  \                  /  \
+         b    t1               c    a
+        / \                        / \
+       c   temp                  temp  t1
+    */
     public static Node rotateRight(Node a){
         Node b = a.left;
         Node temp = b.right;
@@ -70,6 +77,13 @@ class avl {
         return b;
     }
 
+    /*
+        a                                  b
+       /  \                               /  \
+      t1    b                            a    c
+           / \                          / \
+          temp c                       t1  temp
+    */
     public static Node rotateLeft(Node a){
         Node b = a.right;
         Node temp = b.left;
@@ -96,14 +110,14 @@ class avl {
         node.height = Math.max(lh, rh) + 1;
         int diff = lh - rh;
         Node newNode = node;
-        if(diff > 1 && node.left.data > data){ //LL
+        if(diff > 1 && node.left.data >= data){ //LL
             newNode = rotateRight(node);
         }
         else if(diff > 1 && node.left.data < data){ //LR
             node.left = rotateLeft(node.left);
             newNode = rotateRight(node);
         }
-        else if(diff < -1 && node.right.data < data){ //RR
+        else if(diff < -1 && node.right.data <= data){ //RR
             newNode = rotateLeft(node);
         }
         else if(diff < -1 && node.right.data > data){//RL
@@ -122,8 +136,11 @@ class avl {
         }
     }
 
+    public static int getBalance(Node n){
+        if(n == null) return 0;
+        return height(n.left) - height(n.right);
+    }
 
-    //imcomplete right now
     public static Node deleteNode(Node node, int data){
         if(node == null) return null;
         if(node.data > data){
@@ -134,13 +151,13 @@ class avl {
         }
         else{
             if(node.left == null && node.right == null){
-                node =  null;
+                return null;
             }
             else if(node.right == null){
-                node =  node.left;
+                return node.left;
             }
             else if(node.left == null){
-                node =  node.right;
+                return node.right;
             }
             else{
                 Node lmax = max(node.left);
@@ -149,25 +166,22 @@ class avl {
             }
         }
 
-        if(node == null){
-            return null;
-        }
         int lh = height(node.left);
         int rh = height(node.right);
         node.height = Math.max(lh, rh) + 1;
         int diff = lh - rh;
         Node newNode = node;
-        if(diff > 1 && node.left.data > data){ //LL
+        if(diff > 1 && getBalance(node.left) >= 0){ //LL
             newNode = rotateRight(node);
         }
-        else if(diff > 1 && node.left.data < data){ //LR
+        else if(diff > 1 && getBalance(node.left) < 0){ //LR
             node.left = rotateLeft(node.left);
             newNode = rotateRight(node);
         }
-        else if(diff < -1 && node.right.data < data){ //RR
+        else if(diff < -1 && getBalance(node.right) <= 0){ //RR
             newNode = rotateLeft(node);
         }
-        else if(diff < -1 && node.right.data > data){//RL
+        else if(diff < -1 && getBalance(node.right) > 0){//RL
             node.right = rotateRight(node.right);
             newNode = rotateLeft(node);
         }

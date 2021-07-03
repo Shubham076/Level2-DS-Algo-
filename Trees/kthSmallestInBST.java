@@ -1,6 +1,6 @@
 //leetcode 230
 import java.util.*;
-class kthLargestElementInBST {
+class kthSmallestInBST {
 	public class TreeNode {
 		int val;
 		TreeNode left;

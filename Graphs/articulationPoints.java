@@ -11,8 +11,8 @@ that edge is called bridge.
 //discovery time is the at which node is doscovered in the dfs
 
 lowest time = For every node u, the minimum discovery time that can be reached from subtree rooted with u.
+leetcode 1192
 */
-
 import java.util.*;
 class articulationPoints{
 	static HashSet<Integer> a_pts;
@@ -70,12 +70,9 @@ class articulationPoints{
 				lt[cur] = Math.min(lt[cur] , dt[child]);
 			}
 		}
-
-
 		//condition for root node
 		if(par == -1 && no_of_child >= 2){
 			a_pts.add(cur);
 		}
 	}
-
 }

@@ -1,4 +1,4 @@
-// lintcode 912
+// lintcode 912 https://www.lintcode.com/problem/best-meeting-point/leaderboard/
 import java.util.*;
 class bestMeetingPoint {
 	public static int distance(int x1, int y1, int x2, int y2){
@@ -9,6 +9,7 @@ class bestMeetingPoint {
 		// Write your code here
 		ArrayList<Integer> x = new ArrayList<>();   //travelling across columns
 		ArrayList<Integer> y = new ArrayList<>();   // trvaelling across rows
+
 		//travelling in a row
 		for(int i = 0; i < grid.length; i++){
 			for(int j = 0; j < grid[0].length; j++){
@@ -27,10 +28,11 @@ class bestMeetingPoint {
 			}
 		}
 
-		int mx = x.get(x.size() / 2);
-		int my = y.get(y.size() / 2);
+		
+		int mx = x.get(x.size() / 2);  //medianx
+		int my = y.get(y.size() / 2);  //mediany
 		int d = 0;
-
+		//why we havent sorted because index in always sorted
 		for(int i = 0; i < grid.length; i++){
 			for(int j = 0; j < grid[0].length; j++){
 				if(grid[i][j] == 1){

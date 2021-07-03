@@ -1,3 +1,4 @@
+// find the max of sum of smalllest and second smallest in all the subarrays
 class maxSumOfSmallestandSecondSmallest{
 	public static void main(String[] args) {
 		int[] arr = {4, 3, 1, 5, 6};

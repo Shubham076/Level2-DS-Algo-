@@ -21,6 +21,7 @@ class globalAndLocalInversion {
 		for (int i = 0; i < nums.length - 2; i++) {
 			max = Math.max(max, nums[i]);
 			if (max > nums[i + 2])
+				//found a global inversion that is not local inversion
 				return false;
 		}
 		return true;

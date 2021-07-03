@@ -18,14 +18,12 @@ public class branchAndBoundNQueen {
     }
 
     public static void solve(boolean[][] board, int row , String ans , boolean[] col , boolean[] nd , boolean[] rd) {
-
         if ( row == board.length) {
             System.out.println(ans + ".");
             return;
         }
 
         for (int j = 0; j < board[0].length; j++) {
-
             if (col[j] == false && nd[row + j] == false && rd[row -  j + board[0].length - 1] == false) {
                 board[row][j] = true;
                 col[j] = true;

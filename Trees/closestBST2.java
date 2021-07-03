@@ -14,7 +14,6 @@ class closestBST2{
 	}
 	static LinkedList<Integer> ans;
 	public List<Integer> closestKValues(TreeNode root, double target, int k) {
-        // write your code here
         ans = new LinkedList<>();
         helper(root, target, k);
         return ans;

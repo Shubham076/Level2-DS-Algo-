@@ -1,2 +1,1 @@
-Articuation points are: [1]
-Bridges are: [1-3]
+false

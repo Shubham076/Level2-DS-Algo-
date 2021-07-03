@@ -1,9 +1,10 @@
+/* 
+all pair shortest path problem
+works with negative weights
+detect negative weight cycle too
+time complexity O(N^3)
+*/
 import java.util.*;
-
-//all pair shortest path problem
-//works with negative weights
-//detect negative weight cycle too
-//time complexity O(N^3)
 class floydWarshall{
 	public static void print(int[][] arr){
 		for(int[] i : arr){
