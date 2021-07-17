@@ -1,4 +1,5 @@
-//leetcode 839 applicatio od dsu
+//leetcode 839 application of dsu
+import java.util.*;
 class similarStringGroups{
 	static HashMap<String, String> par;
 	static HashMap<String, Integer> rank;
@@ -73,7 +74,7 @@ class similarStringGroups{
         int groups = 0;
         for(String s: par.keySet()){
         	if(par.get(s).equals(s)){
-        		group++;
+        		groups++;
         	}
         }
 

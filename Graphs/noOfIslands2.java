@@ -77,7 +77,7 @@ class noOfIslands2 {
 				}
 				union(cell, newCell);
 			}
-			ans.add(cnt); x
+			ans.add(cnt);
 		}
 		return ans;
 	}

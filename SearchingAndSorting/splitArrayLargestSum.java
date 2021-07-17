@@ -20,7 +20,7 @@ public class splitArrayLargestSum {
             lo = Math.max(lo, nums[i]);
             hi += nums[i];
         }
-        System.out.println(lo + " " + hi);
+        // System.out.println(lo + " " + hi);
         int ans = hi;
         while(lo <= hi){
             int mid = lo + (hi - lo)/ 2;

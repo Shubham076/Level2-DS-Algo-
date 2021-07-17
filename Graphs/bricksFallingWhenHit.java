@@ -1,5 +1,4 @@
 /*
-runeing
 	leetcode 803
 	we can run bfs from each brick find the cnt of bricks which is are connnected to it 
 	but the time complexity for this is equal to q * O(V + E);
