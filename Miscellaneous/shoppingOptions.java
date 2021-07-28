@@ -30,7 +30,7 @@ class shoppingOptions{
         return count;
     }
     public static int getNumberOfOptions(List<List<Integer>> items, int budget){
-        if(budget< 0){
+        if(budget < 0){
             return 0;
         }
 

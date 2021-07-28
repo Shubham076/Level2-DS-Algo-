@@ -1,3 +1,4 @@
+//gfg
 class elementAppearOnceInSortedArray {
 	static int findOnce(int arr[], int n){
 		//if array is even size that is not possible as it is given in ques all elements apeear twice except once

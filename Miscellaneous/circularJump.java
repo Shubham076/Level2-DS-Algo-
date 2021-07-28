@@ -19,7 +19,7 @@ import java.io.*;
 public class circularJump {
 
 	static int int_max = Integer.MAX_VALUE;
-	static int int_min = Intger.MIN_VALUE;
+	static int int_min = Integer.MIN_VALUE;
 
 	private static final Scanner scn = new Scanner(System.in);
 	private static final PrintWriter out = new PrintWriter(new BufferedOutputStream(System.out));

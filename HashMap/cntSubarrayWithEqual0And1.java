@@ -1,3 +1,8 @@
+/*
+this problem can be reduced to subarray sum equal k
+just assume all the zeros with -1
+if the sum of subarray is equal to 0 means it contains equal no of -1 and 1 => 0 and 1
+*/
 import java.util.*;
 class cntSubarrayWithEqual0And1 {
 	public static int findMaxLength(int[] nums) {

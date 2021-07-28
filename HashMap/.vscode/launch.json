@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch reArrangeCharacters",
+            "request": "launch",
+            "mainClass": "reArrangeCharacters",
+            "projectName": "HashMap_3cf266b"
+        },
+        {
+            "type": "java",
             "name": "Launch threeSumMin",
             "request": "launch",
             "mainClass": "threeSumMin",

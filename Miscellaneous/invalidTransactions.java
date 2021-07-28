@@ -1,8 +1,8 @@
-//leetcode 1169
+//leetcode 1169  not so important mpre number of dislikes
 import java.util.*;
 class invalidTransactions{
-	public List<String> invalidTransactions(String[] transactions) {
-        List<String> ans = new ArrayList();
+	public static List<String> invalid_Transactions(String[] transactions) {
+        List<String> ans = new ArrayList<>();
         int n = transactions.length;
         if (n == 0) return ans;
         String[] name = new String[n];
@@ -36,6 +36,6 @@ class invalidTransactions{
      }
     public static void main(String[] args) {
     	String[] arr = {"alice,20,1200,mtv", "alice,20,1200,mtv"};
-    	System.out.println(invalidTransactions(arr));
+    	System.out.println(invalid_Transactions(arr));
     }
 }

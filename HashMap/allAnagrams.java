@@ -1,5 +1,5 @@
+//given two strings return count of p anagrams in string s  leetcode 438
 import java.util.*;
-//given two strings return count of p anagrams in string s
 public class allAnagrams {
     public static void main(String[] args){
         Scanner scn = new Scanner(System.in);

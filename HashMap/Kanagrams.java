@@ -1,3 +1,11 @@
+/*
+two strings are called kangrams if we replace upto <= k characters of one string to convert into anagram 
+of second 
+we simply make freq map of first
+and then travel on second string to remove the freq;
+
+after these 2 steps cnt <= k true;
+*/
 import java.util.*;
 public class Kanagrams {
     public static void main(String[] args){

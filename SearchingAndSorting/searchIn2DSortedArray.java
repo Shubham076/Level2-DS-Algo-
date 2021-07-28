@@ -15,7 +15,6 @@ public class searchIn2DSortedArray {
                 hi = mid - 1;
             }
         }
-
         return -1;
     }
 

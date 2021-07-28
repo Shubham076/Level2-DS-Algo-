@@ -16,7 +16,7 @@ class power{
 	public static long modMul(long a, long b){
 		return (a % mod * b % mod) % mod;
 	}
-	public static long power(long a, long b){
+	public static long Power(long a, long b){
 		long res = 1;
 		while(b > 0){
 			if((b & 1) == 1){  //if number is odd
@@ -39,7 +39,7 @@ class power{
 			int j = b.charAt(i) - '0';
 			second = (second * 10 + j) % (mod - 1);
 		}
-		System.out.println(power(first, second));
+		System.out.println(Power(first, second));
 	}
 
 	public static void main(String[] args) {

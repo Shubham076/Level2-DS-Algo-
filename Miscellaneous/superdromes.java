@@ -105,7 +105,6 @@ public class superdromes {
 
 	public static StringBuilder decimalToBinary(int n) {
 		StringBuilder res = new StringBuilder("");
-		int p = 1;
 		while (n > 0) {
 			int r = n % 2;
 			n /= 2;

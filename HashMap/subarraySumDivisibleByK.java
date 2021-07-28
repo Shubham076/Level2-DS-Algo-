@@ -1,5 +1,18 @@
+/*
+leetcode 971
+print length of longest subArray divisible by k
+
+1  2  3  4  5  6  7 
+<---->
+   s1
+<--------------->
+        s2
+s1, s2 are sums;
+s1 = kn + x;
+s2 = km + x
+s2 - s1 = k(m - n) which is divisible by k		   
+*/
 import java.util.*;
-//print length of longest subArray
 class subarraySumDivisibleByK {
 	public static int subarraysDivByK(int[] a, int k) {
 		HashMap<Integer, Integer> map = new HashMap<>();  //remainder vs index

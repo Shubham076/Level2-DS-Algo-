@@ -1,3 +1,4 @@
+//group all the strings having smae freq map
 import java.util.*;
 public class groupAnagrams {
     public static void main(String[] args){
