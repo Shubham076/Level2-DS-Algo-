@@ -82,7 +82,7 @@ class bricksFallingWhenHit{
         for(int[] x : hits){
         	int r = x[0];
         	int c = x[1];
-        	if(grid[r][c] == 1)
+        	if(grid[r][c] == 1)  //if it is a brick
         		grid[r][c] = 2;
         }
 

@@ -25,6 +25,8 @@ class intervalsIntersection {
 			//checking the overlapping part
 			if(fs <= se && ss <= fe){
 				int[] interval = new int[2];
+
+				//adding the intersection of intervals
 				interval[0] = Math.max(fs, ss);
 				interval[1] = Math.min(fe, se);
 				ans.add(interval);

@@ -1,3 +1,14 @@
+/*
+max profit if k transactions allowed
+let says we have to find  max profit we can have if 3 transactions allowed on 5th day
+so competetors are:
+c1 = 3 transaction 4day tak hogyi
+c2 = ya phir 2 transaction first day and 3 rd between 1st and 5th 
+c3 = ya phir 2 transaction second day and 3 rd between 2nd and 5th 
+c4 = ya phir 2 transaction third day and 3 rd between 3rd and 5th 
+c5 = ya phir 2 transaction forth day and 3 rd between 4th and 5th 
+so ans = max(c1, c2, c3, c4, c5);
+*/
 import java.util.Scanner;
 public class buyAndSellStockKTransactions {
     public static void main(String[] args) {

@@ -11,6 +11,7 @@ class flattenBinaryTreeToCicularDLL {
 	public static Node mergeDLL(Node t1, Node t2){
 	 	Node h1 = t1.right;
 	 	Node h2 = t2.right;
+	 	
 	 	t1.right = h2;
 	 	h2.left = t1;
 	 	h1.left = t2;

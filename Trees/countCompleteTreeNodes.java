@@ -45,8 +45,8 @@ class countCompleteTreeNodes {
 		if(lh == rh){
 			return ((1 << lh) - 1); //2^h - 1
 		}
-     	int l = countNodes(root);
-     	int r = countNodes(root);
+     	int l = countNodes(root.left);
+     	int r = countNodes(root.right);
 
      	return l + r + 1;  
     }

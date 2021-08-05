@@ -45,8 +45,7 @@ class numberOfDistinctIslands {
 
 		s.append('R');
 		dfs(grid, i, j - 1);
-
-		s.append("B");
+		
 	}
 	public static int numberofDistinctIslands(int[][] grid) {
 		set = new HashSet<>();

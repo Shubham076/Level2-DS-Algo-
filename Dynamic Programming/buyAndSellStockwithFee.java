@@ -11,7 +11,8 @@ public class buyAndSellStockwithFee {
 
         int fees = scn.nextInt();
         scn.close();
-        int obsp = -arr[0];  //bought state price  - BSBSB ONE BUY EXTRA(ONE EXTRA SHARE)
+         //bought state price  - BSBSB ONE BUY EXTRA(ONE EXTRA SHARE) why negative coz we have bought one share
+        int obsp = -arr[0]; 
         int ossp = 0;      // sold state price - BSBSBS
 
         for(int i = 1; i < arr.length; i++){

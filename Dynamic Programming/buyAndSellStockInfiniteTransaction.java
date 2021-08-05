@@ -17,6 +17,7 @@ public class buyAndSellStockInfiniteTransaction {
                 sd++;
             }
             else{
+                //collecting the profit
                 p += arr[sd] - arr[bd];
                 bd = sd = i;
             }

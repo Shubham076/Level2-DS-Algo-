@@ -1,10 +1,8 @@
-import java.util.Scanner;
-
 /**
  * buyAndSeelStockOneTransaction
  */
+import java.util.Scanner;
 public class buyAndSellStockOneTransaction {
-
     public static void main(String[] args) {
         Scanner scn =  new Scanner(System.in);
         int n = scn.nextInt();
@@ -19,7 +17,7 @@ public class buyAndSellStockOneTransaction {
         // op = overall profit  p = profit
         int op = 0;
         int p = 0;
-
+        //max profit we can get if selling the stock today is mandatory
         for(int i = 0; i < arr.length; i++){
             if(arr[i] < lsf){
                 lsf = arr[i];
@@ -30,7 +28,6 @@ public class buyAndSellStockOneTransaction {
                 op = p;
             }
         }
-
         System.out.println(op);
     }
 }

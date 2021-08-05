@@ -8,7 +8,7 @@ class negativeIntegerInWindowOfSizeK {
 				nearestNegative = i;
 			}
 		}
-		ans[ans.length - 1] = nearestNegative == -1 ? 0 : arr[nearestNegative];;
+		ans[ans.length - 1] = nearestNegative == -1 ? 0 : arr[nearestNegative];
 		for(int i = N - k - 1; i >= 0; i--){
 			if(arr[i] < 0){
 				ans[i] = arr[i];

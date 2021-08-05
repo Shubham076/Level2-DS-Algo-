@@ -46,8 +46,8 @@ class connectNodesAtSameLevel{
     //without using extra space
     public static Node connect2(Node root){
         if(root == null) return null;
-        //means next level is available
         Node actual = root;
+        //means next level is available
         while(root.left != null){
 
             Node temp = root;

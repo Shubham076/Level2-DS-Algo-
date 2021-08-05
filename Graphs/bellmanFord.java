@@ -1,3 +1,6 @@
+/*
+in ith iteration i calculates the minimum of atleast ith path length
+*/
 import java.util.*;
 class bellmanFord{
 	static int[] distances;

@@ -1,3 +1,4 @@
+//leetcode 198 same as Maximum sum such that no two elements are adjacent
 class houseRobber {
     public static int rob(int[] nums) {
         int[] dp = new int[nums.length + 1];

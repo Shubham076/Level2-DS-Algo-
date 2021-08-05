@@ -9,7 +9,8 @@ class buyAndSellStock2Transactions{
         }
         scn.close();
 
-        int mpl = 0;  //max profit left
+        //max profit left agr aj sell krna mandatory h
+        int mpl = 0;  
         int[] dpl = new int[n];
         int lsf = arr[0];  //least so far
 
@@ -27,7 +28,8 @@ class buyAndSellStock2Transactions{
             }
         }
 
-        int mpr = 0;   //max profit right
+        //max profit right agr buy krna mandatory h
+        int mpr = 0;
         int msf = arr[n - 1];  //max so far
         int[] dpr = new int[n];
         for(int i = arr.length -2; i >= 0; i--){

@@ -1,0 +1,84 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "HashMap_3cf266b"
+        },
+        {
+            "type": "java",
+            "name": "Launch reArrangeCharacters",
+            "request": "launch",
+            "mainClass": "reArrangeCharacters",
+            "projectName": "HashMap_3cf266b"
+        },
+        {
+            "type": "java",
+            "name": "Launch threeSumMin",
+            "request": "launch",
+            "mainClass": "threeSumMin",
+            "projectName": "HashMap_3cf266b"
+        },
+        {
+            "type": "java",
+            "name": "Launch threeSumWithMultiplicity",
+            "request": "launch",
+            "mainClass": "threeSumWithMultiplicity",
+            "projectName": "HashMap_3cf266b"
+        },
+        {
+            "type": "java",
+            "name": "Launch threeSumClosest",
+            "request": "launch",
+            "mainClass": "threeSumClosest",
+            "projectName": "HashMap_3cf266b"
+        },
+        {
+            "type": "java",
+            "name": "Launch fourSum",
+            "request": "launch",
+            "mainClass": "fourSum",
+            "projectName": "HashMap_3cf266b"
+        },
+        {
+            "type": "java",
+            "name": "Launch threeSum",
+            "request": "launch",
+            "mainClass": "threeSum",
+            "projectName": "HashMap_3cf266b"
+        },
+        {
+            "type": "java",
+            "name": "Launch equalsAndHashcodeOveride",
+            "request": "launch",
+            "mainClass": "equalsAndHashcodeOveride",
+            "projectName": "HashMap_3cf266b"
+        },
+        {
+            "type": "java",
+            "name": "Launch isomorphicStrings",
+            "request": "launch",
+            "mainClass": "isomorphicStrings",
+            "projectName": "HashMap_3cf266b"
+        },
+        {
+            "type": "java",
+            "name": "javadbg",
+            "request": "launch",
+            "mainClass": "${file}",
+            "args": [
+                "^<",
+                "${workspaceFolder}\\input.txt"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "postDebugTask": "killTerminal"
+        }
+    ]
+}
