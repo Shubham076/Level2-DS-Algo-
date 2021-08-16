@@ -5,6 +5,7 @@ import java.util.*;
 public class minStack {
     Stack<Long> data;
     long min;
+    
     /** initialize your data structure here. */
     public MinStack() {
         data = new Stack<>();

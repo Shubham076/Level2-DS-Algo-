@@ -83,30 +83,4 @@ class printLongestIncreasingSubsequences  {
             }
         }
     }
-
-    // for printing one of the answers
-    // public static void alternateMethod(int[] arr){
-    //     lisPair[] dp = new lisPair[arr.length];
-    //     lisPair omax = new lisPair("", 0);
-
-    //     for (int i = 0; i < dp.length; i++) {
-    //         lisPair max = new lisPair("", 0);
-    //         for (int j = 0; j < i; j++) {
-    //             if (arr[j] <= arr[i]) {
-    //                 if (dp[j].val > max.val) {
-    //                     max.val = dp[j].val;
-    //                     max.psf = dp[j].psf;
-    //                 }
-    //             }
-    //         }
-    //         dp[i] = new lisPair(max.psf + " " + arr[i], (1 + max.val));
-    //         if (dp[i].val > omax.val) {
-    //             omax.val = dp[i].val;
-    //             omax.psf = dp[i].psf;
-    //         }
-    //     }
-
-    //     System.out.println(omax.val + "=>" + omax.psf);
-    // }
-
 }

@@ -14,6 +14,8 @@ class breakPalindrome{
                 return s.toString();
             }
         }
+
+	// for test case "aaaa" aaab < abaa
         s.setCharAt(n - 1, 'b');
         return s.toString();
     }

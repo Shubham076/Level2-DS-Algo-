@@ -1,3 +1,4 @@
+//count the number of subarrays having all the unique elements in the array
 import java.util.*;
 class coutOfEquivaentSubarrays{
 	public static void main(String[] args){

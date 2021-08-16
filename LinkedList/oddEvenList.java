@@ -40,6 +40,8 @@ class oddEvenList {
 		}
 
 		ot.next = eh.next;
+
+	//now to remove the cycle
 		et.next = null;
 
 		return oh.next;

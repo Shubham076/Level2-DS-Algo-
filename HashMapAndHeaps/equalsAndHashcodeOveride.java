@@ -10,6 +10,7 @@ public class equalsAndHashcodeOveride {
 
         @Override
         public boolean equals(Object o){
+	    if(this == o) return true; //address is same
             if(o == null) return false;
             Pair other = (Pair)o;
             if(this.i == other.i && this.j == other.j){

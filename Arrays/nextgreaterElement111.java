@@ -1,10 +1,25 @@
+/*
+when we are swap a number at a greater place then impact is seen at greater place
+
+for eg -> 532 if we replace 5 with 2 then the number becomes 252 which is smaller
+so we can say if we swap to any higher index then then number at higher idx after swapping decides
+whether number is increased or not
+
+for eg => 12345
+so the point is we swap the number 4 with any of the digits on the left then impact is shown
+on the left numbers instead of 4;
+
+as we have to find the minimum number so we try to change the min idx
+and to show the impact at particular idx we must swap with numbers on the smaller place value 
+*/
+
 import java.util.*;
 class nextgreaterElement111{
 	public static void swap(int i, int j, ArrayList<Integer> list){
 		int ith = list.get(i);
 		int jth = list.get(j);
 		list.set(i, jth);
-		list.set(j , ith);
+		list.set(j, ith);
 	}
 
 	public static void reverse(int p, int q, ArrayList<Integer> list){

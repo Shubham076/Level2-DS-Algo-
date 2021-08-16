@@ -16,7 +16,7 @@ public class smallestSubarrayWithAllOccurenceOfMFE {
     }
     ArrayList<Integer> smallestSubsegment(int arr[], int n){
      HashMap<Integer, Pair> map = new HashMap<>();
-     Pair p = new Pair(0, -1, -1);
+     Pair p = new Pair(0, -1, -1); //freq, start, end
      for(int i  = 0 ; i < arr.length; i++){
             if(!map.containsKey(arr[i])){
                 map.put(arr[i], new Pair(1, i, i));
