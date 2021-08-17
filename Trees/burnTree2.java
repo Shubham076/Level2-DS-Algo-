@@ -1,5 +1,6 @@
+//print the time at which each node in a tree burns
 import java.util.*;
-public class burningTime2 {
+public class burnTree2 {
     static class Node{
         int data;
         Node left;
