@@ -2,6 +2,14 @@
 import java.util.*;
 // Time complexity nlogn
 class jobSequencing {
+	static class Job{
+		int deadline;
+		int profit;
+		Job(int deadline , int profit){
+			this.deadline = deadline;
+			this.profit = profit;
+		}
+	}
 	static int[] par;
 	//logn 
 	public static int find(int n){
@@ -20,7 +28,7 @@ class jobSequencing {
 			par[ly] = lx;
 		}
 	}
-	int[] JobScheduling(Job arr[], int n) {
+	static int[] JobScheduling(Job arr[], int n) {
 		Arrays.sort(arr, (a, b) -> b.profit - a.profit);  //nlogn
 		// 100 is the max deadline
 		par = new int[101]; //1 based indexing
@@ -40,5 +48,17 @@ class jobSequencing {
 			}
 		}
 		return new int[] {cnt, ans};
+	}
+	public static void main(String[] args){
+		int[][] arr = {{2, 100}, {1, 19}, {2, 27}, {1, 25}, {3, 15}};
+		Job[] jobs = new Job[arr.length];
+		for(int i = 0; i < arr.length; i++){
+			int[] a = arr[i];
+			jobs[i] = new Job(a[0], a[1]);
+		}
+		int[] ans = JobScheduling(jobs, 3);
+		for(int i : ans){
+			System.out.print(i + " ");
+		}
 	}
 }
