@@ -10,9 +10,7 @@ class containsDuplicates2{
         			return true;
         		}
         	}
-        	else{
-        		map.put(nums[i], i);
-        	}
+        	map.put(nums[i], i);
         }
         return false;
     }

@@ -2,7 +2,7 @@ import java.util.*;
 class countAllSubarrayWith0Sum{
 	public static void main(String[] args){
 		Scanner scn = new Scanner(System.in);
-		HashMap<Integer, Integer> map = new HashMap<>();
+		HashMap<Integer, Integer> map = new HashMap<>(); //sum vs idx
 		map.put(0 , -1);
 		int sum = 0;
 		int count = 0;

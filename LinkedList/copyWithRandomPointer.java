@@ -26,12 +26,10 @@ public class copyWithRandomPointer {
             n.next = map.get(temp.next);
             n.random = map.get(temp.random);
         }
-        
         return map.get(head);
     }
 
     public Node copyRandomList2(Node head){
-
         //step one insert copy of cur nodes next to cur next
         Node cur = head;
         Node forw = null;
@@ -52,7 +50,6 @@ public class copyWithRandomPointer {
             if(random != null){
                 cur.next.random = cur.random.next;
             }
-
             cur = cur.next.next;
         }
 
@@ -68,7 +65,6 @@ public class copyWithRandomPointer {
             prev = prev.next;
             cur = cur.next;
         }
-
         return dummy.next;
     }
 }

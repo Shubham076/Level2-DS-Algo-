@@ -9,7 +9,6 @@ class breakPalindrome{
             int j = n - 1 - i;
             if(i == j) continue;  //case of odd length center of string
             if(c != 'a'){
-                System.out.println("running" + " " + c);
                 s.setCharAt(i, 'a');
                 return s.toString();
             }

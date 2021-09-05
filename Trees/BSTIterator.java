@@ -1,5 +1,5 @@
 // leetcode 173
-import java.util.;
+import java.util.*;
 class BSTIterator {
 	public class TreeNode {
 		int val;
@@ -25,7 +25,7 @@ class BSTIterator {
 			st.push(cur);
 			cur = cur.left;
 		}
-		TreeNode rem = st.remove();
+		TreeNode rem = st.pop();
 		cur = rem.right;
 		return rem.val;
 	}

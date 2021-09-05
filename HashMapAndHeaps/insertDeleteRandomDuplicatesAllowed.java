@@ -63,6 +63,7 @@ class insertDeleteRandomDuplicatesAllowed {
 
 				map.get(n).remove(list.size());
 				map.get(n).add(idx);
+				
 			}
 			return true;
 		} 

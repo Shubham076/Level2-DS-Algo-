@@ -11,7 +11,7 @@ class permutationInString {
 			map1.put(c , map1.getOrDefault(c, 0) + 1);
 		}
 
-		for(int i = 0; i < n; i++){
+		for(int i = 0; i < n - 1; i++){
 			char c = s1.charAt(i);
 			map2.put(c , map2.getOrDefault(c, 0) + 1);
 		}

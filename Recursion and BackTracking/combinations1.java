@@ -1,7 +1,6 @@
-//box are choosing the items
 public class combinations1 {
     // lb represents the last index that is filled
-    //item chooses the boxes
+    //item chooses the boxes, ci = current item ti = total item lb = last box index
     // we are placing values in increasing order of index to avoiod repetetion
     public static void combinations(int[] boxes, int ci, int ti, int lb) {
         // write your code here

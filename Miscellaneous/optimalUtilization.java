@@ -41,8 +41,8 @@ Output: [[3, 1]]
 Example 4:
 
 Input:
-a = [[1, 8], [2, 15], [3, 9]]
-b = [[1, 8], [2, 11], [3, 12]]
+a = {{1, 3}, {2, 5}, {3, 7}, {4, 10}};
+b = {{1, 2}, {2, 3}, {3, 4}, {4, 5}}
 target = 20
 
 Output: [[1, 3], [3, 2]]
@@ -58,39 +58,42 @@ public class optimalUtilization {
         System.out.println();
     }
     public static void main(String[] args){
-        int[][] a = {{1, 3}, {2, 5}, {3, 7}, {4, 10}};
-        int[][] b = {{1, 2}, {2, 3}, {3, 4}, {4, 5}};
-        int k = 10;
-        
-
+        int[][] a = {{1, 8}, {2, 7}, {3, 14}};
+        int[][] b = {{1, 5}, {2, 10}, {3, 14}};
+        int k = 20;
+    
         //solution
         HashMap<Integer, ArrayList<int[]>> map = new HashMap<>();
         ArrayList<Integer> l = new ArrayList<>();
+        int max = Integer.MIN_VALUE;    
         for(int[] i : a){
             for(int[] j: b){
                 int sum = i[1] + j[1];
-                ArrayList<int[]> list = map.getOrDefault(sum, new ArrayList<>());
-                list.add(new int[] {i[0], j[0]});  
-                map.put(sum, list);
+                if(sum <= k ){
+                    max = Math.max(sum, max);
+                    ArrayList<int[]> list = map.getOrDefault(sum, new ArrayList<>());
+                    list.add(new int[] {i[0], j[0]});  
+                    map.put(sum, list);
+                }
             }
         }
     
-        for(int sum : map.keySet()){
-            System.out.print(sum + " => ");
-            print(map.get(sum));
-        }
-        for(int sum : map.keySet()){
-            if(sum < k){
-                l.add(sum);
-            }
-            else if(sum == k){
-                print(map.get(sum));
-                return; 
-            }
-        }
-        if(l.size() == 0){
-            System.out.println(-1);
-        }
-        print(map.get(Collections.max(l)));
+        // for(int sum : map.keySet()){
+        //     System.out.print(sum + " => ");
+        //     print(map.get(sum));
+        // }
+        // for(int sum : map.keySet()){
+        //     if(sum < k){
+        //         l.add(sum);
+        //     }
+        //     else if(sum == k){
+        //         print(map.get(sum));
+        //         return; 
+        //     }
+        // }
+        // if(l.size() == 0){
+        //     System.out.println(-1);
+        // }
+        print(map.get(max));
     }
 }

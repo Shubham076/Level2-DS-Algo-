@@ -1,5 +1,17 @@
 //leetcode 1123
 class lowestCommonAncestorOfDeepestLeaves{
+	public class TreeNode {
+		int val;
+		TreeNode left;
+		TreeNode right;
+		TreeNode() {}
+		TreeNode(int val) { this.val = val; }
+		TreeNode(int val, TreeNode left, TreeNode right) {
+			this.val = val;
+			this.left = left;
+			this.right = right;
+		}
+	}
 	static int deepest;
 	static TreeNode lca;
 	public static int helper(TreeNode root, int d){

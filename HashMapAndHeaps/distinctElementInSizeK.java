@@ -23,7 +23,6 @@ class distinctElementInSizeK{
 			else{
 				map.remove(arr[j]);
 			}
-
 			i++;
 			j++;
 		}

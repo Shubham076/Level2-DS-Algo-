@@ -29,23 +29,22 @@ class flattenBinaryTreeToCicularDLL {
         Node lt = convert(root.left);
         Node rt = convert(root.right);
 
-        if(root.left == null && root.right == null){
+        if(lt == null && rt == null){
         	root.left = root;
         	root.right = root;
         	return root; 
         }
-        else if(root.right == null){
+        else if(rt == null){
         	root.left = root;
         	root.right = root;
         	return mergeDLL(lt, root);
         }
-        else if(root.left == null){
+        else if(lt == null){
         	root.left = root;
         	root.right = root;
         	return mergeDLL(root, rt);
         }
         else{
-        	Node right = root.right;
         	root.left = root;
         	root.right = root;
         	Node t1 = mergeDLL(lt, root);

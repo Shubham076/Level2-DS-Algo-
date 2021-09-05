@@ -1,5 +1,5 @@
 public class permutations2 {
-	//si = selected items ti = total items cb = current box tb = total box , adf = answer so far
+	//si = selected items ti = total items cb = current box tb = total box , asf = answer so far
 	//box chosing the items
     public static void permutations(int cb, int tb, int[] items, int si, int ti, String asf){
         // write your code here

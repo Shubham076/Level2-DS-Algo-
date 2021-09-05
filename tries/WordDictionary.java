@@ -9,13 +9,21 @@ class WordDictionary {
 			isTerminal = false;
 			childs = new Node[26];
 		}
-
+/*		          
+				* car (i = 0)
+               /  
+              c  car (i = 1)
+             /    
+            a    car (i = 2)
+		  /      
+		 r car  (i = 3 == str.length())
+*/
 		boolean find(String word, int i){
 			if(i == word.length()){
 				return isTerminal;
 			}
-			char c = word.charAt(i);
-			if(c == '.'){
+			char ch = word.charAt(i);
+			if(ch == '.'){
 				for(Node c : childs){
 					if(c != null && c.find(word, i + 1)){
 						return true;
@@ -24,11 +32,11 @@ class WordDictionary {
 				return false;
 			}
 			else{
-				if(childs[c - 'a'] == null){
+				if(childs[ch - 'a'] == null){
 					return false;
 				}
 				else{
-					return childs[c - 'a'].find(word, i + 1);
+					return childs[ch - 'a'].find(word, i + 1);
 				}
 			}
 		}

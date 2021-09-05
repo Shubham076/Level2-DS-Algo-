@@ -1,6 +1,7 @@
 /*
-lintcode 908
-Given n points on a 2D plane, find if there is such a line parallel to y-axis that reflect the given points.
+lintcode 908 
+Given n points on a 2D plane, find if there is such a line
+parallel to y-axis that reflect the given points.
 
 we know that leftmost point is the mirror reflection of righmost point
 so if a mirror or y axis axis that reflect all the points that is should be (xmin + xmax) / 2;

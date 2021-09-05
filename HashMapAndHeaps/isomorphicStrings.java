@@ -35,7 +35,6 @@ public class isomorphicStrings {
             }
 
         }
-
         System.out.println(true);
     }
 }

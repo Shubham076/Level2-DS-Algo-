@@ -1,4 +1,4 @@
-//leetcode 413
+//leetcode 413 meaning of the cell is the no of aps ending at dp[i]
 class arithmeticSlices{
 	public static void main(String[] args){
 		int[] arr = {1, 2, 3, 4};

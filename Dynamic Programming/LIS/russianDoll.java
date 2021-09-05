@@ -13,7 +13,7 @@ public class russianDoll {
 
         public int compareTo(Doll o){
             return this.w - o.w;
-     }
+        }
     }
 
     public static void main(String[] args) {

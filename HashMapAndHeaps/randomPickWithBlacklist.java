@@ -9,7 +9,7 @@ so what we will do we map all the blaclist to the last of array using hashmap
 
 for eg n = 6, blacklist = {2, 3};
 hashap = {2  => 5}, {3 => 4}
-bow we will fnd random in first 1 -> 4
+now we will fnd random in first 1 -> 4
 */
 import java.util.*;
 class randomPickWithBlacklist {

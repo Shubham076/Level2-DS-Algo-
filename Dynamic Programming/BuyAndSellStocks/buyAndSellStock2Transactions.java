@@ -32,7 +32,7 @@ class buyAndSellStock2Transactions{
         int mpr = 0;
         int msf = arr[n - 1];  //max so far
         int[] dpr = new int[n];
-        for(int i = arr.length -2; i >= 0; i--){
+        for(int i = arr.length - 2; i >= 0; i--){
             if(arr[i] > msf){
                 msf = arr[i];
             }

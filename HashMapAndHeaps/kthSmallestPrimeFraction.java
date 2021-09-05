@@ -15,6 +15,7 @@
 	but we dont need to create a sorted matri;
 	we will add indexes for fraction in the priority queue write a custom comparator
 */
+//klogn
 import java.util.*;
 class kthSmallestPrimeFraction{
 	public int[] kthSmallestPrimeFraction(int[] arr, int k) {

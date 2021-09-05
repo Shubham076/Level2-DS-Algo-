@@ -1,7 +1,5 @@
 import java.util.Arrays;
 import java.util.Scanner;
-
-
 public class maximunNonOverlappingBridges {
 
     public static class Bridge implements Comparable<Bridge>{
@@ -39,21 +37,18 @@ public class maximunNonOverlappingBridges {
         int[] dp = new int[n];
         for(int i = 0; i < dp.length; i++){
             int max = 0;
-            for(int  j = 0; j < i; j++){
+            for(int j = 0; j < i; j++){
                 if(arr[j].south < arr[i].south){
                     if(dp[j] > max){
                         max = dp[j];
                     }
                 }
             }
-
             dp[i] = 1 + max;
             if(dp[i] > omax){
                 omax = dp[i];
             }
-
         } 
-
         System.out.println(omax);
     
     }

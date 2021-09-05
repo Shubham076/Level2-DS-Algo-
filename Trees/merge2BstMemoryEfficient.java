@@ -39,28 +39,26 @@ public class merge2BstMemoryEfficient {
                 cur2 = cur2.left;
             }
 
-            if(st1.size() == 0){
-                while(st2.size() > 0){
-                    ans.add(st2.pop().data);
-                }
+            Node rm1 = st1.size() > 0 ? st1.pop() : null;
+            Node rm2 = st2.size() > 0 ? st2.pop() : null;
+
+            if(rm1 == null && rm2 == null){
                 break;
             }
-
-            if(st2.size() == 0){
-                while(st1.size() > 0){
-                    ans.add(st1.pop().data);
-                }
-                break;
+            else if(rm1 == null){
+                ans.add(rm2.data);
+                cur2 = rm2.right;
             }
-
-            Node rm1 = st1.pop();
-            Node rm2 = st2.pop();
-            if(rm1.data <= rm2.data){
+            else if(rm2 == null){
+                ans.add(rm1.data);
+                cur1 = rm1.right;
+            }
+            else if(rm1.data <= rm2.data){
                 ans.add(rm1.data);
                 cur1 = rm1.right;
                 st2.push(rm2);
             }
-            else{
+            else if(rm1.data > rm2.data){
                 ans.add(rm2.data);
                 cur2 = rm2.right;
                 st1.push(rm1);
@@ -69,8 +67,8 @@ public class merge2BstMemoryEfficient {
         System.out.println(ans);
     }
     public static void main(String[] args){
-        int[] arr1 = {1, 2, 8, 10};
-        int[] arr2 = {0, 3, 5};
+        int[] arr1 = {1};
+        int[] arr2 = {2 , 3, 4, 5, 6, 7};
         Node root1 = construct(arr1, 0, arr1.length - 1);
         Node root2 = construct(arr2, 0, arr2.length - 1);
         solve(root1, root2);

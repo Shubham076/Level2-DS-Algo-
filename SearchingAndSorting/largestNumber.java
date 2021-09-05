@@ -2,9 +2,9 @@
 import java.util.*;
 class largestNumber{
 	public String largestNumber(int[] nums) {
-        String[] a = new String[arr.length];
-        for(int i = 0; i < arr.length; i++){
-        	a[i] = arr[i] + "";
+        String[] a = new String[nums.length];
+        for(int i = 0; i < nums.length; i++){
+        	a[i] = nums[i] + "";
         }
         Arrays.sort(a, (p, q) -> {
         	long n1 = Long.parseLong(p + q);
@@ -17,7 +17,7 @@ class largestNumber{
         	}
         });
         String ans = "";
-        for(int i = arr.length - 1; i >= 0; i--){
+        for(int i = nums.length - 1; i >= 0; i--){
         	ans += a[i];
         }
         if(ans.charAt(0) == '0'){

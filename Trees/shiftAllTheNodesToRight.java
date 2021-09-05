@@ -1,6 +1,7 @@
 /*
 https://www.geeksforgeeks.org/modify-a-binary-tree-by-shifting-all-nodes-to-as-far-right-as-possible/
 */
+import java.util.*;
 class shiftAllTheNodesToRight {
 	static class Node {
 		int data;

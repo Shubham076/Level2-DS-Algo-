@@ -2,8 +2,8 @@
 import java.util.*;
 class heaters{
 	static class Pair{
-		int js = -1;
-		int jl = -1;
+		int js = -1; //just small
+		int jl = -1; //just large
 	}
 
 
@@ -30,11 +30,13 @@ class heaters{
 		}
 		return p;
 	}
+
+	// find the ceil and floor of house in the heaters array
 	public int findRadius(int[] houses, int[] heaters) {
         Arrays.sort(heaters);
         int ans = Integer.MIN_VALUE;
         for(int i = 0; i < houses.length; i++){
-        	int hn = houses[i];
+        	int hn = houses[i];  //hn
         	Pair p = helper(heaters, hn);
         	int d1 = p.js == -1 ? Integer.MAX_VALUE : hn - p.js;
         	int d2 = p.jl == -1 ? Integer.MAX_VALUE : p.jl - hn;

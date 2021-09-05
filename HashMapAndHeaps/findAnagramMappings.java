@@ -28,6 +28,8 @@ public class findAnagramMappings {
         for(int i = 0; i < n; i++){
             b[i] = scn.nextInt();
 
+
+            //for handling the duplicates mapping of element vs arrays of indexes of same element
             if(map.containsKey(b[i])){
                 ArrayList<Integer> list = map.get(b[i]).arr;
                 list.add(i);

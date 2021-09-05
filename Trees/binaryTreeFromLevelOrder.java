@@ -59,7 +59,6 @@ public class binaryTreeFromLevelOrder {
         display(root.right);
     }
 
-
     public static void main(String[] args){
         Integer[] arr = {1, 2, 3, 4, 5};
         Node root = constructTree(arr);

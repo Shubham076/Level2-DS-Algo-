@@ -20,10 +20,8 @@ class sortAlreadySortedLinkedList{
 				//adding to the first
 				cur.next = head;
 				head = cur;
-
 				cur = prev;
 			}
-
 			prev = cur;
 			cur = cur.next;
 		}

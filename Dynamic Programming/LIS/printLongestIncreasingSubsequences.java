@@ -16,20 +16,6 @@ class printLongestIncreasingSubsequences  {
         }
     }
 
-    static class lisPair{
-        String psf;
-        int val;
-
-        public lisPair(String psf, int val){
-            this.psf = psf;
-            this.val = val;
-        }
-
-        public String toString(){
-            return this.psf + " " + this.val;
-        }
-    }
-
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();

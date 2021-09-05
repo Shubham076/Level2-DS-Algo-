@@ -8,7 +8,7 @@ if rem != 0
 */
 class excelColumnNameFromNumber{
 	public static void main(String[] args){
-		int n = 52;
+		int n = 30;
 		String ans = "";
 		while(n > 0){
 			int r = n % 26;

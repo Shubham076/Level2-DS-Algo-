@@ -2,7 +2,7 @@
 import java.util.*;
 public class capacityToShipWithindDays {
     public int shipWithinDays(int[] weights, int D) {
-        int max = Arrays.strePam(weights).max().getAsInt();
+        int max = Arrays.stream(weights).max().getAsInt();
         int sum = Arrays.stream(weights).sum();
 
         int low = max;

@@ -3,7 +3,8 @@ leetcode 554
 here we have to find the mimimum number of closed bricks crossed by vertical line = maximum number of space passed by vertical line
 prefix sum variation
 best explanation https://leetcode.com/problems/brick-wall/discuss/888577/IntuitionC%2B%2BWith-PicturesHashMapDetailed-ExplanationCommentsSolutionCode
-we keep the cnt of spaces we encountered at ech level spaces with the max cnt gives the minimum bricks crossed 
+we keep the cnt of spaces we encountered at each level spaces with the 
+max cnt gives the minimum bricks crossed 
 */
 import java.util.*;
 class brickWall{

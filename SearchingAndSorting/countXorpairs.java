@@ -11,7 +11,7 @@ class countXorpairs {
 			freq[arr[i]]++;
 		}
 		//xor have a property xor of same numbers is always 0
-		// so we cnt freq and we can makw (n * n -1 / 2) pairs with n elements;
+		// so we cnt freq and we can make (n * n -1 / 2) pairs with n elements;
 		int cnt = 0;
 		for(int i = 0; i < freq.length; i++){
 			int v = freq[i];
