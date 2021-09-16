@@ -1,8 +1,9 @@
 {
     "java.project.sourcePaths": [
+        "evaluation.java",
         "conversions/prefix",
         "conversions/postfix",
         "conversions/infix",
-        "evaluation.java"
+        ""
     ]
 }

@@ -46,6 +46,7 @@ public class wordSearch2usingTrie {
 
         Node child = root.childs[arr[i][j] - 'a'];
         if (child.s != null) {
+            //means found word
             ans.add(child.s);
         }
         vis[i][j] = 1;

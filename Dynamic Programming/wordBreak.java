@@ -41,7 +41,7 @@ public class wordBreak {
    dp =>    [ 0 0 0 0 0 0 0 0]
 
    j always starts from 0
-   i iterated and wew are checking all the suufixes fom j -> i
+   i iterated and wew are checking all the suffixes fom j -> i
    for eg at 5th index we checking  
    leetco present in dict
    eetco present in dict
@@ -52,6 +52,8 @@ public class wordBreak {
    
    if any suffix is present in the dict
    then we adding the answer of j - 1th index which stores the number of sentence upto j - 1 th index
+   O(l * l * l) l is the length of max word
+   O(l * l) as general for not considering the substring function  
 */
     public boolean wordbreak(String s, List<String> dict) {
         if (s == null || s.length() == 0)

@@ -1,7 +1,7 @@
-import java.util.*;
 //leetcode 134
 //answer is always going to be the min prefix index + 1;
-//proof is saved in ds playlist youtube
+//proof is saved in another question gas station
+import java.util.*;
 class circularTour {
 	public int canCompleteCircuit(int[] gas, int[] cost) {
 		int sum = 0;

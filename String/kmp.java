@@ -49,7 +49,7 @@ class kmp{
     }
     public static void main(String[] args){
         String s = "geeksforgeeks";
-        String p = "eek";
+        String p = "geeks";
 
         // method 1
         int[] lps = computeLPS(p + "#" + s);
