@@ -37,7 +37,7 @@ public class prefixEvaluation {
     }
 
     public static void main(String[] args) {
-        String s = "-+2*31+3*41";
+        String s = "+-*84/625";
         int ans = PrefixEvaluation(s);
         System.out.println(ans);
     }
