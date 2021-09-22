@@ -20,8 +20,8 @@ public class buyAndSellStockKTransactions {
         for(int t = 1; t <= k; t++){
             int max = Integer.MIN_VALUE;
             for(int d = 1; d < arr.length; d++){
-                if(dp[t - 1][d -1] - arr[d - 1] > max){
-                    max = dp[t -1][d - 1] - arr[d - 1];
+                if(dp[t - 1][d - 1] - arr[d - 1] > max){
+                    max = dp[t - 1][d - 1] - arr[d - 1];
                 }
 
                 if(max + arr[d] > dp[t][d - 1]){

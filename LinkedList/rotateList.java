@@ -24,7 +24,6 @@ class rotateList{
         temp = head;
         int x = s - k;  //list remaining to left of k
         for(int i = 0; i < x - 1; i++){
-            System.out.println(i);
         	temp = temp.next;
         }
         head = temp.next;
