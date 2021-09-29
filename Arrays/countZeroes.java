@@ -1,7 +1,7 @@
 /*
-Given a binary string S of size N, and a 2D array Q[][] of queries consisting of M pairs of the form {L, R}, the task for each query is to find the maximum number of 0s lying between two 1s in the range [L, R].
-prefix sum
-for ex 
+Given a binary string S of size N, and a 2D array Q[][] of queries consisting
+of M pairs of the form {L, R}, the task for each query is to find the maximum
+number of 0s lying between two 1s in the range [L, R]. prefix sum for ex 
 */
 public class countZeroes {
     public static void main(String[] args) {

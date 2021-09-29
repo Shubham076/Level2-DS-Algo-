@@ -1,3 +1,4 @@
+//leetcode 42
 class rainwaterTrapping {
 	//method 1
 	public int maxArea1(int[] height) {
@@ -39,7 +40,7 @@ class rainwaterTrapping {
 			}
 			else{
 				ans += smax - height[j];
-				j++;
+				j--;
 			}
 		}
 		return ans;

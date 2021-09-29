@@ -8,7 +8,7 @@ increases cost by one. The task is to sort the array in the minimum cost
 just find the longest consecutive sequence
 the elements which are already in their correct position we dont need to move
 remaining elements we need to move
-so we find the longest consecutive sequence and answer is going to be n - len(sequence);
+so we find the longest consecutive sequence(relative order should be maintained) and answer is going to be n - len(sequence);
 */
 import java.util.*;
 class trickyArraySorting{

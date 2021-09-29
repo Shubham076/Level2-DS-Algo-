@@ -1,4 +1,7 @@
 //leetcode 849
+/*
+find the maximum distance between 1 and 0;
+*/
 class maximizeDistanceToClosestPerson {
 	public static int maxDistToClosest(int[] seats) {
         int last = -1;

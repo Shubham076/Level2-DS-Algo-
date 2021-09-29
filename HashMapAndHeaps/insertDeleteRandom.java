@@ -7,7 +7,7 @@ class insertDeleteRandom{
 	ArrayList<Integer> list;
 	Random r;
 	/** Initialize your data structure here. */
-    public RandomizedSet() {
+    public insertDeleteRandom() {
     	map = new HashMap<>();
     	list = new ArrayList<>();
     	r = new Random();    

@@ -1,4 +1,5 @@
 //https://www.geeksforgeeks.org/minimize-cash-flow-among-given-set-friends-borrowed-money/  O(nlogn)
+import java.util.*;
 class minimizeCashFlowBetweenFriends {
 	static class Pair implements Comparable<Pair> {
 		int n;

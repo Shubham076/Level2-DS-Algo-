@@ -8,7 +8,7 @@ kx + k* (k - 1) / 2 = N    //sum of first k - 1 terms = k*(k - 1) / 2;
 if we are getting a integer val for a value of k means a sequence is possible
 from above eq if  (N - k * (k - 1) / 2) % k == 0 means it is possible. and the seq starts from x upto k terms
 
-	//upper limit of  k
+//upper limit of  k
 kx = (N - k * (k - 1) / 2)
 lhs is positive as x > 0 && k > 0 => so rhs should also be positive
 (N - k * (k - 1) / 2) > 0

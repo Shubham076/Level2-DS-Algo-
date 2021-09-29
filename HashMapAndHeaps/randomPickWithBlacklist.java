@@ -16,7 +16,7 @@ class randomPickWithBlacklist {
 	Random r;
 	HashMap<Integer, Integer> map;
 	int limit;
-	public Solution(int n, int[] blacklist) {
+	public void Solution(int n, int[] blacklist) {
 		map = new HashMap<>();
 		r = new Random();
 		limit = n - blacklist.length;

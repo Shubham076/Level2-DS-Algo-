@@ -12,11 +12,31 @@ so ans = max(c1, c2, c3, c4, c5);
 import java.util.Scanner;
 public class buyAndSellStockKTransactions {
     public static void main(String[] args) {
-        int[] arr = {2, 4, 1};
+        int[] arr = {10, 22, 5, 75, 65, 80};
         int n = arr.length;
         int k = 2; //represents transactions
         int[][] dp = new int[k + 1][arr.length];
 
+
+        /*
+        O(n * 3)
+        for(int t = 1; t < dp.length; t++){
+            for(int d = 1; d < dp[0].length; d++){
+                //k transactions done till previous day
+                int max = dp[t][d - 1];
+
+               //or k - 1 transactions done between any day from 0th to d - 1 & kth is done between d and any day
+                for(int pd = 0; pd < d; pd++) {
+                    int a = dp[t - 1][pd] + arr[d] - arr[pd];
+                    max = Math.max(max, a);
+                }
+
+                dp[t][d] = max;
+            }
+        }
+        */
+
+        //O(n * 2)
         for(int t = 1; t <= k; t++){
             int max = Integer.MIN_VALUE;
             for(int d = 1; d < arr.length; d++){
