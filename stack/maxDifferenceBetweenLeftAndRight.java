@@ -4,6 +4,7 @@ https://www.geeksforgeeks.org/find-maximum-difference-between-nearest-left-and-r
 when we calculate next smaller element on the right just below the element in the stack we have next smaller
 element on the left
 */
+import java.util.*;
 class maxDifferenceBetweenLeftAndRight{
     int findMaxDiff(int a[], int n) {
         Stack<Integer> s = new Stack<>();
