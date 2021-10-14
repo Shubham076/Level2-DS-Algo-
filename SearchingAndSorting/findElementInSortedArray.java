@@ -1,5 +1,6 @@
 /*
-Given a sorted array in which each element is repeated twice except one element whose frequency is thrice. Find the element whose frequency is thrice. Expected time complexity O(logn) and space O(1)
+Given a sorted array in which each element is repeated twice except one element
+whose frequency is thrice. Find the element whose frequency is thrice. Expected time complexity O(logn) and space O(1)
 input [4,4,5,5,5,6,6,7,7,8,8] output = 5
 */
 class findElementInSortedArray {
@@ -26,14 +27,16 @@ class findElementInSortedArray {
             int mid = lo + (hi - lo) / 2;
             if (arr[mid] == arr[mid - 1] && arr[mid] == arr[mid + 1]) {
                 return arr[mid];
-            } else if (arr[mid] == arr[mid - 1]) {
+            } 
+            else if (arr[mid] == arr[mid - 1]) {
                 int lc = mid - lo + 1;
                 if (lc % 2 == 0) {
                     lo = mid + 1;
                 } else {
                     hi = mid;
                 }
-            } else if (arr[mid] == arr[mid + 1]) {
+            } 
+            else if (arr[mid] == arr[mid + 1]) {
                 int rc = hi - mid + 1;
                 if (rc % 2 == 0) {
                     hi = mid - 1;
@@ -46,7 +49,7 @@ class findElementInSortedArray {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 4, 4, 5, 5, 6, 6, 7, 7, 7, 8, 8 };
+        int[] arr = { 4, 4, 5, 5, 5, 6, 6, 7, 7, 8, 8 };
         for (int i = 0; i < arr.length - 2; i += 2) {
             if (arr[i] == arr[i + 2]) {
                 System.out.println("Linear: " + arr[i]);

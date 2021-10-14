@@ -32,6 +32,7 @@ class intervalsIntersection {
 				ans.add(interval);
 			}
 
+			//move the one with the smaller end why> beacause we have taken its contribution
 			if(fe <= se){
 				i++;
 			}

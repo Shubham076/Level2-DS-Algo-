@@ -44,8 +44,8 @@ class countElementsInTwoArrays {
 			psum[i] = psum[i - 1] + freq[i];
 		}
 
-		for(int i : arr1){
-			ans.add(psum[i]);
+		for(int v : arr1){
+			ans.add(psum[v]);
 		}
 		return ans;
 	}

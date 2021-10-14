@@ -21,7 +21,8 @@ class jobSequencing {
 		return temp;
 	}
 
-	public static void union(int x,int y){
+	//logn
+	public static void union(int x, int y){
 		int lx = find(x);
 		int ly = find(y);
 		if(lx != ly){
@@ -37,7 +38,7 @@ class jobSequencing {
 		}
 		int ans = 0;
 		int cnt = 0;
-		//leader is always pointing towards empty slot  nlogn
+		//leader is always pointing towards empty slot  o(nlogn)
 		for(Job j: arr){
 			int freeSlot = find(j.deadline);
 			if(freeSlot > 0){

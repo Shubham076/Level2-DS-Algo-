@@ -1,3 +1,4 @@
+package BuyAndSellStocks;
 import java.util.Scanner;
 class buyAndSellStock2Transactions{
     public static void main(String[] args) {

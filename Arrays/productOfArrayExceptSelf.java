@@ -12,13 +12,12 @@ public class productOfArrayExceptSelf {
             res[i] = res[i] * prod;
             prod *= nums[i];
         }
-
         return res;
     }
 
     public static void main(String[] args) {
         int[] nums = { -1, 1, 0, -3, 3 };
-        int[] ans = productExceptSelf2(nums);
+        int[] ans = productExceptSelf(nums);
         for (int i : ans) {
             System.out.print(i + " ");
         }

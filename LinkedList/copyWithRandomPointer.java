@@ -12,7 +12,7 @@ public class copyWithRandomPointer {
         }
     }
     
-    //method1 hashing O(N)
+    //method1 hashing O(N) O(N) space
     public Node copyRandomList1(Node head) {
         HashMap<Node, Node> map = new HashMap<>();
         

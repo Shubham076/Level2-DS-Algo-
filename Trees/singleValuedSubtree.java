@@ -1,3 +1,5 @@
+//https://www.geeksforgeeks.org/find-count-of-singly-subtrees/
+// A Single Valued Subtree is one in which all the nodes have same value. Expected time complexity is O(n).
 import java.util.*;
 public class singleValuedSubtree {
     static class Node{
@@ -111,10 +113,8 @@ public class singleValuedSubtree {
         if(root.right != null && root.right.data != root.data){
             return false;
         }
-
         cnt++;
         return true;
-
     }
 
     public static void main(String[] args){

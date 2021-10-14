@@ -18,7 +18,6 @@ class longestMountainInArray{
         			j--;
         		}
 
-
         		//move forwards
         		while(i <= arr.length - 2 && arr[i] > arr[i + 1]){
         			i++;

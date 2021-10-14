@@ -22,7 +22,6 @@ public class reverseWords {
 
     public static Node solve(Node head){
         if(head == null || head.next == null) return head;
-        Node oh = head;
         Node prev = null;
         Node cur = head;
         Node next = null;
@@ -32,7 +31,7 @@ public class reverseWords {
             prev = cur;
             cur = next;
         }
-        oh.next = cur;
+        head.next = cur;
         if(cur != null){
             cur.next = solve(cur.next);
         }

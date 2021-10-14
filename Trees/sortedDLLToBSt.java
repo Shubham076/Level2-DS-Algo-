@@ -1,4 +1,4 @@
-//leetcode 109
+//geeksforgeeks.org/in-place-conversion-of-sorted-dll-to-balanced-bst/
 import java.util.*;
 class sortedDLLToBSt {
 	static class ListNode {
@@ -22,27 +22,40 @@ class sortedDLLToBSt {
 		}
 	}
 	static ListNode temp;
-	public TreeNode sortedListToBST(ListNode head) {
-     	temp = head;
-     	ListNode i = head;
-     	int cnt = 0;
-     	while(i != null){
-     		cnt++;
-     		i = i.next;
-     	}
-
-     	return construct(cnt);   
+	static TreeNode mid(TreeNode head){
+		if(head == null || head.right == null) return head;
+		TreeNode slow = head;
+		TreeNode fast = head;
+		while(fast.right != null && fast.right.right != null){
+			slow = slow.right;
+			fast = fast.right.right;
+		}
+		return slow;
+	}
+	public TreeNode sortedListToBST(TreeNode head) {
+     	return construct(head);   
     }
 //O(N)
-    public static TreeNode construct(int n){
-    	if(n == 0){
-    		return null;
-    	}
-    	TreeNode left = construct(n / 2); 
-    	TreeNode root = new TreeNode(temp.val);
-    	temp = temp.next;
-    	root.left = left;
-    	root.right = construct(n - n / 2 - 1);
-    	return root;
+    public static TreeNode construct(TreeNode head){
+    	if(head == null || head.right == null) return head;
+
+    	TreeNode mid = mid(head);
+    	TreeNode prev = mid.left;
+    	TreeNode forw = mid.right;
+
+    	forw.left = mid.right = mid.left = null;
+
+    	//edge case when size of the list is 2
+    	if(prev != null)
+    		prev.right = null;
+
+    	//edge case when size of the list is 2
+    	TreeNode lefthead = prev != null ? head : null;
+    	TreeNode righthead = forw;
+
+    	mid.left = construct(lefthead);
+    	mid.right = construct(righthead);
+
+    	return mid;
     }	
-}
+} 

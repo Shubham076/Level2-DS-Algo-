@@ -1,5 +1,5 @@
 //leetcode 404
-import java.util.;
+import java.util.*;
 class sumOfLeftLeaves {
 	public class TreeNode {
 		int val;

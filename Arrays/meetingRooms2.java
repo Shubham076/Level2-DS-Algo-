@@ -1,4 +1,5 @@
 //lintcode 919
+//calculate the min number of meeting rooms required to accomadoate all the meetings
 import java.util.*;
 class meetingRooms2{
 	static class Interval {
@@ -30,7 +31,6 @@ class meetingRooms2{
 				cnt--;
 				j++;
 			}
-
 			total = Math.max(total, cnt);
 		}
 		return total;

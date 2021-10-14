@@ -1,4 +1,4 @@
-
+import java.util.*;
 public class decodeString {
     public static void solve(String s){
         Stack<String> st = new Stack<>();
@@ -28,7 +28,7 @@ public class decodeString {
                     i++;
                 }
                 i--;
-                st.push(str);
+                st.push(c + "");
             }
             else if(Character.isDigit(c)){
                 int x = 0;

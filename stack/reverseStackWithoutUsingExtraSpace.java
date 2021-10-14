@@ -1,5 +1,5 @@
 import java.util.*;
-public class cloneStackWithoutUsingExtraSpace {
+public class reverseStackWithoutUsingExtraSpace {
     //O(n * n) + O(N) space iterative
     public static void reverseStack(Stack<Integer> s, Stack<Integer> d){
         int cnt = 0;

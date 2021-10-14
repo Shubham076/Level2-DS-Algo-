@@ -1,5 +1,6 @@
 //leetcode 632
 // Find the smallest range that includes at least one number from each of the k lists.
+//O(n log m)
 import java.util.*;
 class smallestRangeFromKList {
 	static class Pair implements Comparable<Pair> {

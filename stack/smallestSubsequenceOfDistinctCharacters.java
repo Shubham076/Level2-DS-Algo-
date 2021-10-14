@@ -1,5 +1,8 @@
-/* leetcode 1081,316 Return the lexicographically smallest subsequence of s that contains all the distinct characters of s exactly once.
+/* leetcode 1081,316
+ Return the lexicographically smallest subsequence of s
+that contains all the distinct characters of s exactly once.
 */
+import java.util.*;
 public class smallestSubsequenceOfDistinctCharacters {
     public String smallestSubsequence(String s) {
 

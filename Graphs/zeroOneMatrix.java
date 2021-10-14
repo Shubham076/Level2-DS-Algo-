@@ -1,4 +1,5 @@
 	//leetcode 542
+	import java.util.*;
 class zeroOneMatrix {
 	static int[][] dir = {{0, 1} , {1, 0} , {0 , -1} , { -1 , 0}};
 	static class Pair {

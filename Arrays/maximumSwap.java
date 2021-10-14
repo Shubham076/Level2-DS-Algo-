@@ -6,7 +6,7 @@ class maximumSwap{
 		arr[i] = arr[j];
 		arr[j] = temp;
 	}
-	 public static int maximumSwap(int num) {
+	 public static int MaximumSwap(int num) {
      	char[] arr = Integer.toString(num).toCharArray();
      	int maxidx = -1; int maxdigit = -1;
      	int leftidx = -1; int rightidx = -1;        
@@ -32,6 +32,6 @@ class maximumSwap{
     }
 	public static void main(String[] args){
 		int n = 7236;
-		System.out.println(maximumSwap(n));
+		System.out.println(MaximumSwap(n));
 	}
 }

@@ -1,6 +1,6 @@
 /*
 leetcode 787
-application of bellaman ford
+application of bellman ford
 as in ith iteration bellman ford given shortest distance for ith path length
 here we have to find the shortest within k stops means  s -- >  ...kstops   --> dest
 simply have to find the shortest cost to dest having path length of k + 1;  //1 based indexing

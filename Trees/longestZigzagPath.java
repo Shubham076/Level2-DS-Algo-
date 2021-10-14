@@ -28,6 +28,7 @@ class longestZigzagPath{
     	Pair left = longestZigZag_(root.left);
     	Pair right = longestZigZag_(root.right);
     	Pair ans = new Pair();
+		
     	ans.max = Math.max(left.max , Math.max(right.max, Math.max(left.backwardHeight, right.forwardHeight) + 1));
     	ans.forwardHeight = left.backwardHeight + 1;
     	ans.backwardHeight = right.forwardHeight + 1;

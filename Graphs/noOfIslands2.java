@@ -64,7 +64,9 @@ class noOfIslands2 {
 				ans.add(cnt);
 				continue;
 			}
-			par[cell] = cell;
+
+			//set is defining the land
+			par[cell] = cell; 
 			rank[cell] = 1;
 			cnt++;
 

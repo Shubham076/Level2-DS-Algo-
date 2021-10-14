@@ -16,6 +16,7 @@ class meetingRooms {
 		for(int j = 1; j < intervals.size(); j++){
 			Interval cur = intervals.get(j);
 			if(cur.start < prev.end){
+				//overlapping meetings
 				return false;
 			}
 			prev = cur;

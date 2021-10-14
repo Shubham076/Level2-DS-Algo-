@@ -17,7 +17,6 @@ class majorityElements{
 				count--;
 			}
 		}
-
 		return val;
 	}
 	public static void main(String[] args) {

@@ -25,7 +25,6 @@ class bricksFallingWhenHit{
 		return temp;
 	}
 
-	//always making lx as parent
 	public static void union(int x, int y){
 		int lx = find(x);
 		int ly = find(y);

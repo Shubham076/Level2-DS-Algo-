@@ -2,7 +2,6 @@
 /*
 question is same as zero one matrix we have to find the max distance of zero from ones
 so we use reverse bfs we start our bfs from ones
-
 */
 import java.util.*;
 class asFarFromLandAsPossible{

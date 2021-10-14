@@ -1,5 +1,5 @@
 import java.util.*;
-//for cicrcular arrays run the loop 2 times
+//for circular arrays run the loop 2 times
 // time complexity O(N)
 public class nextGreaterElement2 {
     public static int[] nextGreaterElements(int[] nums) {

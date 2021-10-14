@@ -11,7 +11,8 @@ what we do we calculate mid and check
    why plus one ? beacause it is possible that mid + 1 can be our answer
 
 * if arr[mid] == hi
-  we cant neglect any part so we simply reduce by hi by one why beacuse if hi is our answer it is covered by mid
+  we cant neglect any part so we simply reduce by hi by one why beacuse if hi
+   is our answer it is covered by mid
 
   O(N)
 */

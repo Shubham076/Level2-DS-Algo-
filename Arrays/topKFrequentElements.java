@@ -15,7 +15,8 @@ class topKFrequentElements {
 			int cnt = map.get(n);
 			if (buckets[cnt] != null) {
 				buckets[cnt].add(n);
-			} else {
+			}
+			else {
 				ArrayList<Integer> temp = new ArrayList<>();
 				temp.add(n);
 				buckets[cnt] = temp;

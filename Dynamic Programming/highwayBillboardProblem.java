@@ -43,8 +43,8 @@ public class highwayBillboardProblem {
     }
     public static void main(String[] args){
         int d = 20;
-        int[] pos = {6, 7, 12, 13, 14};
-        int[] rev = {5, 6, 5, 3, 1};
+        int[] pos = {6, 7, 12, 13, 14}; //pos of the billboard
+        int[] rev = {5, 6, 5, 3, 1};   //revenue of particular billboard
         int t = 5;
 
         System.out.println(maxRevenue(d, pos, rev, t));

@@ -1,7 +1,7 @@
 // leetcode 128
 import java.util.*;
 
-//sequence = subsequence
+//sequence
 public class longestConsecutiveSequence {
     // O(nlogn) + O(n)
     public static int longestConsecutive(int[] nums) {

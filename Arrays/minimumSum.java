@@ -1,4 +1,5 @@
 // https://practice.geeksforgeeks.org/problems/min-sum-formed-by-digits3551/1#
+import java.util.*;
 class minimumSum{
 	public static long minSum(int arr[], int n){
         // Your code goes here

@@ -16,7 +16,8 @@ class searchInSortedRotatedArray {
 				//if element is present in the sorted range
 				if (target >= nums[lo] && target < nums[mid]) {
 					hi = mid - 1;
-				} else {
+				}
+				else {
 					lo = mid + 1;
 				}
 			}
@@ -25,7 +26,8 @@ class searchInSortedRotatedArray {
 				//if element is present in sorted range or not
 				if (target > nums[mid] && target <= nums[hi]) {
 					lo = mid + 1;
-				} else {
+				}
+				else {
 					hi = mid - 1;
 				}
 			}

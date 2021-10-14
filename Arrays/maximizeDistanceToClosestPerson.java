@@ -14,7 +14,6 @@ class maximizeDistanceToClosestPerson {
         		else{
         			ans = Math.max(ans , (i - last) / 2);
         		}
-
         		last = i;
         	}
         }

@@ -100,7 +100,7 @@ class pathLengthWithMaxBends{
         solve(root.right, n, len + 1, true, dir);
     }
     public static void main(String[] args){
-        Integer[] arr = {4, 2, 6, 1, 3, 5, 7, null, null, null, null, null, null, 9, null, 12, 10, null, null, null, 11, 45, 13, null, null, null, 14};
+        Integer[] arr = {1, null, 1, 1, 1, null, null, 1, 1, null, 1, null, null, null, 1, null, 1};
         Node root = constructTree(arr);
         // display(root);
         maxBends = 0;

@@ -1,4 +1,9 @@
 //leetcode 1031
+
+/*
+greedy is nt going to work for this example
+2 2 7 8 9 9 7
+*/
 import java.util.*;
 class maximumSumOfTwoNonOverlappingArrays{
 	// O(N) 

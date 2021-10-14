@@ -4,7 +4,6 @@ Find the closest leaf in a Binary Tree
 Difficulty Level : Hard
 Last Updated : 25 Jun, 2021
 Given a Binary Tree and a key ‘k’, find distance of the closest leaf from ‘k’.
-
 */
 public class closestLeaf {
     public class TreeNode {

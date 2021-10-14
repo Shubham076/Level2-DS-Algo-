@@ -7,7 +7,7 @@ public class minStack {
     long min;
     
     /** initialize your data structure here. */
-    public MinStack() {
+    public minStack() {
         data = new Stack<>();
 
     }

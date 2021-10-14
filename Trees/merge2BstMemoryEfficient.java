@@ -68,7 +68,7 @@ public class merge2BstMemoryEfficient {
     }
     public static void main(String[] args){
         int[] arr1 = {1};
-        int[] arr2 = {2 , 3, 4, 5, 6, 7};
+        int[] arr2 = {2, 3, 4, 5, 6, 7};
         Node root1 = construct(arr1, 0, arr1.length - 1);
         Node root2 = construct(arr2, 0, arr2.length - 1);
         solve(root1, root2);

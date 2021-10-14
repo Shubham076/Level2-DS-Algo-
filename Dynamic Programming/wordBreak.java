@@ -41,7 +41,7 @@ public class wordBreak {
    dp =>    [ 0 0 0 0 0 0 0 0]
 
    j always starts from 0
-   i iterated and wew are checking all the suffixes fom j -> i
+   i iterated and we are checking for all the suffixes fom j -> i
    for eg at 5th index we checking  
    leetco present in dict
    eetco present in dict

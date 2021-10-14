@@ -72,7 +72,6 @@ public class burnTree {
             burnTree(root, rt, root.right);
             return rt + 1;
         }
-
         return -1;
     }
 

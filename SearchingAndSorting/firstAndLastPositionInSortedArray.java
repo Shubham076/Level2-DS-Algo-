@@ -8,9 +8,11 @@ class firstAndLastPositionInSortedArray {
 			if (arr[mid] == t) {
 				first = mid;
 				hi = mid - 1;
-			} else if (arr[mid] > t) {
+			} 
+			else if (arr[mid] > t) {
 				hi = mid - 1;
-			} else {
+			} 
+			else {
 				lo = mid + 1;
 			}
 		}
@@ -22,9 +24,13 @@ class firstAndLastPositionInSortedArray {
 			if (arr[mid] == t) {
 				last = mid;
 				lo = mid + 1;
-			} else if (arr[mid] > t) {
+			}
+			 
+			else if (arr[mid] > t) {
 				hi = mid - 1;
-			} else {
+			}
+			 
+			else {
 				lo = mid + 1;
 			}
 		}

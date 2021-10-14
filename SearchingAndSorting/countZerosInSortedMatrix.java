@@ -1,5 +1,5 @@
 //https://practice.geeksforgeeks.org/problems/count-zeros-in-a-sorted-matrix/
-//matrix is row wise and column and contains only zero and ones
+//matrix is row wise and column wise sorted and contains only zero and ones
 class countZerosInSortedMatrix {
 	int countZeros(int A[][], int n) {
 		int cnt = 0;

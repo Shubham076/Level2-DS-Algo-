@@ -45,7 +45,6 @@ public class buyAndSellStockCoolDown {
             ossp = nssp;
             ocsp = ncsp;
         }
-
         System.out.println(ossp);
     }
 }

@@ -27,12 +27,12 @@ public class capacityToShipWithindDays {
     public static int requiredDays(int d, int[] arr, int capacity) {
         int csum = 0;
         int day = 1;
-        for (int i : arr) {
-            if (csum + i > capacity) {
+        for (int v : arr) {
+            if (csum + v > capacity) {
                 day++;
                 csum = 0;
             }
-            csum += i;
+            csum += v;
         }
         return day;
     }

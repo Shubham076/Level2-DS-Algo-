@@ -87,7 +87,6 @@ class bottomViewOfBinaryTree{
                 }
             }
         }
-
         return ans;
     }
 

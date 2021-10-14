@@ -6,7 +6,7 @@ let discuss the case for even
 eg 1 2 3 4 5 6 7 8 9 10
 if we divide the array into 2 equal parts
   1 2 3 4 5   6 7 8 9 10
-median  = Math of first + min of sec / 2
+median  = Max of first + min of sec / 2
 
 in case of odd 
 we divide the array in 2 parts such that left has one element greater than right
@@ -46,6 +46,16 @@ public class medianOf2sortedArrays2 {
         int n = a.length + b.length;
         int lo = 0;
         int hi = a.length;
+        //why a.length? 
+        /*
+            mid1 is defining that mid1 - 1 elements belongs to left half
+            the max value mid1 can take is equal to that of hi
+            if we keep hi = a.length - 1 then we are saying that except the last element all the belong 
+            to the left half but it can be possible that all the elements of first araay belongs to 
+            the first half  
+
+            thats why we are keeping the hi = arr.length
+        */
         while(lo <= hi){
             int mid1 = lo + (hi - lo) / 2;
             int mid2 = (n + 1) / 2 - mid1;

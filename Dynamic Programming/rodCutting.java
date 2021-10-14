@@ -1,5 +1,4 @@
 import java.util.*;
-
 //goal is to find the maximum amount you can earn by selling the rod
 class rodCutting{
 	public static void main(String[] args){
@@ -15,8 +14,8 @@ class rodCutting{
 		}
 		int[] dp = new int[n + 1];
 		dp[0] = 0;
-		dp[1] = 1;
-
+		dp[1] = prices[1];
+		//dp[i] stores the max price we can get by selling the ith length rod
 		for(int i = 2; i < dp.length; i++){
 			dp[i] = prices[i];
 			int li = 1;
@@ -28,9 +27,7 @@ class rodCutting{
 				li++;
 				ri--;
 			}
-
 		}
-
 		System.out.println(dp[n]);
 	}
 }

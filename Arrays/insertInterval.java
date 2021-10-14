@@ -1,5 +1,4 @@
 /*
-
 leetcode 57
 You are given an array of non-overlapping intervals intervals where intervals
 [i] = [starti, endi] represent the start and the end of the ith interval and
@@ -11,7 +10,6 @@ Insert newInterval into intervals such that intervals is still sorted in
 ascending order by starting and intervals still does not have any overlapping
 intervals (merge overlapping intervals if necessary). Return intervals after
 the insertion.
-
 */
 import java.util.*;
 class insertInterval {
@@ -48,7 +46,6 @@ class insertInterval {
 			ans.add(intervals[i]);
 			i++;
 		}
-
 		return ans.toArray(new int[ans.size()][]);
 	}
 	public static void main(String[] args) {

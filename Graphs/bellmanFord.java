@@ -45,7 +45,7 @@ class bellmanFord{
 		solve(graph);
 		if(!negativeCycle){
 			for(int i = 0; i < distances.length; i++){
-			System.out.println("Node" + i + ": " + distances[i]);
+				System.out.println("Node" + i + ": " + distances[i]);
 			}
 		}
 	}

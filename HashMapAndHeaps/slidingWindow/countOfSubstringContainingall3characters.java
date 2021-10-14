@@ -1,4 +1,5 @@
 //leetcode 1358
+package slidingWindow;
 public class countOfSubstringContainingall3characters {
     public static int numberOfSubstrings(String s) {
         int[] cnt = {0, 0, 0};

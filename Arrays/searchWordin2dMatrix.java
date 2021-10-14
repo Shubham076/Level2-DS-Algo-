@@ -35,6 +35,7 @@ public class searchWordin2dMatrix {
             }
         }
     }
+//O(n * m * 8 * l);
     public static void main(String[] args){
         char[][] arr = {{'g', 'o', 'g', 'o', 'g'},
                         {'o', 'o', 'o', 'o', 'o'},

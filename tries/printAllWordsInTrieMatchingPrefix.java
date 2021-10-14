@@ -71,8 +71,8 @@ public class printAllWordsInTrieMatchingPrefix {
 
     public static void main(String[] args) {
         ArrayList<ArrayList<String>> ans = new ArrayList<>();
-        String[] dict = { "test", "testing", "testingdone", "move", "moving", "cat", "cats" };
-        String[] prefixes = { "tes", "mov", "cat" , "hello"};
+        String[] dict = { "shivani", "shubham" };
+        String[] prefixes = { "sh"};
         Trie t = new Trie();
         for(String s: dict){
             t.insert(s);

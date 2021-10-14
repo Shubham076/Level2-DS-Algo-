@@ -1,3 +1,10 @@
+
+//return the min number of multiplications neeeded
+/*
+
+
+
+*/
 import java.util.*;
 class matrixChainMultiplication{
 	public static void main(String[] args){

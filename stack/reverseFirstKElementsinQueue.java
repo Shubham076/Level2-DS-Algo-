@@ -1,4 +1,5 @@
 //https://practice.geeksforgeeks.org/problems/reverse-first-k-elements-of-queue/1
+import java.util.*;
 class reverseFirstKElementsinQueue{
 	public Queue<Integer> modifyQueue(Queue<Integer> q, int k){
       Stack<Integer> s = new Stack<>();
