@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-//Time complexity O(N^4)
+//Time complexity O(N ^ 3)
 class fourSum {
     public static void main(String[] args) {
         int[] nums = { 0, 0, 0, 0 };

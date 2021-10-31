@@ -1,8 +1,26 @@
 import java.util.*;
 class countSubstringWithoutRepeatingCharacters{
-	public static void main(String[] args){
-		Scanner scn = new Scanner(System.in);
-		String s = scn.next();
+	static int method1(String s){
+		HashMap<Character, Integer> map = new HashMap<>();
+        int j = 0;
+        int cnt = 0;
+        for(int i = 0; i < s.length(); i++){
+            char c = s.charAt(i);
+            map.put(c, map.getOrDefault(c, 0) + 1);
+
+            //loop releasing the character
+            while(map.get(c) >= 2){
+                char d = s.charAt(j);
+                int v = map.get(d);
+                map.put(d,  v - 1);
+				j++;
+            }
+
+			cnt += i - j + 1;
+        }
+        return cnt;
+	}
+	static int method2(String s){
 		int i = -1;
 		int j = -1;
 		int ans = 0;
@@ -42,7 +60,12 @@ class countSubstringWithoutRepeatingCharacters{
 				break;
 			}
 		}
-
-		System.out.println(ans);
+		return ans;
+	}
+	public static void main(String[] args){
+		String s = "ab";
+		int ans1 = method1(s);
+		int ans2 = method2(s);
+		System.out.print(ans1 + " " + ans2);
 	}
 }

@@ -15,7 +15,6 @@ class cheapestFlightWithinKStops{
 	public int findCheapestPrice(int n, int[][] flights, int src, int des, int k) {
 		int[] cur = new int[n];
 		int[] prev = new int[n];
-		Arrays.fill(prev, Integer.MAX_VALUE);
 		for(int i = 0; i < n; i++){
 			cur[i] = prev[i] = Integer.MAX_VALUE;
 		}
@@ -34,7 +33,6 @@ class cheapestFlightWithinKStops{
 				prev[i] = cur[i];
 			}
 		}
-
 		return prev[des] != Integer.MAX_VALUE ? prev[des] : -1;
     }
 }

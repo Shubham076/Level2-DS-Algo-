@@ -24,7 +24,7 @@ class minimumNumberOfRefuellingStops {
 				i++;
 			}
 			else{
-				//no more fuel stops available 
+				//no more fuel available 
 				if(q.size() == 0){
 					return -1;
 				}
@@ -49,7 +49,6 @@ class minimumNumberOfRefuellingStops {
 				}
 			}
 		}
-
 		return -1;
 	}
 }

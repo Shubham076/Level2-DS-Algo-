@@ -29,7 +29,6 @@ public class wordSearch2 {
                         ans.add(w);
                         return;
                     }
-
                 }
             }
         }

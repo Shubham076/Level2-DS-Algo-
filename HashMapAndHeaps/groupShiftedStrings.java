@@ -1,3 +1,12 @@
+/*
+Given an array of strings (all lowercase letters), the task is to group them in such a way 
+that all strings in a group are shifted versions of each other.
+Two string S and T are called shifted if, 
+
+S.length = T.length 
+For example strings, {acd, dfg, wyz, yab, mop} are shifted versions of each other.
+
+*/
 import java.util.*;
 public class groupShiftedStrings {
 

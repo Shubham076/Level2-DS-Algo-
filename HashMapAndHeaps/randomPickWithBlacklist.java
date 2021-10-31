@@ -26,10 +26,13 @@ class randomPickWithBlacklist {
 		int j = n - 1;
 		for (int val : blacklist) {
 			//if val is already present in the last we dont need to find a mapping
+			//if val < limit means we need to provide a mapping
 			if (val < limit) {
-				while (map.containsKey(j)) {
+				while (map.containsKey(j)) {  //means it is blacklisted node decrese j
 					j--;
 				}
+
+				//found the on blacklisted node
 				map.put(val, j);
 				j--;
 			}

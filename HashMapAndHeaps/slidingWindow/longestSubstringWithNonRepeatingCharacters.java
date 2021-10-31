@@ -1,8 +1,31 @@
 import java.util.*;
 class longestSubstringWithNonRepeatingCharacters{
-	public static void main(String[] args){
-		Scanner scn = new Scanner(System.in);
-		String s = scn.next();
+
+	static int method1(String s){
+		HashMap<Character, Integer> map = new HashMap<>();
+        int j = 0;
+        int ans = 0;
+        for(int i = 0; i < s.length(); i++){
+            char c = s.charAt(i);
+            map.put(c, map.getOrDefault(c, 0) + 1);
+
+            //loop releasing the character
+            while(map.get(c) >= 2){
+                char d = s.charAt(j);
+                int v = map.get(d);
+                map.put(d,  v - 1);
+				j++;
+            }
+
+            int curLen = i - j + 1;
+            if(curLen > ans){
+                ans = curLen;
+            }
+        }
+        return ans;
+	}
+
+	static int method2(String s){
 		int i = -1;
 		int j = -1;
 		int maxLen = 0;
@@ -43,6 +66,12 @@ class longestSubstringWithNonRepeatingCharacters{
 			}
 		}
 
-		System.out.println(maxLen);
+		return maxLen;
+	}
+	public static void main(String[] args){
+		String s = "geeksforgeeks";
+		int ans1 = method1(s);
+		int ans2 = method2(s);
+		System.out.println(ans1 + " " + ans2);
 	}
 }

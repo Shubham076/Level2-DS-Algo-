@@ -6,7 +6,7 @@ add the first element of each row as out of these three we found the first small
 note for finding the kth largest element
 add the last elements of each row in the max heap
 
-timec complexity KlogN where n is the number of rows
+time complexity KlogN where n is the number of rows
 */
 import java.util.*;
 class kthSmallestElementinSortedMatrix{

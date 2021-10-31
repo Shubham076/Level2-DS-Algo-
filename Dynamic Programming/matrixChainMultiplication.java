@@ -1,22 +1,12 @@
 
-//return the min number of multiplications neeeded
 /*
-
-
-
+	return the min number of multiplications needed
 */
 import java.util.*;
 class matrixChainMultiplication{
 	public static void main(String[] args){
 		long start = System.nanoTime();
-		
-		Scanner scn = new Scanner(System.in);
-		int n = scn.nextInt();
-		int[] arr = new int[n];
-		for(int i = 0; i < arr.length; i++){
-			arr[i] = scn.nextInt();
-		}
-
+		int[] arr = {10, 20, 30, 40, 50};
 		int[][] dp = new int[arr.length - 1][arr.length - 1];
 		for(int g = 0; g < dp.length; g++){
 			for(int i = 0, j = g; j < dp.length; j++, i++){
@@ -39,18 +29,17 @@ class matrixChainMultiplication{
 						dp[i][j] = min;
 					}
 				}
-
 			}
 		}
 
-		// for(int i = 0; i < dp.length; i++){
-		// 	for(int j = 0; j < dp.length; j++){
-		// 		System.out.format(" % 7d ",dp[i][j]);
-		// 	}
-		// }
+		for(int i = 0; i < dp.length; i++){
+			for(int j = 0; j < dp.length; j++){
+				System.out.format(" % 7d ",dp[i][j]);
+			}
+			System.out.println();
+		}
 		System.out.println(dp[0][dp.length - 1]);
 		long end = System.nanoTime();
-		System.out.println("Execution Time: " + (end - start) / 1000000 + "ms");
-		
+		System.out.println("Execution Time: " + (end - start) / 1000000 + "ms");	
 	}
 }

@@ -8,7 +8,7 @@ if above example we can see that every second factor is mutiple of 2 and every 5
 multiple of 5 => count of (2) > count of 5 => problem is reduced to count of 5;
 
 now how to find the cnt of 5 in n
-simply take the flooor value [n / 5]
+simply take the floor value [n / 5]
 for eg n = 11 => no of cnt of 5 => [11 / 5] = 2;
 
 but lets try this method for 28
@@ -28,7 +28,7 @@ class findNumberOfTrailingZeroes{
 	public static void main(String[] args) {
 		int n = 100;
 		int cnt = 0;
-		for(int i = 5 ; n / i >= 1; i *= 5){
+		for(int i = 5; n / i >= 1; i *= 5){
 			cnt += n / i;
 		}
 		System.out.println(cnt);

@@ -7,8 +7,8 @@ import java.util.*;
 class levenshteinDistance{
 	public static void main(String[] args){
 		Scanner scn = new Scanner(System.in);
-		String s = scn.nextLine();
-		String d = scn.nextLine();
+		String s = "shubham";
+		String d = "shivani";
 		int[][] dp = new int[s.length() + 1][d.length() + 1];
 
 		for(int i = 0; i <= s.length(); i++){

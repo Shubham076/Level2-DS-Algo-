@@ -1,7 +1,11 @@
+/*
+leetcode 10
+'.' Matches any single character.​​​​
+'*' Matches zero or more of the preceding element.
+*/
 public class RegularExpressionMatching {
-
     public static void main(String[] args) {
-        String s = "a";
+        String s = "aa";
         String p = "a*";
         boolean[][] dp = new boolean[p.length() + 1][s.length() + 1];
         dp[0][0] = true;
@@ -23,8 +27,8 @@ public class RegularExpressionMatching {
                 /*
                 case of *
                 so first we have to check that the character before * is equal to last character in string
-                if not then mis* have only becomes mi all the other options are going to dissatify
-                why ?  see in the eg below
+                if not then mis* have only becomes mi all the other options are not possible
+                why see in the eg below :-
 
                 for eg s = ab
                        p = a*
@@ -52,7 +56,6 @@ public class RegularExpressionMatching {
                 }
             }
         }
-
         System.out.println(dp[p.length()][s.length()]);
     }
 }

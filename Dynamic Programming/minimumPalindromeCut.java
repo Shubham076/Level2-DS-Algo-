@@ -48,4 +48,20 @@ class minimumPalindromeCut{
 		System.out.println();
 		System.out.println(dp[s.length() - 1]);
 	}
+
+	//recursive for printing all
+	private static void helper(List<List<String>> res, List<String> path, boolean[][] dp, String s, int pos) {
+        if(pos == s.length()) {
+            res.add(new ArrayList<>(path));
+            return;
+        }
+        
+        for(int i = pos; i < s.length(); i++) {
+            if(dp[pos][i]) {
+                path.add(s.substring(pos, i + 1));
+                helper(res, path, dp, s, i + 1);
+                path.remove(path.size() - 1);
+            }
+        }
+    }
 }

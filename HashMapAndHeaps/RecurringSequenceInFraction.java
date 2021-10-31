@@ -1,37 +1,47 @@
 /*
+leetcode 166
 Given a fraction. Convert it into a decimal. 
 If the fractional part is repeating, enclose the repeating part in parentheses.
 */
 import java.util.*;
-class  RecurringSequenceInFraction {
+class RecurringSequenceInFraction {
 	public static String fractionToDecimal(int num, int den) {
+		if(num == 0) return "0";
+		StringBuilder ans = new StringBuilder("");
 		HashMap<Integer, Integer> map = new HashMap<>();
-		String ans = "";
+		boolean isNegative = (num > 0 ^ den > 0);
+		ans.append( isNegative ? "-" : "");
+		num = Math.abs(num);
+		den = Math.abs(den);
 		int q = num / den;
 		int r = num % den;
-
+		ans.append(q);
 		if(r == 0){
-			return q + "";
+			return ans.toString();
+		}
+		else{
+			ans.append(".");
 		}
 
 		while(r != 0 && !map.containsKey(r)){
 			map.put(r, ans.length());
-
 			r *= 10;
-			ans += r / den;
+			q = r / den;
 			r %= den;
+			ans.append(q);
 		}
 
-		if(r == 0){
-			return q + "." + ans;
+		if(r != 0){ //repeating or recurrring decimal
+			int len = map.get(r);
+			ans.insert(len, "(");
+			ans.append(")");
 		}
-		else {
-			return q + "." + ans.substring(0, map.get(r)) + "(" + ans.substring(map.get(r)) + ")";
-		}
+
+		return ans.toString();
 	}
 	public static void main(String[] args) {
-		int n = 5;
-		int d = 2;
+		int n = -1;
+		int d = -2;
 		System.out.println(fractionToDecimal(n, d));
 	}
 }

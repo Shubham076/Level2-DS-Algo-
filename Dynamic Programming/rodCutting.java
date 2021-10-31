@@ -1,5 +1,5 @@
-import java.util.*;
 //goal is to find the maximum amount you can earn by selling the rod
+import java.util.*;
 class rodCutting{
 	public static void main(String[] args){
 		Scanner scn = new Scanner(System.in);

@@ -1,6 +1,8 @@
 /*
 https://practice.geeksforgeeks.org/problems/smallest-subarray-with-all-occurrences-of-a-most-frequent-element2258/1
-Given an array, A. Let x be an element in the array. x has the maximum frequency in the array. Find the smallest subsegment of the array which also has x as the maximum frequency element.
+Given an array, A. Let x be an element in the array.
+x has the maximum frequency in the array.
+Find the smallest subsequence of the array which also has x as the maximum frequency element.
 */
 import java.util.*;
 public class smallestSubarrayWithAllOccurenceOfMFE {

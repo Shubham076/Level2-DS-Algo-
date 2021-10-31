@@ -14,11 +14,8 @@ divisible by 5
 : if 2 even numers are not divisible by 5 then the number having greater index comes first
 : all odd numbers must maintain their relative ordering
 
-
 if we want to sort in incresing order then return a - b or Integer.compare(a, b);
 if we want to sort in decreasing order then return b - a or Integer.compare(b, a);
-
-
 */
 import java.util.*;
 class sortArray{

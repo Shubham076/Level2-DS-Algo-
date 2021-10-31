@@ -1,4 +1,5 @@
 class NQueenCombinations1 {
+	//qs = queen selected and tq = total queen
 	public static void queensCombinations(int qs, int tq, boolean[][] chess, int lc) { //lc = last cell
 		// write your code here
 		if (qs == tq) {

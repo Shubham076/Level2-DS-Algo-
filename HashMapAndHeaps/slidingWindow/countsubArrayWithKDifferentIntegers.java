@@ -1,5 +1,6 @@
 /*
-leetcode 992
+same as nice subarrays question
+leetcode 992 
 in this problem we have to subarray with  k diff integers
 so what we will do we will
 	cnt of subarray with atmost k diff integer = c1

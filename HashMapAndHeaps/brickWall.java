@@ -22,7 +22,6 @@ class brickWall{
         		max = Math.max(max, map.get(sum));
         	}
         }
-
         return max != Integer.MIN_VALUE ? n - max : n;
     }
 }

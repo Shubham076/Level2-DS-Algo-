@@ -16,7 +16,7 @@ class permutation1{
                 boxes[i] = 0;
             }
         }
-      }
+    }
     
       public static void main(String[] args) throws Exception {
         int nboxes = 5;

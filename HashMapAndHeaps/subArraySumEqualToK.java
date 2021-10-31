@@ -21,7 +21,6 @@ class subArraySumEqualToK{
 			if(map.containsKey(rsum)){
 				ans += map.get(rsum);
 			}
-
 			map.put(sum, map.getOrDefault(sum, 0) + 1);
 		}
 		System.out.println(ans);

@@ -38,7 +38,6 @@ class slidingWindowMedian {
 			else{
 				left.remove(val);
 			}
-
 			balance();
 		}
 

@@ -1,7 +1,8 @@
 /*
 leetcode 1297
 intuition
-If you are able to find substrings with size > minSize meeting the maxLetters reqirement, substrings with smaller sizes have atleast the same frequency!
+If you are able to find substrings with size > minSize meeting the maxLetters reqirement,
+ substrings with smaller sizes have atleast the same frequency!
 
 If string S with size N > minSize has frequency F, then the substring of S must also have frequency F.
 Therefore, we only need to consider the minSize substring.

@@ -1,5 +1,7 @@
 /*
 https://www.geeksforgeeks.org/length-largest-subarray-contiguous-elements-set-1/
+Given an array of distinct integers, find length of the longest subarray which contains numbers
+ that can be arranged in a continuous sequence. 
 */
 
 import java.util.*;

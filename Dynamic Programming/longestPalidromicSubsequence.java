@@ -25,7 +25,6 @@ public class longestPalidromicSubsequence {
                 }
             }
         }
-
         System.out.println(dp[0][s.length() - 1]);
     }
 }

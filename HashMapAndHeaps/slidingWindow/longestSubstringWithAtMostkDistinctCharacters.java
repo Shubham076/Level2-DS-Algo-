@@ -1,9 +1,23 @@
 import java.util.*;
 class longestSubstringWithAtMostkDistinctCharacters{
-	public static void main(String[] args){
-		Scanner scn = new Scanner(System.in);
-		String s = scn.next();
-		int k = scn.nextInt();
+	static int method1(String s, int k){
+		HashMap<Character, Integer> map = new HashMap<>();
+        int j = 0;
+        int ans = Integer.MIN_VALUE;
+        for (int i = 0; i < s.length(); i++) {
+            map.put(s.charAt(i), map.getOrDefault(s.charAt(i), 0) + 1);
+
+            while (map.size() > k) {
+                map.put(s.charAt(j), map.get(s.charAt(j)) - 1);
+                if(map.get(s.charAt(j)) == 0) map.remove(s.charAt(j));
+                j++;
+            }
+			ans = Math.max(ans, i - j + 1);
+        }
+        return ans;
+	}
+
+	static int method2(String s, int k){
 		HashMap<Character, Integer> map = new HashMap<>();
 		int len = 0;
 		int i = -1;
@@ -51,6 +65,11 @@ class longestSubstringWithAtMostkDistinctCharacters{
 				break;
 			}
 		}
-		System.out.println(len);
+		return len;
+	}
+	public static void main(String[] args){
+		Scanner scn = new Scanner(System.in);
+		String s = scn.next();
+		int k = scn.nextInt();
 	}
 }

@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch pairWithGivenSumInSortedMatrix",
+            "request": "launch",
+            "mainClass": "pairWithGivenSumInSortedMatrix",
+            "projectName": "HashMapAndHeaps_afc803fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch minimizeCashFlowBetweenFriends",
+            "request": "launch",
+            "mainClass": "minimizeCashFlowBetweenFriends",
+            "projectName": "HashMapAndHeaps_afc803fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch IntervalWithMaxNumberOfmeetings",
+            "request": "launch",
+            "mainClass": "IntervalWithMaxNumberOfmeetings",
+            "projectName": "HashMapAndHeaps_afc803fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch firstNonRepetingCharacter",
+            "request": "launch",
+            "mainClass": "firstNonRepetingCharacter",
+            "projectName": "HashMapAndHeaps_afc803fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch RecurringSequenceInFraction",
+            "request": "launch",
+            "mainClass": "RecurringSequenceInFraction",
+            "projectName": "HashMapAndHeaps_afc803fb"
+        },
+        {
+            "type": "java",
             "name": "Launch maxNumberOfOcuurenceOfSubstring",
             "request": "launch",
             "mainClass": "slidingWindow.maxNumberOfOcuurenceOfSubstring",

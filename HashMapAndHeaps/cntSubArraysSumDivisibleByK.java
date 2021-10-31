@@ -1,3 +1,13 @@
+/*
+<------------------> s1
+we can express s1 as => kn + x
+
+<------> s2
+s2 = km + x;
+s2 - s1 = k(m - n)
+*/
+
+
 import java.util.*;
 class cntSubArraysSumDivisibleByK{
 	public static int subarraysDivByK(int[] a, int k) {

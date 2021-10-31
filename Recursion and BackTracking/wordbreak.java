@@ -17,6 +17,17 @@ public class wordbreak{
             }
         }   
     }
+    private boolean wb(String s, Set<String> dict) {
+        if (s.length() == 0) {
+            return true;
+        }
+        for (int i = 1; i <= s.length(); ++i) {
+            if (dict.contains(s.substring(0, i)) && wb(s.substring(i), dict)) {
+                return true;
+            }
+        }
+        return false;
+    }
     public List<String> wordBreak(String s, List<String> wordDict) {
         ans = new ArrayList<>();
         helper(s, "", wordDict);
