@@ -7,6 +7,23 @@ public class restoreIpAddress {
         if(Integer.parseInt(s) > 255) return false;
         return true;
     }
+
+    //cleaner code
+    static void helper2(int i, int p, String s, String cur, List<String> ans){
+        if(p > 4) return;
+
+        if(i == s.length()){
+            if(p == 4){
+                ans.add(cur.substring(0, cur.length() - 1));
+            }
+            return;
+        }
+        for(int j = 1; j <= 3; j++){
+            if(i + j <= s.length() && isValid(s.substring(i, i + j))){
+                helper2(i + j, p + 1, s, cur + s.substring(i, i + j) + ".", ans);        
+            }
+        }
+    }
     static void helper(int i, int p, String s, String cur, List<String> ans){
         if(p > 4) return;
         if(i == s.length()){

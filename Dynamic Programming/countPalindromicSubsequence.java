@@ -22,7 +22,7 @@ s3 =  _ a, ba
 s4 = a _ a, aba
 here we can observe that cnt of valid pailndrome in s1 => 1, s4 => 2 or we can say that s4 => s1 + 1
 total = s1 + s2 + s3 + s4
-    =  s1 + s2 + s3 + s1 + 1 
+      =  s1 + s2 + s3 + s1 + 1 
     = 1 + (s1 + s3) + (s1 + s2)
     = 1 + c1m + mc2; (from i $$ ii)
 */

@@ -1,6 +1,8 @@
 //leetcode 347
 import java.util.*;
 class topKFrequentElements {
+
+	// O(N)
 	public static int[] topKFrequent(int[] nums, int k) {
 		HashMap<Integer, Integer> map = new HashMap<>();
 
@@ -24,21 +26,21 @@ class topKFrequentElements {
 		}
 
 		int[] ans = new int[k];
-		int j = 0;
+		int p = 0;
 		for (int i = buckets.length - 1; i >= 0 && k > 0; i--) {
 			if (buckets[i] != null) {
-				for (int v : buckets[i]) {
-					ans[j] = v;
-					j++;
+				for (int j = 0; j < buckets[i].size() && k > 0; j++) {
+					ans[p] = buckets[i].get(j);
+					p++;
+					k--;
 				}
-				k -= buckets[i].size();
 			}
 		}
 		return ans;
 	}
 	public static void main(String[] args) {
-		int[] arr = {1};
-		int k = 1;
+		int[] arr = {1, 1, 1, 2, 3};
+		int k = 2;
 		int[] ans = topKFrequent(arr, k);
 		for (int i : ans) {
 			System.out.print(i + " ");

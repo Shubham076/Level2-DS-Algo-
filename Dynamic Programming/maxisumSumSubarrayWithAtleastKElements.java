@@ -28,7 +28,6 @@ public class maxisumSumSubarrayWithAtleastKElements {
         /*concept of sliding window
          calculating the sum of each window and including the contribution maximum sum before that 
          window
-
         */
         for(int i = k; i < arr.length; i++){
             sum += arr[i] - arr[i - k];

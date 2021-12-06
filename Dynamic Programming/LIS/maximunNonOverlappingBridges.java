@@ -14,7 +14,8 @@ public class maximunNonOverlappingBridges {
         public int compareTo(Bridge o){
             if(this.north != o.north){
             return this.north - o.north;
-            }else{
+            }
+            else{
                 return this.south - o.south;
             }
         }

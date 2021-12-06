@@ -1,5 +1,6 @@
 import java.util.*;
-// space complexity O(m *n) m are the strings stored in the queue
+// Time: O(L * n) space complexity O(m *n) m are the strings stored in the queue
+//L is the length of the maximum string
 class wordLadder {
     public static int ladderLength(String beginWord, String endWord, List<String> wordList) {
         HashSet<String> set  = new HashSet<>();

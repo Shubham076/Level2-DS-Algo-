@@ -1,4 +1,13 @@
-//leetcode 1041
+/* leetcode 1041
+On an infinite plane, a robot initially stands at (0, 0) and faces north.
+ The robot can receive one of three instructions:
+"G": go straight 1 unit;
+"L": turn 90 degrees to the left;
+"R": turn 90 degrees to the right.
+The robot performs the instructions given in order, and repeats them forever.
+Return true if and only if there exists a circle in the plane such that
+the robot never leaves the circle.
+*/
 class robotBoundedInCircle{
 	public static boolean isRobotBounded(String instructions) {
         int x = 0, y = 0, dir = 0;  //dir = 0 means north , 1 = east, 2 means south, 3 means west

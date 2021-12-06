@@ -14,7 +14,7 @@ public class merge2SortedArrays {
     static void sort(int[] arr){
         for(int i = 1; i < arr.length; i++){
             for(int j = i - 1; j >= 0; j--){
-                if(arr[j] > arr[i]){
+                if(arr[j] > arr[j + 1]){
                     swap(i, j, arr);
                 }
                 else break;

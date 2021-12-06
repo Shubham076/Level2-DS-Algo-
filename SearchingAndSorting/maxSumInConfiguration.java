@@ -7,21 +7,21 @@ only operation is allowed is you can rotate the array
 
 O(N) intuition
 arr = [a, b, c, d, e];
-     0  1  2  3  4
+       0  1  2  3  4
 after rotating the array by one array becomes
 arr' = [e, a, b, c, d]
  	   0  1  2  3  4
 
-s0 = a * 0 + b * 1 + c * 2 + d * 3 + e * 4;
+s0 = 0a + 1b + 2c + 3d + 4e;
 
 after rotation
-s1 = a * 1 + b * 2 + c * 3 + d * 4 + e * 0
+s1 = 1a + 2b + 3c + 4d + 0e
 
 there is a relation between s0 and s1
 s1 = s0 + (a + b + c + d + e) - n * e;
 
 so the general formula becomes 
-s(i + 1) = s(i) + (a + b + c + d + e - n) * arr[n - 1 - i];
+s(i + 1) = s(i) + (a + b + c + d + e ) n * arr[n - 1 - i];
 */
 import java.util.*;
 class maxSumInConfiguration{

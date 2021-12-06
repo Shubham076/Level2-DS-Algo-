@@ -20,7 +20,7 @@ class removeDuplicates2{
     			running = true;
     		}
 
-    		//if the above loop runs means the next of temp is not a unique element
+    		//if the above loop runs means the next of temp.next is not a unique element
     		//so change our potential unique to cur;
 
     		if(running) temp.next = cur;

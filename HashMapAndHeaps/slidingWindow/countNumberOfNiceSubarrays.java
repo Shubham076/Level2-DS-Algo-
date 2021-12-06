@@ -8,19 +8,20 @@ O(N)
 import java.util.*;
 class countNumberOfNiceSubarrays{
 	public static int findAtmostk1(int[] nums, int k){
-		HashMap<Integer, Integer> map = new HashMap<>();
-        int j = 0;
-        int cnt = 0;
-        for (int i = 0; i < nums.length; i++) {
-            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
-
-            while (map.size() > k) {
-                map.put(nums[j], map.get(nums[j]) - 1);
-                if(map.get(nums[j]) == 0) map.remove(nums[j]);
-                j++;
-            }
-			cnt += i - j + 1;
-        }
+		int cnt = 0;
+		int i = 0, co = 0;
+		for(int j = 0 ; j < nums.length; j++){
+			if(nums[j] % 2 == 1){
+				co++;
+			}
+			while(co > k){
+				if(nums[i] % 2 == 1){
+					co--;
+				}
+				i++;
+			}
+			cnt += j - i + 1;
+		}
         return cnt;
 	}
 	public static int findAtmostK2(int[] nums , int k) {

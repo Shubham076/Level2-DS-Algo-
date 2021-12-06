@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch shortestUnsortedSubarray",
+            "request": "launch",
+            "mainClass": "shortestUnsortedSubarray",
+            "projectName": "HashMapAndHeaps_afc803fb"
+        },
+        {
+            "type": "java",
             "name": "Launch pairWithGivenSumInSortedMatrix",
             "request": "launch",
             "mainClass": "pairWithGivenSumInSortedMatrix",

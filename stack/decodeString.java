@@ -22,12 +22,12 @@ public class decodeString {
                 st.push(temp);
             }
             else if(Character.isLetter(c)){
-                String str = "";
-                while(i < s.length() && Character.isLetter(s.charAt(i))){
-                    str += s.charAt(i);
-                    i++;
-                }
-                i--;
+                // String str = "";
+                // while(i < s.length() && Character.isLetter(s.charAt(i))){
+                //     str += s.charAt(i);
+                //     i++;
+                // }
+                // i--;
                 st.push(c + "");
             }
             else if(Character.isDigit(c)){

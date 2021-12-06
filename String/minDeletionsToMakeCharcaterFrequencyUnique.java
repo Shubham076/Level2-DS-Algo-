@@ -1,7 +1,11 @@
-//leetcode 1647
+/*
+leetcode 1647
+A string s is called good if there are no two different characters in s that have the same frequency.
+Given a string s, return the minimum number of characters you need to delete to make s good.
+*/
 import java.util.*;
 public class minDeletionsToMakeCharcaterFrequencyUnique {
-    public int minDeletions(String s) {
+    public static int minDeletions(String s) {
         HashSet<Integer> set = new HashSet<>();
         int[] freq = new int[26];
         for(int i = 0; i < s.length(); i++){
@@ -15,8 +19,12 @@ public class minDeletionsToMakeCharcaterFrequencyUnique {
                 freq[i]--;
                 ans++;
             }
-        }
-            
+        }            
         return ans;
+    }
+
+    public static void main(String[] args){
+        String a = "aabcc";
+        System.out.println(minDeletions(a));
     }
 }

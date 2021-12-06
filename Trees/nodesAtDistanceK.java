@@ -1,4 +1,4 @@
-//leetcode 863
+//leetcode 863  O(N) as we are visiting each node twice max
 import java.util.*;
 class nodesAtDistanceK {
 	public class TreeNode {

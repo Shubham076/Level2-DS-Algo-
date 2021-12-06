@@ -5,8 +5,7 @@ public class lexicographicallySmallestSubsequenceOfLengthk {
         String s = "bbcaab";
         int n = s.length();
         int k = 1;
-        Stack<Chara
-        cter> st = new Stack<>();
+        Stack<Character> st = new Stack<>();
         for(int i = 0; i < s.length(); i++){
             char c = s.charAt(i);
             if(st.size() == 0) st.push(c);

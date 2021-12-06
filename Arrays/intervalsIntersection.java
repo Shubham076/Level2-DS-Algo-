@@ -10,7 +10,7 @@ class intervalsIntersection {
 	// fs < se && ss < fe   
 	//intersecting part (start mein greater and end mein smaller)
 	public static int[][] intervalIntersection(int[][] firstList, int[][] secondList) {
-		int  i = 0;
+		int i = 0;
 		int j = 0;
 		List<int[]> ans = new ArrayList<>();
 		while(i < firstList.length && j < secondList.length){

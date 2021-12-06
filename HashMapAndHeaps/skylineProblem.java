@@ -3,15 +3,15 @@ leetcode 218
 as we have to find the starting point of each horizontal line in the boundary of the buildings or 
 we have to return the points when there is height change
 algorithm:
-create starting and the ending point of each rectangle in the list
-to differentiate between start and end we use signs =>  -ve height for start and positive height for end of rectangle
-now sort the point according to the x coordinnates.
-now travel one by one
-** create a priority queue which stores the current height we are travelling right now
-if start point is encounter put it in the priority queue(max);
-if end point is encounter remove the height from the height
-in this way at any time we have the height at which we are trvelling stored in the queue.
-and whenever there is a change in the height it means that is a valid point  of the skyline 
+    create starting and the ending point of each rectangle in the list
+    to differentiate between start and end we use signs =>  -ve height for start and positive height for end of rectangle
+    now sort the point according to the x coordinnates.
+    now travel one by one
+    ** create a priority queue which stores the current height we are travelling right now
+    if start point is encounter put it in the priority queue(max);
+    if end point is encounter remove the height from the height
+    in this way at any time we have the height at which we are trvelling stored in the queue.
+    and whenever there is a change in the height it means that is a valid point  of the skyline 
 */
 import java.util.*;
 public class skylineProblem {

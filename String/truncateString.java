@@ -13,7 +13,8 @@ class truncateString {
             char d = s.charAt(i);
             if (c == d) {
                 cnt++;
-            } else {
+            } 
+            else {
                 if (cnt != k) {
                     while (cnt-- > 0) {
                         ans.append(c);

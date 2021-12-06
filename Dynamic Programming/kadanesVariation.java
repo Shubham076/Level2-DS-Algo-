@@ -32,7 +32,6 @@ class kadanesVariation{
             if(ans > oans){
                 oans = ans;
             }
-
         }
         System.out.println(oans);
     }
