@@ -35,7 +35,8 @@ class sortedDLLToBSt {
 	public TreeNode sortedListToBST(TreeNode head) {
      	return construct(head);   
     }
-//O(N)
+    
+	//O(N)
     public static TreeNode construct(TreeNode head){
     	if(head == null || head.right == null) return head;
 

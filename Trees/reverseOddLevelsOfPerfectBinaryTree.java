@@ -76,6 +76,7 @@ public class reverseOddLevelsOfPerfectBinaryTree {
         }
 
         if(l % 2 == 0){
+            //means left and right child at odd level
             int temp = left.data;
             left.data = right.data;
             right.data = temp;
