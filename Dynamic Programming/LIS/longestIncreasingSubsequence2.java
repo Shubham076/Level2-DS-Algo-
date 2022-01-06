@@ -18,6 +18,7 @@ otherwise what replace the immediate big with that no so to increase the range o
 
 as in above example if we dont replace 5 with 3 then seq becomes [2, 5] which is wrong  
 */ 
+import java.util.*;
 public class longestIncreasingSubsequence2 {
     public static int lis(int[] arr) {
         List<Integer> seq = new ArrayList<>();

@@ -1,6 +1,12 @@
 /*
 https://www.geeksforgeeks.org/temple-offerings/
-Consider a devotee wishing to give offerings to temples along with a mountain range. The temples are located in a row at different heights. Each temple should receive at least one offer. If two adjacent temples are at different altitudes, then the temple that is higher up should receive more offerings than the one that is lower down. If two adjacent temples are at the same height, then their offerings relative to each other do not matter. Given the number of temples and the heights of the temples in order, find the minimum number of offerings to bring.
+
+Q: Consider a devotee wishing to give offerings to temples along with a mountain range. 
+The temples are located in a row at different heights. Each temple should receive at least one offer. 
+If two adjacent temples are at different altitudes, then the temple that is higher up should receive more 
+offerings than the one that is lower down. If two adjacent temples are at the same height, then their offerings
+ relative to each other do not matter. Given the number of temples and the heights of the temples in order,
+  find the minimum number of offerings to bring.
 
 */
 public class templeOffering {

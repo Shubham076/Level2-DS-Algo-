@@ -10,7 +10,7 @@ c5 = ya phir 2 transaction forth day and 3 rd between 4th and 5th day
 so ans = max(c1, c2, c3, c4, c5);
 */
 import java.util.Scanner;
-public class buyAndSellStockKTransactions {
+class buyAndSellStockKTransactions {
     public static void main(String[] args) {
         int[] arr = {10, 22, 5, 75, 65, 80};
         int n = arr.length;

@@ -2,7 +2,8 @@
 leetcode 97
 Given strings s1, s2, and s3, find whether s3 is formed by an interleaving of s1 and s2.
 
-An interleaving of two strings s and t is a configuration where they are divided into non-empty substrings such that:
+An interleaving of two strings s and t is a configuration where they are divided into non-empty
+substrings such that:
 
 s = s1 + s2 + ... + sn
 t = t1 + t2 + ... + tm
@@ -55,7 +56,7 @@ public class stringInterleaving {
     }
     public static boolean isInterleave(String s1, String s2, String s3) {
         if(s1.length() + s2.length() != s3.length()) return false;
-        Boolean[][] dp = new Boolean[s1.length() + 1][s2.length() + 1];
+        Boolean[][] dp = new Boolean[s1.length()][s2.length()];
         return solve2(s1, s2, s3, 0, 0, 0, dp);   
     }
 
