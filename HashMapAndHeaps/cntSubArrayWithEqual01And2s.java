@@ -8,7 +8,7 @@ class cntSubArrayWithEqual01And2s{
 		int del0 = oc - zc;
 		int del1 = tc - oc; 
 		String key = del0 + "#" + del1;
-		map.put(key, 0);
+		map.put(key, 1);
 		int ans = 0;
 		for (int i = 0; i < nums.length; i++) {
 			if (nums[i] == 0) zc++;

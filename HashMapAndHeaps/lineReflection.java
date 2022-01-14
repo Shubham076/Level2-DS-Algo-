@@ -34,6 +34,8 @@ public class lineReflection {
             long x1 = p[0];
             long y = p[1];
             long hash1 = x1 * 10_00_00_001 + y;
+
+            //means already processed
             if(!set.contains(hash1)){
                 continue;
             }

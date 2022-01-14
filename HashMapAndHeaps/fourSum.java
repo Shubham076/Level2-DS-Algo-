@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 //Time complexity O(N ^ 3)
 class fourSum {
     public static void main(String[] args) {

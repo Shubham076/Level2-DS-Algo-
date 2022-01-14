@@ -1,4 +1,8 @@
-//leetcode 1358
+/*
+leetcode 1358
+Given a string s consisting only of characters a, b and c.
+Return the number of substrings containing at least one occurrence of all these characters a, b and c.
+*/
 package slidingWindow;
 public class countOfSubstringContainingall3characters {
     public static int numberOfSubstrings(String s) {

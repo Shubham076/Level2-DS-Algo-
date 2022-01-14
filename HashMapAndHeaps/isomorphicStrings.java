@@ -12,7 +12,7 @@ public class isomorphicStrings {
             return;
         }
         HashMap<Character, Character> map1 = new HashMap<>(); //stores the mapping
-        HashMap<Character, Boolean> map2 = new HashMap<>();  //stores whether the char of t is used or not
+        HashSet<Character> set = new HashSet<>();  //stores whether the char of t is used or not
         
         for(int i = 0; i < s.length(); i++){
             char c = s.charAt(i);
@@ -26,15 +26,14 @@ public class isomorphicStrings {
                 }
             }
             else{
-                if(map2.containsKey(d) && map2.get(d)){
+                if(set.contains(d)){
                     return;
                 }
                 else{
                     map1.put(c , d);
-                    map2.put(d , true);
+                    set.add(d);
                 }
             }
-
         }
         System.out.println(true);
     }
