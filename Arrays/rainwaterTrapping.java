@@ -24,6 +24,7 @@ class rainwaterTrapping {
 		return water;
 	}
 
+	//O(n) o(1)
 	public int maxArea2(int[] height){
 		int i = 0;
 		int j = height.length - 1;

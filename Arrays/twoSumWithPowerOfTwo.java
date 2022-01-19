@@ -2,7 +2,8 @@ import java.util.HashMap;
 
 /*
 https://binarysearch.com/problems/Pair-Sums-to-Power-of-Two
-You are given a list of integers nums. Return the number of pairs i < j such that nums[i] + nums[j] is equal to 2 ** k for some 0 ≤ k.
+You are given a list of integers nums. 
+Return the number of pairs i < j such that nums[i] + nums[j] is equal to 2 ** k for some 0 ≤ k.
 O(32 * N)
 */
 public class twoSumWithPowerOfTwo {

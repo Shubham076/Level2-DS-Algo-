@@ -53,8 +53,6 @@ class buyAndSellStock2Transactions{
                 op = dpl[i] + dpr[i];
             }
         }
-
         System.out.println(op);
-
     }
 }

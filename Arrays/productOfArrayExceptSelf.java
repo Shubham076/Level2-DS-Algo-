@@ -8,10 +8,40 @@ public class productOfArrayExceptSelf {
         }
 
         int prod = 1;
-        for(int i = nums.length - 1; i >= 0; i--){
+        for (int i = nums.length - 1; i >= 0; i--) {
             res[i] = res[i] * prod;
             prod *= nums[i];
         }
+        return res;
+    }
+
+    public int[] productExceptSelf2(int[] nums) {
+        int[] res = new int[nums.length];
+        int prod = 1;
+        int zeroCount = 0;
+        for (int i : nums) {
+            if (i == 0) {
+                zeroCount++;
+                continue;
+            } else {
+                prod *= i;
+            }
+        }
+
+        for (int i = 0; i < nums.length; i++) {
+            if (zeroCount == 0)
+                res[i] = prod / nums[i];
+
+            else if (zeroCount == 1) {
+                if (nums[i] == 0)
+                    res[i] = prod;
+                else
+                    res[i] = 0;
+            } else {
+                res[i] = 0;
+            }
+        }
+
         return res;
     }
 
