@@ -5,8 +5,6 @@ class heaters{
 		int js = -1; //just small
 		int jl = -1; //just large
 	}
-
-
 //calculating ceil and floor value in the array
 	public static Pair helper(int[] arr, int k){
 		Pair p = new Pair();
@@ -44,5 +42,4 @@ class heaters{
         }
         return ans;
     }
-
 }

@@ -23,7 +23,7 @@ class randomPickWithBlacklist {
 		for (int val : blacklist) {
 			map.put(val, -1);
 		}
-		int j = n - 1;
+		int j = n - 1; //0 based
 		for (int val : blacklist) {
 			//if val is already present in the last we dont need to find a mapping
 			//if val < limit means we need to provide a mapping

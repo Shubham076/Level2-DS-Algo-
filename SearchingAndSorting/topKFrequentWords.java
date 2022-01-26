@@ -1,4 +1,5 @@
 //leetcode 692
+import java.util.*;
 class topKFrequentWords{
 	public List<String> topKFrequent(String[] words, int k) {
      	HashMap<String, Integer> map = new HashMap<>();
@@ -16,7 +17,6 @@ class topKFrequentWords{
      			return map.get(b) - map.get(a);
      		}
      	});
-
      	return ans.subList(0, k);  
     }
 }

@@ -1,7 +1,7 @@
-//leetcode 727 lintocode 857
 /*
-Given strings S and T, find the minimum (contiguous) substring W of S, so that T is a subsequence of W.
-
+leetcode 727 lintocode 857
+Given strings S and T, find the minimum (contiguous) substring W of S,
+ so that T is a subsequence of W.
 If there is no such window in S that covers all characters in T, return the empty string "". If there are multiple such minimum-length windows, return the one with the smallest starting index.
 Input：S = "abcdebdde"， T = "bde"
 Output："bcde"
@@ -47,7 +47,6 @@ public class minmumWindowSubsequence {
                     //now we have found one start searching for new one
                     j = 0;
                     i = start;
-                    
                     //compete cur ans with the global min
                     if(end - start < min){
                         min = end - start;

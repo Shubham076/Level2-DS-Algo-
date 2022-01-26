@@ -17,7 +17,7 @@ class noOfIslands2 {
 	}
 	static int[] par;
 	static int[] rank;
-	static int[][] dirs = {{0, 1}, {0, -1}, {1, 0}, { -1, 0}};
+	static int[][] dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
 	static int cnt;
 	public static int find(int x) {
 		if (par[x] == x) {

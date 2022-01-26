@@ -50,6 +50,7 @@ class articulationPoints{
 		int no_of_child = 0;
 
 		for(int child : g.get(cur)){
+			//unvisited
 			if(dt[child] == 0){
 				dfs(child, cur, dt, lt, t, g);
 				lt[cur] = Math.min(lt[cur] , lt[child]);

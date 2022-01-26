@@ -1,14 +1,14 @@
 //leetcode 179
 import java.util.*;
 class largestNumber{
-	public String largestNumber(int[] nums) {
+	public static String largestNumber(int[] nums) {
         String[] a = new String[nums.length];
-        for(int i = 0; i < nums.length; i++){
-        	a[i] = nums[i] + "";
-        }
+		for(int i = 0; i < nums.length; i++){
+			a[i] = nums[i] + "";
+		}
         Arrays.sort(a, (p, q) -> {
-        	long n1 = Long.parseLong(p + q);
-        	long n2 = Long.parseLong(q + p);
+        	long n1 = Long.parseLong(p + q);  //102
+        	long n2 = Long.parseLong(q + p);  //210
         	if(n1 > n2){
         		return 1;
         	}
@@ -26,4 +26,8 @@ class largestNumber{
         else
         	return ans;
     }
+
+	public static void main(String[] args){
+		System.out.println(largestNumber(new int[]{10, 2}));
+	}
 }

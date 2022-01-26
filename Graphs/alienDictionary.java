@@ -2,7 +2,7 @@
 /*
 application of topological sort
 Given a sorted dictionary (array of words) of an alien language, find order of characters in the language.
-order dosent exist if graph contains cycle 
+order doesn't exist if graph contains cycle 
 */
 import java.util.*;
 class alienDictionary{

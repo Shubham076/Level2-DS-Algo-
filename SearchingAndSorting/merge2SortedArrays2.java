@@ -35,11 +35,18 @@ public class merge2SortedArrays2 {
         int i, j;
         for (int gap = gap(N); gap >= 1; gap = gap(N)) {
             // comparing with gap in first array
+            System.out.println("gap: " + gap);
             for (i = 0; i + gap < n; i++) {
                 if (arr1[i] > arr1[i + gap]){
                     swap(i, i + gap, arr1);
                 }
             }
+
+            /*
+            eg a = {1  2  3  4}   b = {1   2   3   4}
+            gap = 2
+            when i is at 2 index i + g = 4;  n = 4;
+            */
 
             // comparing in both arrays
             for (j = i + gap - n; i < n && j < m; i++, j++) {
@@ -53,18 +60,17 @@ public class merge2SortedArrays2 {
                 for (j = 0; j + gap < m; j++) {
                     if (arr2[j] > arr2[j + gap]){
                         swap(j, j + gap, arr2);
-                    }
-                    
+                    } 
                 }
             }
-
+            print(arr1, arr2);
             N /= 2;
         }
     }
 
     public static void main(String[] args) {
-        int[] arr1 = { 1, 2, 4, 5};
-        int[] arr2 = { 2, 3, 4 };
+        int[] arr1 = { 1, 2, 3, 4, 5};
+        int[] arr2 = { 2, 3, 4, 5, 6};
         mergeAndSort(arr1, arr2);
         print(arr1, arr2);
     }

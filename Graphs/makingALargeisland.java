@@ -19,7 +19,8 @@ class makingALargeisland {
 			if (size[lx] >= size[ly]) {
 				par[ly] = lx;
 				size[lx] += size[ly];
-			} else if (size[ly] > size[lx]) {
+			}
+			 else if (size[ly] > size[lx]) {
 				par[lx] = ly;
 				size[ly] += size[lx];
 			}

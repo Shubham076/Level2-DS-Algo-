@@ -37,4 +37,5 @@ class medianOf2SortedArrays {
 		}
 
 		return median;
+		}
 	}

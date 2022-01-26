@@ -9,7 +9,8 @@ class validSudoku {
 				char n = board[i][j];
 				if (n != '.'){
 					String block = (i / 3 * 3) + "-" + (j / 3 * 3);
-					if(!seen.add(n + "in row" + i) || !seen.add(n + "in col" + j) || !seen.add(n + "in block" + block)){
+					if(!seen.add(n + "in row" + i) || !seen.add(n + "in col" + j) ||
+					 !seen.add(n + "in block" + block)){
 						return false;
 					}
 				}

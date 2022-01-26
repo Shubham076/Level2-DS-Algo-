@@ -1,5 +1,7 @@
 /*
-You are given two strings A and B that are made of lowercase English alphabets. Find the number of different pairs ((i,j), (k,l)) such that the substrings A[i…j] and B[k…l] are equal and the value of j-i+1 is minimum.
+You are given two strings A and B that are made of lowercase English alphabets.
+Find the number of different pairs ((i,j), (k,l)) such that the substrings A[i…j] and B[k…l] are equal
+and the value of j-i+1 is minimum.
 min value of j-i+1 == 1;
 */
 public class smallestCommonSubstrng {
