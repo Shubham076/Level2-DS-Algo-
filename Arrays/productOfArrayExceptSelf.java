@@ -15,7 +15,7 @@ public class productOfArrayExceptSelf {
         return res;
     }
 
-    public int[] productExceptSelf2(int[] nums) {
+    public static int[] productExceptSelf2(int[] nums) {
         int[] res = new int[nums.length];
         int prod = 1;
         int zeroCount = 0;
@@ -35,19 +35,14 @@ public class productOfArrayExceptSelf {
             else if (zeroCount == 1) {
                 if (nums[i] == 0)
                     res[i] = prod;
-                else
-                    res[i] = 0;
-            } else {
-                res[i] = 0;
             }
         }
-
         return res;
     }
 
     public static void main(String[] args) {
         int[] nums = { -1, 1, 0, -3, 3 };
-        int[] ans = productExceptSelf(nums);
+        int[] ans = productExceptSelf2(nums);
         for (int i : ans) {
             System.out.print(i + " ");
         }

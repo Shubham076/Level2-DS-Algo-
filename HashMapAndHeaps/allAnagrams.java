@@ -14,7 +14,6 @@ public class allAnagrams {
             char c = p.charAt(i);
             pat.put(c, pat.getOrDefault(c, 0) + 1);
         }
-
         for(int i = 0; i < p.length() - 1; i++){
             char c = s.charAt(i);
             str.put(c, str.getOrDefault(c, 0) + 1);

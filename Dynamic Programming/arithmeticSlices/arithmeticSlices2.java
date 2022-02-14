@@ -8,7 +8,7 @@ import java.util.*;
 class arithmeticSlices2{
 	public static int numberOfArithmeticSlices(int[] nums) {
         int n = nums.length;
-        HashMap<Long, Long>[] dp = new HashMap[n];
+        HashMap<Long, Long>[] dp = new HashMap[n]; //commons difference vs cnt of aps of length >=2 
         for(int i = 0; i < n; i++){
         	dp[i] = new HashMap<>();
         }

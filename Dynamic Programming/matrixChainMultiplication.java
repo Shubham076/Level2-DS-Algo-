@@ -1,45 +1,47 @@
-
-/*
-	return the min number of multiplications needed
-*/
+//given two strings return count of p anagrams in string s  leetcode 438
 import java.util.*;
-class matrixChainMultiplication{
-	public static void main(String[] args){
-		long start = System.nanoTime();
-		int[] arr = {10, 20, 30, 40, 50};
-		int[][] dp = new int[arr.length - 1][arr.length - 1];
-		for(int g = 0; g < dp.length; g++){
-			for(int i = 0, j = g; j < dp.length; j++, i++){
-				if(g == 0){
-					dp[i][j] = 0;
-				}
-				else if(g == 1){
-					dp[i][j] = arr[i] * arr[j] * arr[j + 1];
-				}
-				else{
-					int min = Integer.MAX_VALUE;
-					for(int k = i; k < j; k++){
-						int lc = dp[i][k];
-						int rc = dp[k + 1][j];
-						int m = arr[i] * arr[k + 1] * arr[j + 1];
-						int total = lc + rc + m;
-						if(total < min){
-							min = total;
-						}
-						dp[i][j] = min;
-					}
-				}
-			}
-		}
+public class allAnagrams {
+    public static void main(String[] args){
+        Scanner scn = new Scanner(System.in);
+        String s = scn.nextLine();
+        String p = scn.nextLine();
 
-		for(int i = 0; i < dp.length; i++){
-			for(int j = 0; j < dp.length; j++){
-				System.out.format(" % 7d ",dp[i][j]);
-			}
-			System.out.println();
-		}
-		System.out.println(dp[0][dp.length - 1]);
-		long end = System.nanoTime();
-		System.out.println("Execution Time: " + (end - start) / 1000000 + "ms");	
-	}
+        
+        HashMap<Character, Integer> str = new HashMap<>();
+        HashMap<Character, Integer> pat = new HashMap<>();
+        ArrayList<Integer> ans = new ArrayList<>();
+
+        for(int i = 0; i < p.length(); i++){
+            char c = p.charAt(i);
+            pat.put(c, pat.getOrDefault(c, 0) + 1);
+        }
+        double x = 2.2;
+        for(int i = 0; i < p.length() - 1; i++){
+            char c = s.charAt(i);
+            str.put(c, str.getOrDefault(c, 0) + 1);
+        }
+
+        int j = 0;
+        int count = 0;
+        for(int i = p.length() - 1; i < s.length(); i++){
+            char d = s.charAt(i);
+            str.put(d , str.getOrDefault(d, 0) + 1);
+
+            if(pat.equals(str)){
+                count++;
+                ans.add((j));
+            }
+            char c = s.charAt(j);
+            int val = str.get(c);
+            if(val > 1){
+                str.put(c, val - 1);
+            }
+            else{
+                str.remove(c);
+            }
+            j++;
+        }
+
+        System.out.println(ans);
+    } 
 }

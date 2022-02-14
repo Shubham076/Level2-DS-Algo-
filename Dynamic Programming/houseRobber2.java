@@ -1,5 +1,7 @@
 /* leetcode 213
-Since you cannot rob both the first and last house, just create two separate vectors, one excluding the first house, and another excluding the last house. The best solution generated from these two vectors using the original House Robber DP algorithm is the optimal one.
+Since you cannot rob both the first and last house, just create two separate vectors,
+one excluding the first house, and another excluding the last house. The best solution
+generated from these two vectors using the original House Robber DP algorithm is the optimal one.
 O(N) and O(1) space
 */
 public class houseRobber2 {

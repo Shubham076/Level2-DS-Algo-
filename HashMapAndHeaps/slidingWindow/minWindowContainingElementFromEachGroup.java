@@ -5,8 +5,8 @@ g2 - 11 -15
 g3 - 16-22
 g4 - 23-34
 
-and a sequence of numbers. You have to find the length of minimum window containing element from every group.
-I had to do this without using map.
+and a sequence of numbers. You have to find the length of minimum window containing element from 
+every group. I had to do this without using map.
 for eg. 9, 5, 3, 12, 17, 25, 27
 Ans - 4
 

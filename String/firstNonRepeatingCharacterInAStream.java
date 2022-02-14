@@ -43,20 +43,20 @@ public class firstNonRepeatingCharacterInAStream {
         }
 
         Node head() {
-            if(size > 0)
+            if (size > 0)
                 return head.next;
             else return null;
         }
 
-        void display(){
-           for(Node temp = head; temp != null; temp = temp.next){
+        void display() {
+            for (Node temp = head; temp != null; temp = temp.next) {
                 System.out.print((char)temp.c + " ");
             }
             System.out.println();
-    }
+        }
     }
 
-    
+
     static void solve2(String s) {
         boolean[] rep = new boolean[255]; // rep[i] = true if character repeated twice
         Node[] add = new Node[255];      // stores the address of each node
@@ -69,8 +69,7 @@ public class firstNonRepeatingCharacterInAStream {
                 if (add[c] == null) {
                     add[c] = new Node(c);
                     l.add(add[c]);
-                } 
-                else {
+                } else {
                     //character is seen for the second time
                     l.remove(add[c]);
                     add[c] = null;
@@ -78,7 +77,7 @@ public class firstNonRepeatingCharacterInAStream {
                 }
             }
             Node n = l.head();
-            if(n == null)
+            if (n == null)
                 System.out.print(" - ");
             else System.out.print((char)n.c + " ");
         }

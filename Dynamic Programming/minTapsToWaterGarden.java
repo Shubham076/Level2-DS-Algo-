@@ -18,7 +18,7 @@ public class minTapsToWaterGarden {
     <----------------------->
      -3  -2  -1  0  1  2  3 
      ranges[0] = 0 means we can cover area of (0, 0)
-     ranges[1] = 1 means we can cover area of (1, 1)
+     ranges[1] = 0 means we can cover area of (1, 1)
      so answer would be -1 as we cant cover the area between [0, 1]
 
      but in below approach if we take 1 + dp[left - 1]

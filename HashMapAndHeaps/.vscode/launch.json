@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch minimumWindowSubstring",
+            "request": "launch",
+            "mainClass": "minimumWindowSubstring",
+            "projectName": "HashMapAndHeaps_a99df7fb"
+        },
+        {
+            "type": "java",
             "name": "Launch shortestUnsortedSubarray",
             "request": "launch",
             "mainClass": "shortestUnsortedSubarray",

@@ -13,7 +13,7 @@ class flattenBinaryTreeToLinkedList{
 		}
     }
 
-    //O(N)
+    //O(N) pre order
     public TreeNode flatten(TreeNode root) {
         if(root == null) return null;
         TreeNode lt = flatten(root.left);  //left tail

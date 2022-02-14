@@ -1,4 +1,4 @@
-// find the max of sum of smalllest and second smallest in all the subarrays
+// find the max of sum of smallest and second smallest in all the subarrays
 /*
 let us consider all the subarrays of sze >= 2
                        min                smin              sum

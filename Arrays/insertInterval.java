@@ -26,7 +26,7 @@ class insertInterval {
 		//case for overlapping interval
 		//fs = first start  fe = first start   ss = second start se = second end
 		// fs--------fe                                       fs--------fe
-		        // ss----------se          // ss----------se
+		        // ss----------se                // ss----------se
 
 		// fs < se && ss < fe
 

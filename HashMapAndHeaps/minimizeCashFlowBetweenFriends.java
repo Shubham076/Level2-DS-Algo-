@@ -18,7 +18,7 @@ class minimizeCashFlowBetweenFriends {
 		//arr[i][j] representing a flow of cash
 		Queue<Pair> debit = new PriorityQueue<>(Collections.reverseOrder());
 		Queue<Pair> credit = new PriorityQueue<>(Collections.reverseOrder());
-		int[] net = new int[10]; //net amount
+		int[] net = new int[10]; //net amount 10 is max cnt of friends assumption
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr[0].length; j++) {
 				if (arr[i][j] != 0) {

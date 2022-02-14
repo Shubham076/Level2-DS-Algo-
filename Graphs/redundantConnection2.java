@@ -3,7 +3,7 @@ leetcode 685
 
 cases3 
 1 the graph only contains cycle then apply dsu to find the redundant edge
-2 the graph if one node have 2 parents means we one node have a indegree of 2
+2 if one node have 2 parents means we one node have a indegree of 2
 so blacklist the edge that is making the indegree 2 and check if cycle is not there means blacklisted edge is the answer
 
 3 the graph has cycle and a node has indegree of 2
