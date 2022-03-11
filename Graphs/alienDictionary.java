@@ -35,7 +35,7 @@ class alienDictionary{
 		}
 
 		for(int i = 0; i < dict.length - 1; i++){
-			String word1 = dict[0];
+			String word1 = dict[i];
 			String word2 = dict[i + 1];
 			int len = Math.min(word1.length(), word2.length());
 			for(int k = 0; k < len; k++){
@@ -45,6 +45,7 @@ class alienDictionary{
 				if(c1 != c2){
 					//directed edge from c1 -> c2
 					// as dictionary is sorted we can say in lexicograhical order c1 comes first than c2
+					System.out.println("Not equal " + c1 + " " + c2);
 					addEdge(c1, c2);
 					break;
 				}
@@ -58,6 +59,7 @@ class alienDictionary{
 				q.add(c);
 			}
 		}
+		System.out.println(indeg);
 		int cnt = 0;
 		String order = "";
 		while(q.size() > 0){

@@ -18,6 +18,7 @@ public class minStepsToMakePilesEqualHeight {
         Integer[] arr = {1, 1, 2, 2, 2, 3, 3, 3, 4, 4};
         Arrays.sort(arr, Collections.reverseOrder());
         int cnt = 0;
+        // {4,4,3,3,2,2,1}
         for(int i = 1; i < arr.length; i++){
             if(arr[i] < arr[i - 1]){
                 cnt += i;

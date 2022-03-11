@@ -29,7 +29,7 @@ public class snakesAndLadders {
 
                     if(list.get(ni) != -1){
                         //means a ladder or snake
-                        ni = list.get(ni) - 1;
+                        ni = list.get(ni) - 1;  //0 based indexing
                     }
 
                     if(!visited.contains(ni)){

@@ -12,13 +12,15 @@ class knightsProbability{
         for(int m = 1; m <= k; m++){
         	for(int i = 0; i < n; i++){
         		for(int j = 0; j < n; j++){
-        			int ni = 0, nj = 0;
-        			for(int[] mv : moves){
-        				ni = i + mv[0];
-        				nj = j + mv[1];
-        				if(isValid(ni, nj, n)){
-        					next[ni][nj] += cur[i][j] / 8.0;
-        				}
+        			if(cur[i][j] != 0){
+	        			int ni = 0, nj = 0;
+	        			for(int[] mv : moves){
+	        				ni = i + mv[0];
+	        				nj = j + mv[1];
+	        				if(isValid(ni, nj, n)){
+	        					next[ni][nj] += cur[i][j] / 8.0;
+	        				}
+	        			}
         			}
         		}
         	}

@@ -9,8 +9,8 @@ a binary tree can be made upside down in following ways:
   it is guaranteed that every node in the tree have either zero or two child
 
   eg =>                1               =>      2
-                    /   \                    /  \
-                   2    3                   3    1
+                     /   \                    /  \
+                     2    3                   3    1
   
   Algorithm:
     this can be solved by using simple dfs call
