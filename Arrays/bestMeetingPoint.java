@@ -8,7 +8,7 @@ class bestMeetingPoint {
 	public static int minTotalDistance(int[][] grid) {
 		// Write your code here
 		ArrayList<Integer> x = new ArrayList<>();   //travelling across columns
-		ArrayList<Integer> y = new ArrayList<>();   // trvaelling across rows
+		ArrayList<Integer> y = new ArrayList<>();   // travelling across rows
 
 		//travelling in a row
 		for(int i = 0; i < grid.length; i++){

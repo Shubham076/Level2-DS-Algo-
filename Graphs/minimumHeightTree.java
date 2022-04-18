@@ -26,7 +26,7 @@ class minimumHeightTree{
         	indeg[d]++;
         }
 
-		//add in the queue whose indegree is 0;
+		//add in the queue whose indegree is 1;
 		for(int i = 0; i < n; i++){
 
 			//addding all the leaf nodes as leaf is the only vertex having degree one

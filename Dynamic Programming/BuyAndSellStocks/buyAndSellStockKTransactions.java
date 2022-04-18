@@ -12,7 +12,7 @@ so ans = max(c1, c2, c3, c4, c5);
 import java.util.Scanner;
 class buyAndSellStockKTransactions {
     public static void main(String[] args) {
-        int[] arr = {10, 22, 5, 75, 65, 80};
+        int[] arr = {5, 11, 30, 50, 60, 90};
         int n = arr.length;
         int k = 2; //represents transactions
         int[][] dp = new int[k + 1][arr.length];

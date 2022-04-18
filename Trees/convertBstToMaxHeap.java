@@ -51,6 +51,13 @@ class convertBstToMaxHeap{
 		convertToMaxHeap(root.right);
 		root.data = list.get(i++);
 	}
+
+	static void convertToMinHeap(Node root){
+		root.data = list.get(i++);
+		if(root == null) return;
+		convertToMaxHeap(root.left);
+		convertToMaxHeap(root.right);
+	}
 	static ArrayList<Integer> list;
 	static int i;
 	public static void main(String[] args){

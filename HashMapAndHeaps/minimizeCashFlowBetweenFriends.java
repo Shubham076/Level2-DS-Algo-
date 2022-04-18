@@ -2,8 +2,8 @@
 import java.util.*;
 class minimizeCashFlowBetweenFriends {
 	static class Pair implements Comparable<Pair> {
-		int n;
-		int a;
+		int n; //person
+		int a; //amount
 		Pair(int n, int a) {
 			this.n = n;
 			this.a = a;

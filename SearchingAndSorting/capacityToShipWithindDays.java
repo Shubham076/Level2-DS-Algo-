@@ -11,7 +11,7 @@ public class capacityToShipWithindDays {
 
         while (low <= high) {
             int mid = low + (high - low) / 2;
-            int rDays = requiredDays(D, weights, mid); // required days
+            int rDays = requiredDays(weights, mid); // required days
 
             if (rDays <= D) {
                 high = mid - 1;
@@ -24,7 +24,7 @@ public class capacityToShipWithindDays {
         return ans;
     }
 
-    public static int requiredDays(int d, int[] arr, int capacity) {
+    public static int requiredDays(int[] arr, int capacity) {
         int csum = 0;
         int day = 1;
         for (int v : arr) {

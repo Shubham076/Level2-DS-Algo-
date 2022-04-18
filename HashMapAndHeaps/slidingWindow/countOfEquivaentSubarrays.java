@@ -1,4 +1,4 @@
-//count the number of subarrays having k unique elements
+//count the number of subarrays having atleast k unique elements
 import java.util.*;
 class countOfEquivaentSubarrays{
 	static int method1(int[] nums, int k){

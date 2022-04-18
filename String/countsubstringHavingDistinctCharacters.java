@@ -1,7 +1,7 @@
 /*
 https://www.geeksforgeeks.org/count-of-substrings-having-all-distinct-characters/
 */
-public class countsunstringHavingDistinctCharacters {
+public class countsubstringHavingDistinctCharacters {
     public static void main(String[] args){
         String s = "gfg";
         int[] cnt = new int[26];

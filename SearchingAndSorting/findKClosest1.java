@@ -1,43 +1,25 @@
+//leetcode 658
 import java.util.*;
 public class findKClosest1 {
-    // Time complexity nlogk + klogk
-    static class Pair  implements Comparable<Pair>{
-        int val;
-        int gap;
-        public Pair(int val, int gap){
-            this.val = val;
-            this.gap = gap;
-        }
-
-        @Override
-        public int compareTo(Pair other){
-            if(this.gap == other.gap){
-                return this.val - other.val;
+    // Time complexity O(n) + klogk
+    public List<Integer> findClosestElements(int[] arr, int k, int x) {
+        LinkedList<Integer> list = new LinkedList<>();
+        
+        for(int v: arr){
+            if(list.size() < k){
+                list.add(v);
+                
             }
             else{
-                return this.gap - other.gap;
+                if(Math.abs(list.peekFirst() - x) > Math.abs(v - x)){
+                    list.removeFirst();
+                    list.add(v);
+                }   
             }
         }
-    }
-    public static List<Integer> findClosestElements(int[] arr, int k, int x) {
-        ArrayList<Integer> ans = new ArrayList<>();
-        PriorityQueue<Pair> p = new PriorityQueue<>(Collections.reverseOrder());
-        for(int i : arr){
-            if(p.size() < k)
-                p.add(new Pair(i, Math.abs(i - x)));
-            else{
-                if(p.peek().gap > Math.abs(i - x)){
-                    p.remove();
-                    p.add(new Pair(i, Math.abs(i - x)));
-                }
-        }
-
-        while(p.size() > 0){
-            ans.add(p.remove().val);
-        }
-
-        Collections.sort(ans);
-        return ans;
+        
+        Collections.sort(list);
+        return list;
     }
     public static void main(String[] args) {
 		int[] arr = {0, 0, 1, 2, 3, 3, 4, 7, 7, 8};

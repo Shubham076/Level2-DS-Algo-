@@ -22,7 +22,6 @@ class Solution {
                 }
                 else{
                     hi = mid - 1;
-                    
                 }
             }
         }

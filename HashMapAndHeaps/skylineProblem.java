@@ -16,8 +16,8 @@ algorithm:
 import java.util.*;
 public class skylineProblem {
     static class Pair{
-        int x;
-        int h;
+        int x; //x coordinate
+        int h; //height
         Pair(int x, int h){
             this.x = x;
             this.h = h;

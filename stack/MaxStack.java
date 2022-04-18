@@ -44,7 +44,7 @@ class MaxStack {
 
 //o(n)
     public int popMax() {
-        int tbr = max.peek();
+        int tbr = max.peek(); //to be removed
         Stack<Integer> buffer = new Stack<>();
         while (s.peek() != tbr) {
             buffer.push(pop());

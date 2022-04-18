@@ -3,7 +3,7 @@ Given a sorted array in which each element is repeated twice except one element
 whose frequency is thrice. Find the element whose frequency is thrice. Expected time complexity O(logn) and space O(1)
 input [4,4,5,5,5,6,6,7,7,8,8] output = 5
 */
-class findElementInSortedArray {
+class ElementAppearThriceInSortedArray {
     static int binarySearch(int arr[], int n) {
         // if array is even size that is not possible as it is given in ques all
         // elements apeear twice except once

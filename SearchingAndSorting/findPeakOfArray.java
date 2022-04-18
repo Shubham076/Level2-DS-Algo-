@@ -7,10 +7,9 @@ if mid > mid + 1 means peak lies in the left;
 otherwise right
 */
 public class findPeakOfArray {
-    public static void main(String[] args){
-        int[] arr = {10, 20, 15, 2, 23, 90, 67};
-        int n = arr.length;
 
+    //el that is greater than left and right elements
+    static int peak(int[] arr, int n) {
         int l = 0, r = n - 1;
         while (l < r) {
             int mid = l + (r - l) / 2;
@@ -19,6 +18,25 @@ public class findPeakOfArray {
             else
                 l = mid + 1;
         }
-        System.out.println(arr[l]);
+        return arr[l];
+    }
+
+    //el that is smaller than left and right elements
+    static int localMin(int[] arr, int n) {
+        int l = 0, r = n - 1;
+        while (l < r) {
+            int mid = l + (r - l) / 2;
+            if (arr[mid] < arr[mid + 1])
+                r = mid;
+            else
+                l = mid + 1;
+        }
+        return arr[l];
+    }
+    public static void main(String[] args){
+        int[] arr = {10, 20, 15, 2, 23, 90, 67};
+        int n = arr.length;
+        System.out.println(peak(arr, n));
+        System.out.println(localMin(arr, n));
     }
 }

@@ -9,11 +9,12 @@ Given the array answers, return the minimum number of rabbits that could be in
 the forest.
 
 intuition 
-if ith rabit says there are some n rabits who have same color as me => means total number of rabits in group = n + 1
+if ith rabit says there are some n rabits who have same color as me =>
+means total number of rabits in group = n + 1
 with can solve this problem with the same logic
 
-first make frequency map of answers
-key = answer and value = how many rabits saying that
+first make frequency map
+key = answer, value = how many rabits saying that
 for example if 5 - 13
 - means 13 rabits are saying that there are 5 rabits in the forest who have same color as me
 - so how to calculate the minimum numer of rabits for this req

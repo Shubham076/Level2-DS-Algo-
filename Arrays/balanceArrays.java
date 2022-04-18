@@ -9,7 +9,7 @@ after deleting 1 from array : {2,6,4}
 (2+4)=(6)
 hence count is 1
 
-for ex : arr = {5,5,2,5,8}
+for ex : arr = {5, 5, 2, 5, 8}
 if we delete arr[0] or arr[1] , array will be balanced
 (5+5)==(2+8)
 so count is 2 --> arr[0],arr[1]

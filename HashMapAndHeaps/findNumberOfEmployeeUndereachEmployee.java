@@ -32,7 +32,7 @@ class findNumberOfEmployeeUndereachEmployee {
 		}
 
 		HashMap<String , Integer> res = new HashMap<>();
-		printTree(ceo , map , res);
+		printTree(ceo , map , res); //ceo is the root of the generic tree 
 		System.out.println(res);
 	}
 

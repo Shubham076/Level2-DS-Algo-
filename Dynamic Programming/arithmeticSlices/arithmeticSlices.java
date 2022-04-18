@@ -18,7 +18,7 @@ class arithmeticSlices {
 	}
 
 	//O(n) o(1) space
-	static int count(int[] arr) {
+	static int count(int[] arr) {  
 		int sum = 0, cur = 0;
 		for (int i = 2; i < arr.length; i++) {
 			if (arr[i] - arr[i - 1] == arr[i - 1] - arr[i - 2]) {

@@ -1,11 +1,18 @@
-//leetcode 475
+/*
+leetcode 475
+Winter is coming! During the contest, your first job is to design a standard heater with
+a fixed warm radius to warm all the houses.
+Every house can be warmed, as long as the house is within the heater's warm radius range. 
+Given the positions of houses and heaters on a horizontal line, return the minimum radius 
+standard of heaters so that those heaters could cover all houses.
+*/
 import java.util.*;
 class heaters{
 	static class Pair{
 		int js = -1; //just small
 		int jl = -1; //just large
 	}
-//calculating ceil and floor value in the array
+//calculating ceil and floor value  of each house in the heaters array
 	public static Pair helper(int[] arr, int k){
 		Pair p = new Pair();
 		int lo = 0;

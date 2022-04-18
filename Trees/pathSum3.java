@@ -29,7 +29,7 @@ public class pathSum3 {
     }
 	
 	
-	//method 2 O(N)
+	//method 2 O(N) 2 sum idea
 	HashMap<Integer, Integer> map;
 	int ans;
 	//psum = prefix sum

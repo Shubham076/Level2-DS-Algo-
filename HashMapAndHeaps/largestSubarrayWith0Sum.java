@@ -3,7 +3,7 @@ class largestSubarrayWith0Sum{
 	public static void main(String[] args){
 		Scanner scn = new Scanner(System.in);
 		HashMap<Integer, Integer> map = new HashMap<>();
-		map.put(0 , -1);
+		map.put(0 , -1); //sum , index
 		int sum = 0;
 		int len = 0;
 		int si = -1;

@@ -1,4 +1,5 @@
 //https://www.geeksforgeeks.org/shortest-common-supersequence/
+// both str1 and str2 as subsequences.
 public class shortestCommonSupersequence {
     public static String lcs(String s1, String s2){
         String[][] dp = new String[s1.length() + 1][s2.length() + 1];

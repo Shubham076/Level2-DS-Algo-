@@ -1,9 +1,19 @@
 
 /*
 https://www.geeksforgeeks.org/place-k-elements-such-that-minimum-distance-is-maximized/
+problem:
+
+Given an array representing n positions along a straight line. Find k (where k <= n) elements from the
+array such that the minimum distance between any two (consecutive points among the k points) is maximized.
+
 
 bruteforce generate all subsets of size k calculate max distance distance 
-An Efficient Solution is based on Binary Search. We first sort the array. Now we know maximum possible value result is arr[n-1] – arr[0] (for k = 2). We do a binary search for maximum result for given k. We start with the middle of the maximum possible result. If the middle is a feasible solution, we search on the right half of mid. Else we search is left half. To check feasibility, we place k elements under given mid-distance.
+An Efficient Solution is based on Binary Search. We first sort the array.
+Now we know maximum possible value result is arr[n-1] – arr[0] (for k = 2).
+ 
+We do a binary search for maximum result for given k. We start with the middle of
+the maximum possible result. If the middle is a feasible solution, we search on the right half of mid.
+Else we search is left half. To check feasibility, we place k elements under given mid-distance.
 O(NLogN) O(1) space
 */
 import java.util.*;
