@@ -24,7 +24,7 @@ class eulerianPathInUndirectedGraph{
         }
 
         int cnt = 0;
-        for(int i : degree){
+        for(int i : degree){ 
         	if(i % 2 != 0){
         		cnt++;
         	}

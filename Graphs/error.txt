@@ -1,0 +1,2 @@
+Error: Could not find or load main class test2
+Caused by: java.lang.NoClassDefFoundError: test/test2 (wrong name: test2)

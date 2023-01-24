@@ -13,7 +13,7 @@ class insertDeleteRandomDuplicatesAllowed {
 		list = new ArrayList<>();
 		r = new Random();
 	}
-
+`
 	/** Inserts a value to the collection. Returns true if the collection did not already contain the specified element. */
 	public boolean insert(int val) {
 		if (map.containsKey(val)) {
