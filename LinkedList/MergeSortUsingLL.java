@@ -1,5 +1,5 @@
 import java.util.*;
-class mergeSort{
+class MergeSortUsingLL {
 	public static Scanner scn = new Scanner(System.in);
 
 	    public static class ListNode {

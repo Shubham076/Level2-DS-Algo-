@@ -1,5 +1,5 @@
 import java.util.*;
-class longestValidParenthesis{
+class LongestValidParenthesisUsingStack {
 	public static void main(String[] args){
 		String str = ")(";
 		Stack<Integer> s = new Stack<>();  //storing the indexes of base string 

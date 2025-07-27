@@ -8,7 +8,7 @@ class sortedListToBST {
 		ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 	}
 
-	public class TreeNode {
+	class TreeNode {
 		int val;
 		TreeNode left;
 		TreeNode right;
@@ -47,7 +47,7 @@ class sortedListToBST {
 
 	now when we backtrack we first reach the inorder of 1 where we place the first el of linkedlist and make the right call
 	*/
-	public static TreeNode construct(int n) {
+	public TreeNode construct(int n) {
 		if (n == 0) {
 			return null;
 		}

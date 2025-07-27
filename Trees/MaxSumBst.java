@@ -14,7 +14,7 @@
  * }
  * leetcode 1373
  */
-class Solution {
+class MaxSumBst {
     static class TreeNode {
       int val;
       TreeNode left;

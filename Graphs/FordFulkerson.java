@@ -1,7 +1,7 @@
 // https://practice.geeksforgeeks.org/problems/find-the-maximum-flow2126/1
 //O(VE^2)
 import java.util.*;
-class maxFlow_Ford_FulkerSon{
+class FordFulkerson {
 	static boolean bfs(int s, int d, int[][] graph, int[] par){
 		Queue<Integer> q = new ArrayDeque<>();
 		boolean[] vis = new boolean[par.length];

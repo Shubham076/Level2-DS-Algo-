@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+class FractionToDecimal {
     public String fractionToDecimal(int n, int d) {
         if(n == 0) return "0";
 		StringBuilder ans = new StringBuilder("");

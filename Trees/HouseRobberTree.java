@@ -1,6 +1,6 @@
 //leetcode 337
 
-class houseRobber {
+class HouseRobberTree {
 	public class TreeNode {
 		int val;
 		TreeNode left;

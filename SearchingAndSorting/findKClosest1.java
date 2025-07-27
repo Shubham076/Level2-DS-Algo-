@@ -2,7 +2,7 @@
 import java.util.*;
 public class findKClosest1 {
     // Time complexity O(n) + klogk
-    public List<Integer> findClosestElements(int[] arr, int k, int x) {
+    public static List<Integer> findClosestElements(int[] arr, int k, int x) {
         LinkedList<Integer> list = new LinkedList<>();
         
         for(int v: arr){

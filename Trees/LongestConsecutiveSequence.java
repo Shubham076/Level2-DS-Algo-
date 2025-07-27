@@ -1,5 +1,5 @@
 //lintcode 595
-public class longestConsecutiveSequence {
+public class LongestConsecutiveSequence {
     static class TreeNode {
         public int val;
         public TreeNode left, right;

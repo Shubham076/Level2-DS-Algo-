@@ -1,6 +1,6 @@
 //leetcode 239
 import java.util.*;
-class slidingWindowMaximum{
+class SlidingWindowMaximum {
 	// O(nK)
 	public static int[] maxSlidingWindow1(int[] nums, int k) {
      	int max = Integer.MIN_VALUE;

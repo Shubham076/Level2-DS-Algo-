@@ -8,6 +8,8 @@ store the max of them in mx
 ans = n-mx
 leetcode 2009
 */
+import java.util.*;
+
 class MinOperationToMakeArrayContinuous {
 	public int minOperations(int[] nums) {
 	        

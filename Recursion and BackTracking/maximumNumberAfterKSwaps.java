@@ -26,7 +26,6 @@ class maximumNumberAfterKSwaps{
 		}
 	}
 
-	static String max;
 	static void swap(char[] arr, int i, int j){
 		char temp = arr[i];
 		arr[i] = arr[j];

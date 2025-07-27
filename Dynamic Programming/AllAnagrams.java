@@ -1,6 +1,6 @@
 //given two strings return count of p anagrams in string s  leetcode 438
 import java.util.*;
-public class allAnagrams {
+class AllAnagrams {
     public static void main(String[] args){
         Scanner scn = new Scanner(System.in);
         String s = scn.nextLine();

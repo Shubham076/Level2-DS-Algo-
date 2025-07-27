@@ -1,5 +1,5 @@
 //search the cnt of occurences of word in the grid word can be found horizontally diagonally or vertical
-public class searchWordin2dMatrix {
+class SearchWordIn2dMatrix {
     static int[][] dirs = {{1, 1}, {-1, -1}, {-1, 1}, {1, -1}, {0, 1}, {0, -1}, {1, 0}, {-1, 0}};
     static int cnt;
 

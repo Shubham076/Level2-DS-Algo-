@@ -2,7 +2,8 @@
 
 leetcode 1385
 */
-class Solution {
+import java.util.Arrays;
+class DistanceValueBetweenTwoArrays {
     public int findTheDistanceValue(int[] arr1, int[] arr2, int d) {
         Arrays.sort(arr2);
         int c = arr1.length;

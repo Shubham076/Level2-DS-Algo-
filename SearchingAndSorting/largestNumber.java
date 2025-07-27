@@ -1,7 +1,7 @@
 //leetcode 179
 import java.util.*;
 class largestNumber{
-	public static String largestNumber(int[] nums) {
+	public static String largestNumber(int[] arr) {
         String[] a = new String[arr.length];
         for(int i = 0; i < arr.length; i++){
             a[i] = arr[i] + "";

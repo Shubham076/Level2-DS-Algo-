@@ -1,5 +1,5 @@
 import java.util.*;
-class josephusProblem{
+class JosephusProblem {
 	
 	public static int powerOf2(int n){
 		int i = 1;

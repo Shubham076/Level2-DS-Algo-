@@ -1,6 +1,6 @@
 //leetcode 74
 // The word can be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once.
-public class wordSearch {
+public class WordSearchInBoard {
     static int[][] dirs = { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };
 
     public static boolean exist(char[][] board, String word) {

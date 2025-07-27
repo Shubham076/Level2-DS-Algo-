@@ -26,7 +26,7 @@ n.prev = null;
 
 //leetcode 146
 import java.util.*;
-class LRUCache {
+class LruCache {
     class Node{
         int key;
         int val;
@@ -38,7 +38,7 @@ class LRUCache {
     Node tail;
     HashMap<Integer, Node> map;
     int capacity = 0;
-    public LRUCache(int capacity) {
+    public LruCache(int capacity) {
         head = new Node();
         tail = new Node();
         head.next = tail;

@@ -1,6 +1,6 @@
 import java.util.*;
 //Time complexity O(N ^ 3)
-class fourSum {
+class FourSum {
     public static void main(String[] args) {
         int[] nums = { 0, 0, 0, 0 };
         System.out.println(foursum(nums, 0));
